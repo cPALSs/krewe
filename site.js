@@ -80,6 +80,72 @@
       .join("");
   }
 
+  function renderWishlist(site) {
+    const wl = site.wishlist;
+    if (!wl) return;
+    document.getElementById("wishlist-title").textContent = wl.headline;
+    document.getElementById("wishlist-body").textContent = wl.body;
+
+    const list = document.getElementById("wishlist-list");
+    const mt = site.mailto;
+    const items = wl.items || [];
+    if (!items.length) {
+      list.innerHTML =
+        '<li class="roster-empty">No open wishlist items yet.</li>';
+      return;
+    }
+
+    list.innerHTML = items
+      .map((item, i) => {
+        const status = (item.status || "open").toLowerCase();
+        const open = status === "open";
+        const statusLabel =
+          status === "fulfilled"
+            ? "Fulfilled"
+            : status === "pledged"
+              ? "Pledged"
+              : "Open";
+        const subject = fillTemplate(mt.wishlistSubject, { need: item.need });
+        const body = fillTemplate(mt.wishlistBody, { need: item.need });
+        const href = mailto(subject, body);
+        const cta = open
+          ? `<a class="btn btn-tribe" href="${href}">Pledge this need</a>`
+          : `<span class="wishlist-status-badge">${statusLabel}</span>`;
+        return `
+          <li class="wishlist-item" style="animation-delay: ${0.05 * i}s">
+            <span class="wishlist-kicker">${statusLabel}${item.for ? ` · ${item.for}` : ""}</span>
+            <h3 class="wishlist-need">${item.need}</h3>
+            ${item.detail ? `<p class="wishlist-detail">${item.detail}</p>` : ""}
+            ${cta}
+          </li>`;
+      })
+      .join("");
+  }
+
+  function renderTransit(site) {
+    const t = site.transit;
+    if (!t) return;
+    document.getElementById("transit-title").textContent = t.headline;
+    document.getElementById("transit-intro").textContent = t.intro;
+    document.getElementById("transit-path-title").textContent = t.pathTitle;
+    document.getElementById("transit-agency").textContent = t.agencyNote;
+
+    document.getElementById("transit-steps").innerHTML = (t.steps || [])
+      .map((step) => `<li>${step}</li>`)
+      .join("");
+
+    document.getElementById("transit-notes").innerHTML = (t.notes || [])
+      .map((note) => `<li>${note}</li>`)
+      .join("");
+
+    document.getElementById("transit-links").innerHTML = (t.links || [])
+      .map((link, i) => {
+        const sep = i > 0 ? ' <span aria-hidden="true"> · </span> ' : "";
+        return `${sep}<a href="${link.url}" rel="noopener noreferrer">${link.label}</a>`;
+      })
+      .join("");
+  }
+
   function renderMarchMailto(site) {
     const mt = site.mailto;
     const a = document.getElementById("march-mailto");
@@ -172,10 +238,14 @@
         loadJson("data/participants.json"),
       ]);
       renderEvent(site);
+      renderWishlist(site);
+      renderTransit(site);
       renderChampions(site);
       renderMarchMailto(site);
       renderRoster(site, participants);
-      observeReveal(".tribe-item, .roster-list li, .slot-list li");
+      observeReveal(
+        ".tribe-item, .roster-list li, .slot-list li, .wishlist-item"
+      );
     } catch (err) {
       console.error(err);
       document.getElementById("gh-pitch-body").textContent =

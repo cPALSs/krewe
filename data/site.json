@@ -69,6 +69,56 @@
     "championSubject": "Tribe Champion — {tribe} — Golden Harvest 2026",
     "championBody": "Hi Krewe team,\n\nI'd like to champion Tribe {tribeId} · {tribeName} for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nWhy this tribe fits me:\n\nThanks!",
     "marchSubject": "March interest — Little Saigon Krewe — Golden Harvest 2026",
-    "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\nBanners, instruments, lion, áo dài, or other notes:\n\nThanks!"
+    "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\nSigns, instruments, lion, áo dài, or other notes:\n\nThanks!",
+    "wishlistSubject": "Wishlist pledge — {need} — Golden Harvest 2026",
+    "wishlistBody": "Hi Krewe team,\n\nI'd like to help with this wishlist item for Golden Harvest (Oct 24, 2026):\n\n{need}\n\nName:\nOrganization:\nBest contact:\nWhat I can provide:\n\nThanks!"
+  },
+  "wishlist": {
+    "headline": "Krewe wishlist",
+    "body": "In-kind needs for Golden Harvest — like a gift registry. No dollar amounts yet. Email to pledge what you can cover.",
+    "items": [
+      {
+        "id": "hs-food-15",
+        "need": "Food for 15 high school students",
+        "detail": "Hospitality during the staging window (~9:00–11:00) before the march. Packaged meals, snacks, or gift vouchers all work.",
+        "for": "High school marchers (first ask: ~15)",
+        "status": "open"
+      }
+    ]
+  },
+  "transit": {
+    "headline": "Getting there from Elk Grove",
+    "intro": "Capitol Mall is downtown Sacramento. Many high school members don’t drive — public transit is a real option for Saturday staging (~9:00 check-in).",
+    "pathTitle": "SacRT path (weekend-friendly)",
+    "steps": [
+      "Take a SacRT Elk Grove local bus toward Cosumnes River College (CRC) — the southern end of the Blue Line.",
+      "Board Blue Line light rail toward Watt / I-80 (downtown direction).",
+      "Exit at 8th & Capitol, 9th & K, or Archives Plaza (11th & O) — short walk to Capitol Mall staging.",
+      "Return: board Blue Line toward Cosumnes River College (check the headsign), then Elk Grove bus home."
+    ],
+    "notes": [
+      "Saturday schedules differ from weekday rush-hour — Elk Grove weekday-only commuter buses (e.g. E13) won’t help parade morning. Use local EG routes + Blue Line, and verify times the week before.",
+      "Light rail uses one-way streets downtown; your outbound stop and return stop may differ.",
+      "Florin / south Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
+    ],
+    "agencyNote": "We’re exploring which agency to approach for youth or group transit support on parade day. This page is the practical how-to meanwhile — not a promise of free rides yet.",
+    "links": [
+      {
+        "label": "SacRT trip planner",
+        "url": "https://www.sacrt.com/trip-planner/"
+      },
+      {
+        "label": "Elk Grove bus service",
+        "url": "https://www.sacrt.com/elk-grove-bus-service/"
+      },
+      {
+        "label": "Light rail to downtown (Blue Line / Elk Grove)",
+        "url": "https://www.sacrt.com/stateworkers/"
+      },
+      {
+        "label": "SacRT fares",
+        "url": "https://www.sacrt.com/fares/"
+      }
+    ]
   }
 }

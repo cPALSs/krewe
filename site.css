@@ -322,6 +322,112 @@ a:hover {
   background: linear-gradient(180deg, #0a2a27 0%, var(--jade-deep) 100%);
 }
 
+.section-wishlist {
+  background: linear-gradient(180deg, #0c322e 0%, #071816 100%);
+}
+
+.section-transit {
+  background: var(--jade-deep);
+}
+
+.subhead {
+  margin: 1.5rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--gold-soft);
+}
+
+.wishlist-list {
+  list-style: none;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  max-width: var(--max);
+}
+
+.wishlist-item {
+  padding: 1.35rem 1.4rem;
+  background: var(--jade);
+  opacity: 0;
+  transform: translateY(0.6rem);
+}
+
+.wishlist-item.is-visible {
+  animation: roster-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.wishlist-kicker {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.wishlist-need {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.wishlist-detail {
+  margin: 0 0 0.85rem;
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+}
+
+.wishlist-status-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.transit-steps {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  max-width: var(--max);
+  color: var(--ink);
+}
+
+.transit-steps li {
+  margin-bottom: 0.65rem;
+  padding-left: 0.25rem;
+}
+
+.transit-notes {
+  margin: 0 0 1.25rem;
+  padding-left: 1.15rem;
+  max-width: var(--max);
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.transit-notes li {
+  margin-bottom: 0.55rem;
+}
+
+.agency-note {
+  margin: 0 0 1.25rem;
+  max-width: var(--max);
+  padding: 0.9rem 0 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9375rem;
+  color: var(--gold-soft);
+}
+
+/* —— Champions —— */
 .section-champions {
   background: var(--jade-deep);
 }
