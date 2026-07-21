@@ -45,19 +45,36 @@
     const url = document.getElementById("gh-url");
     url.href = e.url;
     const reg = document.getElementById("gh-reg");
-    reg.href = e.registrationUrl;
+    if (reg && e.registrationUrl) reg.href = e.registrationUrl;
   }
 
-  function renderChampions(site) {
+  function championByTribe(participants) {
+    return Object.fromEntries(
+      (participants?.champions || []).map((c) => [c.tribe, c])
+    );
+  }
+
+  function isChampionFilled(c) {
+    if (!c) return false;
+    return (
+      c.status === "filled" || (c.name && String(c.name).trim().length > 0)
+    );
+  }
+
+  function renderChampions(site, participants) {
     const ask = site.championAsk;
     document.getElementById("champions-title").textContent = ask.headline;
     document.getElementById("champions-body").textContent = ask.body;
     document.getElementById("champions-when").textContent = ask.when;
 
+    const byTribe = championByTribe(participants);
+
     const list = document.getElementById("tribe-list");
     const mt = site.mailto;
     list.innerHTML = site.tribes
       .map((tribe, i) => {
+        const c = byTribe[tribe.id];
+        const filled = isChampionFilled(c);
         const subject = fillTemplate(mt.championSubject, {
           tribe: `${tribe.id} · ${tribe.name}`,
           tribeId: tribe.id,
@@ -68,13 +85,18 @@
           tribeName: tribe.name,
         });
         const href = mailto(subject, body);
+        const cta = filled
+          ? `<p class="tribe-confirmed">Champion: ${[c.name, c.org]
+              .filter(Boolean)
+              .join(" · ")}</p>`
+          : `<a class="btn btn-tribe" href="${href}">Volunteer for Tribe ${tribe.id}</a>`;
         return `
           <li class="tribe-item" style="animation-delay: ${0.05 * i}s">
-            <span class="tribe-id">Tribe ${tribe.id}</span>
+            <span class="tribe-id">Tribe ${tribe.id}${tribe.block === "vehicle" ? " · vehicle block" : ""}</span>
             <h3 class="tribe-name">${tribe.name}</h3>
             <p class="tribe-peers">${tribe.peers}</p>
-            <p class="tribe-profile">${tribe.championProfile}</p>
-            <a class="btn btn-tribe" href="${href}">Champion Tribe ${tribe.id}</a>
+            <p class="tribe-profile"><span class="tribe-looking">Looking for:</span> ${tribe.championProfile}</p>
+            ${cta}
           </li>`;
       })
       .join("");
@@ -130,9 +152,68 @@
     document.getElementById("transit-path-title").textContent = t.pathTitle;
     document.getElementById("transit-agency").textContent = t.agencyNote;
 
+    const stagingTitle = document.getElementById("transit-staging-title");
+    const stagingEl = document.getElementById("transit-staging");
+    if (t.staging && t.staging.length) {
+      stagingTitle.textContent = t.stagingTitle || "Staging";
+      stagingTitle.hidden = false;
+      stagingEl.hidden = false;
+      stagingEl.innerHTML = t.staging
+        .map(
+          ([dt, dd]) =>
+            `<div><dt>${dt}</dt><dd>${dd}</dd></div>`
+        )
+        .join("");
+    } else {
+      stagingTitle.hidden = true;
+      stagingEl.hidden = true;
+      stagingEl.innerHTML = "";
+    }
+
     document.getElementById("transit-steps").innerHTML = (t.steps || [])
       .map((step) => `<li>${step}</li>`)
       .join("");
+
+    const parkingTitle = document.getElementById("transit-parking-title");
+    const parkingLead = document.getElementById("transit-parking-lead");
+    const parkingEl = document.getElementById("transit-parking");
+    const parkingRates = document.getElementById("transit-parking-rates");
+    if (t.parking && t.parking.length) {
+      parkingTitle.textContent = t.parkingTitle || "Parking";
+      parkingTitle.hidden = false;
+      parkingLead.textContent = t.parkingLead || "";
+      parkingLead.hidden = !t.parkingLead;
+      parkingEl.hidden = false;
+      parkingEl.innerHTML = t.parking
+        .map((row) => {
+          const [dt, place, rates] = row;
+          const dd = rates
+            ? `${place}<span class="parking-meta">${rates}</span>`
+            : place;
+          return `<div><dt>${dt}</dt><dd>${dd}</dd></div>`;
+        })
+        .join("");
+      parkingRates.textContent = t.parkingRates || "";
+      parkingRates.hidden = !t.parkingRates;
+    } else {
+      parkingTitle.hidden = true;
+      parkingLead.hidden = true;
+      parkingEl.hidden = true;
+      parkingRates.hidden = true;
+    }
+
+    const map = t.map;
+    const mapEl = document.getElementById("transit-map");
+    if (map && map.embedUrl) {
+      mapEl.hidden = false;
+      document.getElementById("transit-map-iframe").src = map.embedUrl;
+      document.getElementById("transit-map-title").textContent =
+        map.title || "Route map";
+      const open = document.getElementById("transit-map-open");
+      open.href = map.openUrl || map.embedUrl;
+    } else {
+      mapEl.hidden = true;
+    }
 
     document.getElementById("transit-notes").innerHTML = (t.notes || [])
       .map((note) => `<li>${note}</li>`)
@@ -186,26 +267,6 @@
 
     renderList(document.getElementById("roster-interested"), interested);
     renderList(document.getElementById("roster-confirmed"), confirmed);
-
-    const slots = document.getElementById("champion-slots");
-    const byTribe = Object.fromEntries(
-      (participants.champions || []).map((c) => [c.tribe, c])
-    );
-    slots.innerHTML = site.tribes
-      .map((tribe, i) => {
-        const c = byTribe[tribe.id] || { status: "open" };
-        const filled =
-          c.status === "filled" || (c.name && c.name.trim().length > 0);
-        const statusText = filled
-          ? [c.name, c.org].filter(Boolean).join(" · ") || "Filled"
-          : "Open";
-        return `
-          <li style="animation-delay: ${0.05 * i}s">
-            <span class="slot-tribe">Tribe ${tribe.id} · ${tribe.name}</span>
-            <span class="slot-status ${filled ? "is-filled" : "is-open"}">${statusText}</span>
-          </li>`;
-      })
-      .join("");
   }
 
   function observeReveal(selector) {
@@ -240,12 +301,10 @@
       renderEvent(site);
       renderWishlist(site);
       renderTransit(site);
-      renderChampions(site);
+      renderChampions(site, participants);
       renderMarchMailto(site);
       renderRoster(site, participants);
-      observeReveal(
-        ".tribe-item, .roster-list li, .slot-list li, .wishlist-item"
-      );
+      observeReveal(".tribe-item, .roster-list li, .wishlist-item");
     } catch (err) {
       console.error(err);
       document.getElementById("gh-pitch-body").textContent =

@@ -19,50 +19,63 @@
     "registrationUrl": "https://goldenharvestparade.org/parade-and-stage-proformance-registration/"
   },
   "pitch": {
-    "headline": "March together. Meet your peers before the curb.",
-    "body": "Little Saigon Krewe is a proposed way for Vietnamese American and Vietnamese-led partners across Greater Sacramento to show up at civic parades as multiple units in sequence — not one shared banner. The public story is the march. The relationship product is the 9:00–11:00 staging window: peer tribes, greeters, and named Tribe Champions so the krewe lead isn’t everyone’s only contact."
+    "headline": "Show up together. Meet new friends before you march.",
+    "body": "Little Saigon Krewe brings Vietnamese American and Vietnamese-led groups from Greater Sacramento to civic parades as separate units walking one after another. On Golden Harvest morning you’ll check in around 9:00, line up with peers who share your world — high school with high school, college with college, and so on — and march at 11:00. Named Tribe Champions and greeters help you find your people so one organizer isn’t the only face everyone meets."
   },
   "tribes": [
     {
       "id": "A",
       "name": "High school",
-      "peers": "VSAs and culture clubs — interclub bonding with a light cross-chapter mix",
-      "championProfile": "Someone vested in the high school pipeline (e.g. a college VSA outreach lead)"
+      "peers": "High school clubs — VSAs and culture clubs; interclub bonding with a light cross-chapter mix",
+      "championProfile": "Someone vested in high school clubs (e.g. a campus VSA outreach lead)",
+      "block": "marching"
     },
     {
       "id": "B",
       "name": "College",
-      "peers": "Campus VSAs and VN CARES chapters",
-      "championProfile": "A college VSA or VN CARES officer who already convenes peers"
+      "peers": "Campus clubs, e.g. VSAs and VN CARES chapters",
+      "championProfile": "A campus club officer (VSA or VN CARES) who already convenes peers",
+      "block": "marching"
     },
     {
       "id": "C",
       "name": "Performance",
       "peers": "Lion, dance, and troupe warm-up · spacing · music cues",
-      "championProfile": "An active dancer or lion lead who needs coordination anyway"
+      "championProfile": "An active dancer or lion lead who needs coordination anyway",
+      "block": "marching"
     },
     {
       "id": "D",
       "name": "Business",
-      "peers": "Chambers, merchants, float and vehicle logistics",
-      "championProfile": "A merchant or chamber face who wants peers to meet each other"
+      "peers": "Chambers and merchants — meet peers on foot in the marching block",
+      "championProfile": "A merchant or chamber face who wants peers to meet each other",
+      "block": "marching"
     },
     {
       "id": "E",
       "name": "Family & heritage",
       "peers": "Language school, scouts, pageant, veterans, elders",
-      "championProfile": "Someone already in the language / scout / pageant / elder orbit"
+      "championProfile": "Someone already in the language / scout / pageant / elder orbit",
+      "block": "marching"
     },
     {
       "id": "F",
       "name": "Service",
       "peers": "Mission-aligned nonprofits — awareness march grammar",
-      "championProfile": "A peer nonprofit lead (when two or more service orgs show)"
+      "championProfile": "A peer nonprofit lead (when two or more service orgs show)",
+      "block": "marching"
+    },
+    {
+      "id": "G",
+      "name": "Floats & vehicles",
+      "peers": "Anyone bringing a float, trailer, car, or pickup — stages on the vehicle block, separate from the marching line-up.",
+      "championProfile": "Someone bringing a vehicle entry, or comfortable running the vehicle line-up",
+      "block": "vehicle"
     }
   ],
   "championAsk": {
-    "headline": "Become a Tribe Champion",
-    "body": "Champions are stage managers, not stars. Hold one tribe sign, open icebreaker prompts, split crowded tribes into small circles, and give that lane a named face — weeks before parade day. Vested interest beats an available body.",
+    "headline": "Tribe Champions",
+    "body": "Each peer tribe gets a named champion — a stage manager, not a star — who holds the tribe sign and helps people connect before the march. We’ll post confirmed names here as people step up. Until then, seats are open.",
     "when": "Sat Oct 24 · roughly 9:30–10:45 at staging"
   },
   "mailto": {
@@ -87,21 +100,40 @@
     ]
   },
   "transit": {
-    "headline": "Getting there from Elk Grove",
-    "intro": "Capitol Mall is downtown Sacramento. Many high school members don’t drive — public transit is a real option for Saturday staging (~9:00 check-in).",
-    "pathTitle": "SacRT path (weekend-friendly)",
+    "headline": "Getting there",
+    "intro": "Staging is on 9th Street at Capitol Mall. Check-in is about 9:00. You can take SacRT (free rides by coupon in 2025 — expect similar for 2026) or drive and park nearby. If your group is bringing a float or parade vehicle, that uses the separate float line-up — not the public garages.",
+    "pathTitle": "SacRT Blue Line (weekend-friendly)",
+    "stagingTitle": "Where to walk (from 2025 packet — expect similar for 2026)",
+    "staging": [
+      ["Check-in", "9th St between L St and N St · 9:00–10:45"],
+      ["Marching groups (Tribes A–F)", "9th St between S Capitol Mall and N St"],
+      ["Float / vehicle line-up", "9th St between L St and N Capitol Mall — Tribe G"]
+    ],
+    "parkingTitle": "If you’re driving (2025 packet)",
+    "parkingLead": "Carpools are encouraged. Street parking where available, or these lots near Capitol Mall (2025 rates — confirm in the 2026 packet):",
+    "parking": [
+      ["Capitol Garage", "10th & L · 1303 10th St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+      ["City Hall Garage", "10th & I · 1000 I St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+      ["Y Parking Lot", "2nd & N · Crocker Art Museum", "~$1.50/hour, $6 max · 4-hour limit"]
+    ],
     "steps": [
       "Take a SacRT Elk Grove local bus toward Cosumnes River College (CRC) — the southern end of the Blue Line.",
       "Board Blue Line light rail toward Watt / I-80 (downtown direction).",
-      "Exit at 8th & Capitol, 9th & K, or Archives Plaza (11th & O) — short walk to Capitol Mall staging.",
-      "Return: board Blue Line toward Cosumnes River College (check the headsign), then Elk Grove bus home."
+      "Exit at 8th & Capitol Station. Walk one block east to 9th St — check-in and marching line-up are on 9th at Capitol Mall.",
+      "Return: board Blue Line at 8th & Capitol toward Cosumnes River College (check the headsign), then Elk Grove bus home."
     ],
     "notes": [
+      "Free RT (2025): SacRT provided free rides by scanning a coupon — look for the 2026 coupon in the Golden Harvest packet or from parade organizers.",
       "Saturday schedules differ from weekday rush-hour — Elk Grove weekday-only commuter buses (e.g. E13) won’t help parade morning. Use local EG routes + Blue Line, and verify times the week before.",
       "Light rail uses one-way streets downtown; your outbound stop and return stop may differ.",
-      "Florin / south Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
+      "Florin / South Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
     ],
-    "agencyNote": "We’re exploring which agency to approach for youth or group transit support on parade day. This page is the practical how-to meanwhile — not a promise of free rides yet.",
+    "agencyNote": "2025 packet: “RT – Free Ride — SacRT provides free rides by scanning the coupon.” Assuming 2026 works the same; confirm when the 2026 packet drops. That coupon is the agency path — not a separate krewe ask to SacRT.",
+    "map": {
+      "title": "Blue Line: Cosumnes River College → 8th & Capitol Station",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d160000!2d-121.4581933!3d38.51582085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x809ac675b0caf2d5%3A0xe6f1f6a5b6ca9213!2sCosumnes%20Light%20Rail%20Station!3m2!1d38.4541101!2d-121.4186499!4m5!1s0x809ad12ecf5edb01%3A0xb5b06d23ac5049b4!2s8th%20%26%20Capitol%20Station!3m2!1d38.5775316!2d-121.4977367!5e0!3m2!1sen!2sus!4v1721548800000!5m2!1sen!2sus",
+      "openUrl": "https://www.google.com/maps/dir/?api=1&origin=Cosumnes+River+College+Station,+Sacramento,+CA&destination=8th+%26+Capitol+Station,+Sacramento,+CA&travelmode=transit"
+    },
     "links": [
       {
         "label": "SacRT trip planner",
@@ -114,6 +146,10 @@
       {
         "label": "Light rail to downtown (Blue Line / Elk Grove)",
         "url": "https://www.sacrt.com/stateworkers/"
+      },
+      {
+        "label": "2025 GHP parade packet (waivers · free RT)",
+        "url": "https://goldenharvestparade.org/wp-content/uploads/2025/09/2025-GHP_Parade-information-Packet_V3.pdf"
       },
       {
         "label": "SacRT fares",

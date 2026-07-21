@@ -322,12 +322,48 @@ a:hover {
   background: linear-gradient(180deg, #0a2a27 0%, var(--jade-deep) 100%);
 }
 
-.section-wishlist {
-  background: linear-gradient(180deg, #0c322e 0%, #071816 100%);
+.section-march {
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 100%, rgba(230, 184, 74, 0.12), transparent 70%),
+    var(--jade-deep);
+}
+
+.section-registration {
+  background: #071816;
 }
 
 .section-transit {
   background: var(--jade-deep);
+}
+
+.section-champions {
+  background: #0a2a27;
+}
+
+.section-joining {
+  background: #071816;
+}
+
+.section-wishlist {
+  background: linear-gradient(180deg, #0c322e 0%, #071816 100%);
+}
+
+.plain-list {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+  max-width: var(--max);
+  color: var(--ink-muted);
+}
+
+.plain-list li {
+  margin-bottom: 0.65rem;
+}
+
+.tribe-confirmed {
+  margin: 0.85rem 0 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--gold-soft);
 }
 
 .subhead {
@@ -406,6 +442,31 @@ a:hover {
   padding-left: 0.25rem;
 }
 
+.transit-map {
+  margin: 0 0 1.5rem;
+  max-width: var(--max-wide);
+}
+
+.transit-map iframe {
+  display: block;
+  width: 100%;
+  height: min(28rem, 70vh);
+  min-height: 20rem;
+  border: 1px solid var(--line);
+  background: #0a2a27;
+}
+
+.transit-map figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-top: 0.65rem;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
 .transit-notes {
   margin: 0 0 1.25rem;
   padding-left: 1.15rem;
@@ -427,19 +488,24 @@ a:hover {
   color: var(--gold-soft);
 }
 
-/* —— Champions —— */
-.section-champions {
-  background: var(--jade-deep);
+.parking-lead,
+.parking-rates {
+  margin: 0 0 1rem;
+  max-width: var(--max);
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
 }
 
-.section-joining {
-  background: #071816;
+.parking-rates {
+  margin-top: -0.25rem;
+  margin-bottom: 1.5rem;
 }
 
-.section-march {
-  background:
-    radial-gradient(ellipse 60% 50% at 50% 100%, rgba(230, 184, 74, 0.12), transparent 70%),
-    var(--jade-deep);
+.event-facts .parking-meta {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
 }
 
 /* —— Event facts —— */
@@ -453,8 +519,8 @@ a:hover {
 
 .event-facts > div {
   display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 0.5rem;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.75rem;
 }
@@ -465,6 +531,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  line-height: 1.35;
   color: var(--ink-faint);
 }
 
@@ -535,6 +602,11 @@ a:hover {
 .tribe-profile {
   font-size: 0.875rem;
   color: var(--ink-faint);
+}
+
+.tribe-looking {
+  font-weight: 600;
+  color: var(--ink-muted);
 }
 
 @media (min-width: 720px) {
