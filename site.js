@@ -290,8 +290,76 @@
     nodes.forEach((n) => io.observe(n));
   }
 
+  function initNav() {
+    const header = document.querySelector(".site-header");
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("site-nav");
+    if (!header || !toggle || !nav) return;
+
+    function setOpen(open) {
+      header.classList.toggle("is-nav-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
+
+    toggle.addEventListener("click", () => {
+      setOpen(!header.classList.contains("is-nav-open"));
+    });
+
+    nav.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => setOpen(false));
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setOpen(false);
+    });
+
+    return { setOpen, header, toggle };
+  }
+
+  function initPastHero(navApi) {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        const past = !entry.isIntersecting;
+        document.body.classList.toggle("is-past-hero", past);
+        if (!past && navApi) navApi.setOpen(false);
+      },
+      { threshold: 0, rootMargin: "0px" }
+    );
+    io.observe(hero);
+  }
+
+  function initDocScroll() {
+    if (!window.DocScroll?.init) return;
+    window.DocScroll.init({
+      tocLinkSelector: ".toc [data-toc-target]",
+      sectionSelector: "[data-doc-section]",
+      mainSelector: ".doc-main",
+      headingSelector: ".doc-main .no-heading-anchors",
+      getScrollSpyOffsetPx() {
+        const pastHero = document.body.classList.contains("is-past-hero");
+        const narrow = window.matchMedia("(max-width: 1099px)").matches;
+        const header = document.querySelector(".site-header");
+        const navHeight =
+          pastHero && narrow && header
+            ? header.getBoundingClientRect().height || 52
+            : 0;
+        const rem =
+          parseFloat(getComputedStyle(document.documentElement).fontSize) ||
+          16;
+        return navHeight + rem;
+      },
+    });
+  }
+
   async function init() {
     document.querySelector(".hero")?.classList.add("is-ready");
+    const navApi = initNav();
+    initPastHero(navApi);
+    initDocScroll();
 
     try {
       const [site, participants] = await Promise.all([
