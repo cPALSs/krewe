@@ -1,0 +1,74 @@
+{
+  "brand": "Little Saigon Krewe",
+  "tagline": "A Vietnamese / Little Saigon community block for Greater Sacramento",
+  "email": "krewe@cpalss.com",
+  "org": {
+    "name": "Community Partners Advocate of Little Saigon Sacramento",
+    "short": "cPALSs",
+    "url": "https://www.cpalss.com"
+  },
+  "event": {
+    "name": "Golden Harvest Parade & Music/Dance Festival",
+    "edition": "5th Annual",
+    "date": "2026-10-24",
+    "dateDisplay": "Saturday, October 24, 2026",
+    "timeNote": "Check-in ~9:00 · march 11:00 AM",
+    "venue": "Capitol Mall, Sacramento",
+    "theme": "Unity, Harmony, and Peace",
+    "url": "https://goldenharvestparade.org/",
+    "registrationUrl": "https://goldenharvestparade.org/parade-and-stage-proformance-registration/"
+  },
+  "pitch": {
+    "headline": "March together. Meet your peers before the curb.",
+    "body": "Little Saigon Krewe is a proposed composite parade block — one banner, many subunits — for Vietnamese American and Vietnamese-led partners across Greater Sacramento. The public story is the march. The relationship product is the 9:00–11:00 staging window: peer tribes, greeters, and named Tribe Champions so the krewe lead isn’t everyone’s only contact."
+  },
+  "tribes": [
+    {
+      "id": "A",
+      "name": "High school",
+      "peers": "VSAs and culture clubs — interclub bonding with a light cross-chapter mix",
+      "championProfile": "Someone vested in the high school pipeline (e.g. a college VSA outreach lead)"
+    },
+    {
+      "id": "B",
+      "name": "College",
+      "peers": "Campus VSAs and VN CARES chapters",
+      "championProfile": "A college VSA or VN CARES officer who already convenes peers"
+    },
+    {
+      "id": "C",
+      "name": "Performance",
+      "peers": "Lion, dance, and troupe warm-up · spacing · music cues",
+      "championProfile": "An active dancer or lion lead who needs coordination anyway"
+    },
+    {
+      "id": "D",
+      "name": "Business",
+      "peers": "Chambers, merchants, float and vehicle logistics",
+      "championProfile": "A merchant or chamber face who wants peers to meet each other"
+    },
+    {
+      "id": "E",
+      "name": "Family & heritage",
+      "peers": "Language school, scouts, pageant, veterans, elders",
+      "championProfile": "Someone already in the language / scout / pageant / elder orbit"
+    },
+    {
+      "id": "F",
+      "name": "Service",
+      "peers": "Mission-aligned nonprofits — awareness march grammar",
+      "championProfile": "A peer nonprofit lead (when two or more service orgs show)"
+    }
+  ],
+  "championAsk": {
+    "headline": "Become a Tribe Champion",
+    "body": "Champions are stage managers, not stars. Hold one tribe sign, open icebreaker prompts, split crowded tribes into small circles, and give that lane a named face — weeks before parade day. Vested interest beats an available body.",
+    "when": "Sat Oct 24 · roughly 9:30–10:45 at staging"
+  },
+  "mailto": {
+    "championSubject": "Tribe Champion — {tribe} — Golden Harvest 2026",
+    "championBody": "Hi Krewe team,\n\nI'd like to champion Tribe {tribeId} · {tribeName} for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nWhy this tribe fits me:\n\nThanks!",
+    "marchSubject": "March interest — Little Saigon Krewe — Golden Harvest 2026",
+    "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\nBanners, instruments, lion, áo dài, or other notes:\n\nThanks!"
+  }
+}
