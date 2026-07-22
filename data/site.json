@@ -75,12 +75,20 @@
   ],
   "championAsk": {
     "headline": "Tribe Champions",
-    "body": "Each peer tribe gets a named champion — a stage manager, not a star — who holds the tribe sign and helps people connect before the march. We’ll post confirmed names here as people step up. Until then, seats are open.",
-    "when": "Sat Oct 24 · roughly 9:30–10:45 at staging"
+    "body": "Each peer tribe aims for a pair of champions — stage managers, not stars — who hold the tribe sign and help people connect before the march. We’ll post confirmed names here as people step up. Until then, seats are open.",
+    "when": "Sat Oct 24 · roughly 9:30–10:45 at staging",
+    "ctaCard": {
+      "kicker": "Open seat",
+      "title": "Want to be a tribe champion?",
+      "body": "Pick a tribe that fits you — or tell us where you’d help most. We aim for a pair on each tribe.",
+      "button": "Email to volunteer"
+    }
   },
   "mailto": {
     "championSubject": "Tribe Champion — {tribe} — Golden Harvest 2026",
     "championBody": "Hi Krewe team,\n\nI'd like to champion Tribe {tribeId} · {tribeName} for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nWhy this tribe fits me:\n\nThanks!",
+    "championGeneralSubject": "Tribe Champion — Golden Harvest 2026",
+    "championGeneralBody": "Hi Krewe team,\n\nI'd like to be a Tribe Champion for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nPreferred tribe (A–G), if you have one:\nWhy this fits me:\n\nThanks!",
     "marchSubject": "March interest — Little Saigon Krewe — Golden Harvest 2026",
     "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\nSigns, instruments, lion, áo dài, or other notes:\n\nThanks!",
     "wishlistSubject": "Wishlist pledge — {need} — Golden Harvest 2026",
@@ -95,6 +103,13 @@
         "need": "Food for 15 high school students",
         "detail": "Hospitality during the staging window (~9:00–11:00) before the march. Packaged meals, snacks, or gift vouchers all work.",
         "for": "High school marchers (first ask: ~15)",
+        "status": "open"
+      },
+      {
+        "id": "ucd-food-gas-parking",
+        "need": "Food, gas, and parking for a UC Davis club",
+        "detail": "Help a UC Davis chapter get to Capitol Mall and stay fed — day-of meals or vouchers, gas for carpools, and downtown parking near staging.",
+        "for": "UC Davis club (e.g. VSA)",
         "status": "open"
       }
     ]

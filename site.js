@@ -71,35 +71,55 @@
 
     const list = document.getElementById("tribe-list");
     const mt = site.mailto;
-    list.innerHTML = site.tribes
-      .map((tribe, i) => {
-        const c = byTribe[tribe.id];
-        const filled = isChampionFilled(c);
-        const subject = fillTemplate(mt.championSubject, {
-          tribe: `${tribe.id} · ${tribe.name}`,
-          tribeId: tribe.id,
-          tribeName: tribe.name,
-        });
-        const body = fillTemplate(mt.championBody, {
-          tribeId: tribe.id,
-          tribeName: tribe.name,
-        });
-        const href = mailto(subject, body);
-        const cta = filled
-          ? `<p class="tribe-confirmed">Champion: ${[c.name, c.org]
-              .filter(Boolean)
-              .join(" · ")}</p>`
-          : `<a class="btn btn-tribe" href="${href}">Volunteer for Tribe ${tribe.id}</a>`;
-        return `
+    const tribeCards = site.tribes.map((tribe, i) => {
+      const c = byTribe[tribe.id];
+      const filled = isChampionFilled(c);
+      const subject = fillTemplate(mt.championSubject, {
+        tribe: `${tribe.id} · ${tribe.name}`,
+        tribeId: tribe.id,
+        tribeName: tribe.name,
+      });
+      const body = fillTemplate(mt.championBody, {
+        tribeId: tribe.id,
+        tribeName: tribe.name,
+      });
+      const href = mailto(subject, body);
+      const confirmed = filled
+        ? `<p class="tribe-confirmed">Champion: ${[c.name, c.org]
+            .filter(Boolean)
+            .join(" · ")}</p>`
+        : "";
+      const ctaLabel = filled
+        ? `Volunteer as second · Tribe ${tribe.id}`
+        : `Volunteer for Tribe ${tribe.id}`;
+      return `
           <li class="tribe-item" style="animation-delay: ${0.05 * i}s">
             <span class="tribe-id">Tribe ${tribe.id}${tribe.block === "vehicle" ? " · vehicle block" : ""}</span>
             <h3 class="tribe-name">${tribe.name}</h3>
             <p class="tribe-peers">${tribe.peers}</p>
             <p class="tribe-profile"><span class="tribe-looking">Looking for:</span> ${tribe.championProfile}</p>
-            ${cta}
+            ${confirmed}
+            <a class="btn btn-tribe" href="${href}">${ctaLabel}</a>
           </li>`;
-      })
-      .join("");
+    });
+
+    const ctaCard = ask.ctaCard;
+    if (ctaCard) {
+      const href = mailto(
+        mt.championGeneralSubject || mt.championSubject,
+        mt.championGeneralBody || mt.championBody
+      );
+      const i = tribeCards.length;
+      tribeCards.push(`
+          <li class="tribe-item tribe-item-cta" style="animation-delay: ${0.05 * i}s">
+            <span class="tribe-id">${ctaCard.kicker || "Open seat"}</span>
+            <h3 class="tribe-name">${ctaCard.title}</h3>
+            ${ctaCard.body ? `<p class="tribe-peers">${ctaCard.body}</p>` : ""}
+            <a class="btn btn-tribe" href="${href}">${ctaCard.button || "Email to volunteer"}</a>
+          </li>`);
+    }
+
+    list.innerHTML = tribeCards.join("");
   }
 
   function renderWishlist(site) {
