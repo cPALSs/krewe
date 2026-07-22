@@ -376,11 +376,17 @@
   }
 
   async function init() {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
     document.querySelector(".hero")?.classList.add("is-ready");
     const navApi = initNav();
     initPastHero(navApi);
-    initDocScroll();
 
+    // Hash scroll must wait until dynamic sections (transit, champions, wishlist)
+    // have real height — otherwise #champions lands on a short page and transit
+    // growth pushes the target out of view (looks like #transit).
     try {
       const [site, participants] = await Promise.all([
         loadJson("data/site.json"),
@@ -398,6 +404,8 @@
       document.getElementById("gh-pitch-body").textContent =
         "Could not load site data. Please refresh, or email krewe@cpalss.com.";
     }
+
+    initDocScroll();
   }
 
   if (document.readyState === "loading") {
