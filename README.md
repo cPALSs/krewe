@@ -24,7 +24,7 @@ Push to `main` deploys via `.github/workflows/deploy-pages.yml`.
 | `data/site.json` | Event copy, tribes, **wishlist**, **transit**, mailto templates |
 | `data/participants.json` | Champion seats + marchers (`interested` / `confirmed`) |
 
-**Wishlist:** need-only items (no `$` amounts). Set `status` to `open` · `pledged` · `fulfilled`.  
+**Fund the Krewe (`wishlist`):** gift cards with `amount`, `slots`, optional `slotsFilled`. Set `status` to `open` · `pledged` · `fulfilled`. Keep in sync with the GH sponsorship packet seed.  
 **Transit:** Elk Grove → Capitol Mall SacRT how-to; agency / comped-fare exploration stays in `agencyNote` until confirmed.
 
 CTAs are `mailto:krewe@cpalss.com` only — no forms. Sync roster from the Parades sheet when status changes; do not put private POC emails or phones in JSON.

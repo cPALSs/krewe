@@ -140,22 +140,40 @@
     list.innerHTML = items
       .map((item, i) => {
         const status = (item.status || "open").toLowerCase();
-        const open = status === "open";
-        const statusLabel =
-          status === "fulfilled"
-            ? "Fulfilled"
-            : status === "pledged"
-              ? "Pledged"
-              : "Open";
+        const slotsTotal =
+          typeof item.slots === "number" ? item.slots : null;
+        const slotsFilled =
+          typeof item.slotsFilled === "number" ? item.slotsFilled : 0;
+        const slotsOpen =
+          slotsTotal != null ? Math.max(0, slotsTotal - slotsFilled) : null;
+        const fullyFunded =
+          status === "fulfilled" ||
+          (slotsOpen != null && slotsOpen === 0);
+        const amount =
+          typeof item.amount === "number"
+            ? `$${item.amount.toLocaleString("en-US")}`
+            : item.amount
+              ? String(item.amount)
+              : "";
+        const slotsLabel =
+          slotsTotal != null
+            ? slotsTotal === 1
+              ? "1 slot"
+              : `${slotsTotal} slots`
+            : "";
+        const kickerParts = [amount, slotsLabel].filter(Boolean);
         const subject = fillTemplate(mt.wishlistSubject, { need: item.need });
-        const body = fillTemplate(mt.wishlistBody, { need: item.need });
+        const body = fillTemplate(mt.wishlistBody, {
+          need: item.need,
+          amount: amount || "see packet",
+        });
         const href = mailto(subject, body);
-        const cta = open
-          ? `<a class="btn btn-tribe" href="${href}">Pledge this need</a>`
-          : `<span class="wishlist-status-badge">${statusLabel}</span>`;
+        const cta = fullyFunded
+          ? `<span class="btn btn-tribe is-filled">Fully funded</span>`
+          : `<a class="btn btn-tribe" href="${href}">Sponsor this gift</a>`;
         return `
           <li class="wishlist-item" style="animation-delay: ${0.05 * i}s">
-            <span class="wishlist-kicker">${statusLabel}${item.for ? ` · ${item.for}` : ""}</span>
+            ${kickerParts.length ? `<span class="wishlist-kicker">${kickerParts.join(" · ")}</span>` : ""}
             <h3 class="wishlist-need">${item.need}</h3>
             ${item.detail ? `<p class="wishlist-detail">${item.detail}</p>` : ""}
             ${cta}

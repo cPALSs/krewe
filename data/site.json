@@ -1,6 +1,6 @@
 {
   "brand": "Little Saigon Krewe",
-  "tagline": "Coordinating Vietnamese presence at Greater Sacramento civic parades",
+  "tagline": "Đoàn diễu hành Cộng đồng Việt Mỹ vùng Sacramento",
   "email": "krewe@cpalss.com",
   "org": {
     "name": "Community Partners Advocate of Little Saigon Sacramento",
@@ -91,25 +91,51 @@
     "championGeneralBody": "Hi Krewe team,\n\nI'd like to be a Tribe Champion for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nPreferred tribe (A–G), if you have one:\nWhy this fits me:\n\nThanks!",
     "marchSubject": "March interest — Little Saigon Krewe — Golden Harvest 2026",
     "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\nSigns, instruments, lion, áo dài, or other notes:\n\nThanks!",
-    "wishlistSubject": "Wishlist pledge — {need} — Golden Harvest 2026",
-    "wishlistBody": "Hi Krewe team,\n\nI'd like to help with this wishlist item for Golden Harvest (Oct 24, 2026):\n\n{need}\n\nName:\nOrganization:\nBest contact:\nWhat I can provide:\n\nThanks!"
+    "wishlistSubject": "Fund the Krewe — {need} — Golden Harvest 2026",
+    "wishlistBody": "Hi Krewe team,\n\nI'd like to sponsor this Fund the Krewe gift for Golden Harvest (Oct 24, 2026):\n\n{need}\nAmount: {amount}\n\nName:\nOrganization:\nBest contact:\nCash check · or in-kind (describe):\nHow you'd like to be named:\n\nThanks!"
   },
   "wishlist": {
-    "headline": "Krewe wishlist",
-    "body": "In-kind needs for Golden Harvest — like a gift registry. No dollar amounts yet. Email to pledge what you can cover.",
+    "headline": "Fund the Krewe",
+    "body": "Like a gift list for Golden Harvest — pick a story, we make it happen and put your name on it. Cash check to cPALSs (memo LSK GH 2026) or in-kind that matches the gift. Ask which slots are still open before you commit.",
     "items": [
       {
         "id": "hs-food-15",
         "need": "Food for 15 high school students",
-        "detail": "Hospitality during the staging window (~9:00–11:00) before the march. Packaged meals, snacks, or gift vouchers all work.",
-        "for": "High school marchers (first ask: ~15)",
+        "amount": 250,
+        "slots": 10,
+        "detail": "Breakfast or lunch money / festival food for one high school group of about 15. Students eat before or after the march.",
         "status": "open"
       },
       {
         "id": "ucd-food-gas-parking",
         "need": "Food, gas, and parking for a UC Davis club",
-        "detail": "Help a UC Davis chapter get to Capitol Mall and stay fed — day-of meals or vouchers, gas for carpools, and downtown parking near staging.",
-        "for": "UC Davis club (e.g. VSA)",
+        "amount": 500,
+        "slots": 2,
+        "detail": "Food plus gas and downtown parking for one UC Davis club trip — so the club arrives without emptying the club treasury.",
+        "status": "open"
+      },
+      {
+        "id": "staging-hub",
+        "need": "Staging Hub",
+        "amount": 400,
+        "slots": 1,
+        "detail": "Water, pins, group signs, name tags, and sunscreen for the morning check-in (about 9:00–11:00).",
+        "status": "open"
+      },
+      {
+        "id": "krewe-banner",
+        "need": "Krewe Banner",
+        "amount": 300,
+        "slots": 1,
+        "detail": "Print and poles for the Little Saigon Krewe march banner so the block walks as one.",
+        "status": "open"
+      },
+      {
+        "id": "spread-the-word",
+        "need": "Spread the Word",
+        "amount": 250,
+        "slots": 2,
+        "detail": "Short Instagram videos and posts, plus a small boost — your name in the captions and day-of tags.",
         "status": "open"
       }
     ]
