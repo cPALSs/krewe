@@ -354,11 +354,10 @@ a:hover {
   margin: 0 0 1rem;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(1.55rem, 7vw, 4.5rem);
+  font-size: 4.5rem;
   line-height: 1.02;
   letter-spacing: -0.03em;
   color: var(--ink);
-  white-space: nowrap;
 }
 
 .hero-line {
