@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-08-02",
   "champions": [
     {
       "tribe": "A",
@@ -15,6 +15,12 @@
     { "tribe": "G", "name": "", "org": "", "status": "open" }
   ],
   "marchers": [
+    {
+      "org": "Cosumnes Oaks High School VSA",
+      "status": "interested",
+      "note": "~10 marchers · áo dài",
+      "tribe": "A"
+    },
     {
       "org": "Florin High School VSA",
       "status": "interested",
