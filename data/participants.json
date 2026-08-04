@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "champions": [
     {
       "tribe": "A",
@@ -22,10 +22,28 @@
       "tribe": "A"
     },
     {
+      "org": "Elk Grove High School VSA",
+      "status": "interested",
+      "note": "Following up · transport TBD",
+      "tribe": "A"
+    },
+    {
       "org": "Florin High School VSA",
       "status": "interested",
       "note": "~15 marchers",
       "tribe": "A"
+    },
+    {
+      "org": "Florin High School Asian Club",
+      "status": "interested",
+      "note": "Lion dance · headcount TBD",
+      "tribe": "C"
+    },
+    {
+      "org": "Pleasant Grove Lion Dance",
+      "status": "interested",
+      "note": "High interest to perform · headcount TBD",
+      "tribe": "C"
     }
   ]
 }
