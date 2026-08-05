@@ -671,6 +671,63 @@ a:hover {
   padding-left: 0.25rem;
 }
 
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: var(--max);
+  border-left: 2px solid var(--line);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 0 0 1.35rem;
+  padding: 0 0 0 1.35rem;
+  opacity: 0;
+  transform: translateY(0.4rem);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.timeline-item.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -0.4rem;
+  top: 0.35rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--accent, #c45c26);
+  border: 2px solid var(--bg, #fff);
+}
+
+.timeline-when {
+  margin: 0 0 0.2rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.timeline-step-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display, inherit);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.timeline-body {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
 .transit-map {
   margin: 0 0 1.5rem;
   max-width: var(--max-wide);

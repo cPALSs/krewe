@@ -21,7 +21,7 @@ Push to `main` deploys via `.github/workflows/deploy-pages.yml`.
 
 | File | What to edit |
 |------|----------------|
-| `data/site.json` | Event copy, tribes, **wishlist**, **transit**, mailto templates |
+| `data/site.json` | Event copy, tribes, **timeline**, **wishlist**, **transit**, mailto templates |
 | `data/participants.json` | Champion seats + marchers (`interested` / `confirmed`) |
 
 **Fund the Krewe (`wishlist`):** gift cards with `amount`, `slots`, optional `slotsFilled`. Set `status` to `open` · `pledged` · `fulfilled`. Keep in sync with the GH sponsorship packet seed.  

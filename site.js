@@ -265,6 +265,27 @@
       .join("");
   }
 
+  function renderTimeline(site) {
+    const tl = site.timeline;
+    if (!tl) return;
+    const title = document.getElementById("timeline-title");
+    const intro = document.getElementById("timeline-intro");
+    const list = document.getElementById("timeline-list");
+    if (!title || !intro || !list) return;
+    title.textContent = tl.headline;
+    intro.textContent = tl.intro;
+    list.innerHTML = (tl.steps || [])
+      .map(
+        (step, i) => `
+      <li class="timeline-item" style="animation-delay: ${0.05 * i}s">
+        <p class="timeline-when">${step.when}</p>
+        <h3 class="timeline-step-title">${step.title}</h3>
+        <p class="timeline-body">${step.body}</p>
+      </li>`
+      )
+      .join("");
+  }
+
   function renderMarchMailto(site) {
     const mt = site.mailto;
     const a = document.getElementById("march-mailto");
@@ -411,12 +432,13 @@
         loadJson("data/participants.json"),
       ]);
       renderEvent(site);
+      renderTimeline(site);
       renderWishlist(site);
       renderTransit(site);
       renderChampions(site, participants);
       renderMarchMailto(site);
       renderRoster(site, participants);
-      observeReveal(".tribe-item, .roster-list li, .wishlist-item");
+      observeReveal(".tribe-item, .roster-list li, .wishlist-item, .timeline-item");
     } catch (err) {
       console.error(err);
       document.getElementById("gh-pitch-body").textContent =
