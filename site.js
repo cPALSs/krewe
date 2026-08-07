@@ -85,7 +85,7 @@
       });
       const href = mailto(subject, body);
       const confirmed = filled
-        ? `<p class="tribe-confirmed">Champion: ${[c.name, c.org]
+        ? `<p class="tribe-confirmed">Champion: ${[c.name, c.role, c.org]
             .filter(Boolean)
             .join(" · ")}</p>`
         : "";

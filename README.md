@@ -29,6 +29,15 @@ Push to `main` deploys via `.github/workflows/deploy-pages.yml`.
 
 CTAs are `mailto:krewe@cpalss.com` only — no forms. Sync roster from the Parades sheet when status changes; do not put private POC emails or phones in JSON.
 
+### Student names on this site
+
+| Who | Public listing |
+|-----|----------------|
+| **High school** | **First name only** (+ optional `role`). No last names. |
+| **College** / adults | Full name OK (+ optional `role`). |
+
+Org/club name is fine either way. Full HS names stay on internal sheets only (vault: Little Saigon Krewe → Working with local VSAs → Public student names).
+
 ## DNS
 
 On the **cpalss.com** zone:
