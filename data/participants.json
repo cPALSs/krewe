@@ -1,5 +1,6 @@
 {
   "updated": "2026-08-06",
+  "maxChampionsPerTribe": 3,
   "champions": [
     {
       "tribe": "A",
@@ -8,12 +9,20 @@
       "org": "VSA @ UC Davis",
       "status": "filled"
     },
-    { "tribe": "B", "name": "", "org": "", "status": "open" },
-    { "tribe": "C", "name": "", "org": "", "status": "open" },
-    { "tribe": "D", "name": "", "org": "", "status": "open" },
-    { "tribe": "E", "name": "", "org": "", "status": "open" },
-    { "tribe": "F", "name": "", "org": "", "status": "open" },
-    { "tribe": "G", "name": "", "org": "", "status": "open" }
+    {
+      "tribe": "A",
+      "name": "Henry",
+      "role": "Officer",
+      "org": "Florin HS VSA",
+      "status": "filled"
+    },
+    {
+      "tribe": "A",
+      "name": "Abran",
+      "role": "Officer",
+      "org": "Florin HS VSA",
+      "status": "filled"
+    }
   ],
   "marchers": [
     {

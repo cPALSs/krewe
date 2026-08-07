@@ -578,11 +578,27 @@ a:hover {
   margin-bottom: 0.65rem;
 }
 
-.tribe-confirmed {
+.tribe-champions {
+  list-style: none;
   margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.tribe-confirmed {
+  margin: 0.35rem 0 0;
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--gold-soft);
+}
+
+.tribe-champions .tribe-confirmed:first-child {
+  margin-top: 0;
+}
+
+.tribe-full {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: var(--muted, #9a9080);
 }
 
 .subhead {

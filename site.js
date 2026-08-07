@@ -48,10 +48,20 @@
     if (reg && e.registrationUrl) reg.href = e.registrationUrl;
   }
 
-  function championByTribe(participants) {
-    return Object.fromEntries(
-      (participants?.champions || []).map((c) => [c.tribe, c])
-    );
+  function championsByTribe(participants) {
+    const max =
+      Number(participants?.maxChampionsPerTribe) > 0
+        ? Number(participants.maxChampionsPerTribe)
+        : 3;
+    const map = {};
+    for (const c of participants?.champions || []) {
+      if (!c?.tribe) continue;
+      if (!map[c.tribe]) map[c.tribe] = [];
+      if (isChampionFilled(c) && map[c.tribe].length < max) {
+        map[c.tribe].push(c);
+      }
+    }
+    return { map, max };
   }
 
   function isChampionFilled(c) {
@@ -61,19 +71,30 @@
     );
   }
 
+  function formatChampionLine(c) {
+    return [c.name, c.role, c.org].filter(Boolean).join(" · ");
+  }
+
+  function championCtaLabel(tribeId, filledCount, max) {
+    if (filledCount <= 0) return `Volunteer for Tribe ${tribeId}`;
+    if (filledCount === 1) return `Volunteer as second · Tribe ${tribeId}`;
+    if (filledCount === 2) return `Volunteer as third · Tribe ${tribeId}`;
+    return null;
+  }
+
   function renderChampions(site, participants) {
     const ask = site.championAsk;
     document.getElementById("champions-title").textContent = ask.headline;
     document.getElementById("champions-body").textContent = ask.body;
     document.getElementById("champions-when").textContent = ask.when;
 
-    const byTribe = championByTribe(participants);
+    const { map: byTribe, max } = championsByTribe(participants);
 
     const list = document.getElementById("tribe-list");
     const mt = site.mailto;
     const tribeCards = site.tribes.map((tribe, i) => {
-      const c = byTribe[tribe.id];
-      const filled = isChampionFilled(c);
+      const champs = byTribe[tribe.id] || [];
+      const filledCount = champs.length;
       const subject = fillTemplate(mt.championSubject, {
         tribe: `${tribe.id} · ${tribe.name}`,
         tribeId: tribe.id,
@@ -84,14 +105,19 @@
         tribeName: tribe.name,
       });
       const href = mailto(subject, body);
-      const confirmed = filled
-        ? `<p class="tribe-confirmed">Champion: ${[c.name, c.role, c.org]
-            .filter(Boolean)
-            .join(" · ")}</p>`
-        : "";
-      const ctaLabel = filled
-        ? `Volunteer as second · Tribe ${tribe.id}`
-        : `Volunteer for Tribe ${tribe.id}`;
+      const confirmed =
+        filledCount > 0
+          ? `<ul class="tribe-champions">${champs
+              .map(
+                (c) =>
+                  `<li class="tribe-confirmed">${formatChampionLine(c)}</li>`
+              )
+              .join("")}</ul>`
+          : "";
+      const ctaLabel = championCtaLabel(tribe.id, filledCount, max);
+      const cta = ctaLabel
+        ? `<a class="btn btn-tribe" href="${href}">${ctaLabel}</a>`
+        : `<p class="tribe-full">Champion seats filled (${max})</p>`;
       return `
           <li class="tribe-item" style="animation-delay: ${0.05 * i}s">
             <span class="tribe-id">Tribe ${tribe.id}${tribe.block === "vehicle" ? " · vehicle block" : ""}</span>
@@ -99,7 +125,7 @@
             <p class="tribe-peers">${tribe.peers}</p>
             <p class="tribe-profile"><span class="tribe-looking">Looking for:</span> ${tribe.championProfile}</p>
             ${confirmed}
-            <a class="btn btn-tribe" href="${href}">${ctaLabel}</a>
+            ${cta}
           </li>`;
     });
 
