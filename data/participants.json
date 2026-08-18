@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06",
+  "updated": "2026-08-17",
   "maxChampionsPerTribe": 3,
   "champions": [
     {
@@ -53,6 +53,12 @@
       "org": "Pleasant Grove Lion Dance",
       "status": "interested",
       "note": "High interest to perform · headcount TBD",
+      "tribe": "C"
+    },
+    {
+      "org": "Northern California Loving Hearts Dance Group",
+      "status": "interested",
+      "note": "Will march (Dai 8/17) · headcount TBD",
       "tribe": "C"
     }
   ]
