@@ -33,8 +33,8 @@
       },
       {
         "when": "After soft commit · early–mid Sept target",
-        "title": "Parental consent & transit intake",
-        "body": "Families complete cPALSs parental consent / transit intake on our form once it’s live. Cleared-to-march starts here for youth. One link — we won’t send a teaser letter that forces a second signup later."
+        "title": "Parental consent",
+        "body": "Families complete cPALSs parental authorization on our form once it’s live. This year parents or guardians provide the ride downtown — we are not running a krewe bus or a staffed light-rail escort. Cleared-to-march starts here for youth."
       },
       {
         "when": "Mid–late Sept (guided)",
@@ -130,19 +130,19 @@
     "body": "Like a gift list for Golden Harvest — pick a story, we make it happen and put your name on it. Cash check to cPALSs (memo LSK GH 2026) or in-kind that matches the gift. Ask which slots are still open before you commit.",
     "items": [
       {
-        "id": "hs-food-15",
-        "need": "Food for 15 high school students",
+        "id": "food-15",
+        "need": "Food for 15 students",
         "amount": 250,
-        "slots": 10,
-        "detail": "Breakfast or lunch money / festival food for one high school group of about 15. Students eat before or after the march.",
+        "slots": 12,
+        "detail": "Breakfast or lunch money / festival food for one student group of about 15 (high school or college). Students eat before or after the march.",
         "status": "open"
       },
       {
-        "id": "ucd-food-gas-parking",
-        "need": "Food, gas, and parking for a UC Davis club",
-        "amount": 500,
+        "id": "ucd-gas-parking",
+        "need": "Gas and parking for a UC Davis club",
+        "amount": 250,
         "slots": 2,
-        "detail": "Food plus gas and downtown parking for one UC Davis club trip — so the club arrives without emptying the club treasury.",
+        "detail": "Gas and downtown parking for one UC Davis club trip (~15 students, about five cars) — drivers get reimbursed without emptying the club treasury.",
         "status": "open"
       },
       {
@@ -150,15 +150,15 @@
         "need": "Staging Hub",
         "amount": 400,
         "slots": 1,
-        "detail": "Water, pins, group signs, name tags, and sunscreen for the morning check-in (about 9:00–11:00).",
+        "detail": "Water, group signs, and name tags for the morning check-in hub (about 9:00–11:00).",
         "status": "open"
       },
       {
         "id": "krewe-banner",
         "need": "Krewe Banner",
-        "amount": 300,
+        "amount": 450,
         "slots": 1,
-        "detail": "Print and poles for the Little Saigon Krewe march banner so the block walks as one.",
+        "detail": "Reusable front banner (“Little Saigon Krewe” + cPALSs · VACOS · NVCC as short text, no logos) plus print of this sponsor’s logo banner, carried behind. Separate from the tabling/canopy banner.",
         "status": "open"
       },
       {
@@ -173,8 +173,8 @@
   },
   "transit": {
     "headline": "Getting there",
-    "intro": "Staging is on 9th Street at Capitol Mall. Check-in is about 9:00. You can take SacRT (free rides by coupon in 2025 — expect similar for 2026) or drive and park nearby. If your group is bringing a float or parade vehicle, that uses the separate float line-up — not the public garages.",
-    "pathTitle": "SacRT Blue Line (weekend-friendly)",
+    "intro": "This year families drive (or take transit on their own). Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort. Staging is on 9th Street at Capitol Mall. Check-in is about 9:00. If your group is bringing a float or parade vehicle, that uses the separate float line-up — not the public garages.",
+    "pathTitle": "SacRT Blue Line — if your family rides together (not a krewe escort)",
     "stagingTitle": "Where to walk (from 2025 packet — expect similar for 2026)",
     "staging": [
       ["Check-in", "9th St between L St and N St · 9:00–10:45"],
@@ -195,6 +195,7 @@
       "Return: board Blue Line at 8th & Capitol toward Cosumnes River College (check the headsign), then Elk Grove bus home."
     ],
     "notes": [
+      "Little Saigon Krewe is not meeting students at a station or escorting a youth group on the train. If you take rail, a parent or guardian rides with their own student.",
       "Free RT (2025): SacRT provided free rides by scanning a coupon — look for the 2026 coupon in the Golden Harvest packet or from parade organizers.",
       "Saturday schedules differ from weekday rush-hour — Elk Grove weekday-only commuter buses (e.g. E13) won’t help parade morning. Use local EG routes + Blue Line, and verify times the week before.",
       "Light rail uses one-way streets downtown; your outbound stop and return stop may differ.",
