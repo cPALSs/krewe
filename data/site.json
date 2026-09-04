@@ -131,42 +131,42 @@
     "items": [
       {
         "id": "food-15",
-        "need": "Food for 15 students",
+        "need": "Breakfast for 15 students",
         "amount": 250,
         "slots": 12,
-        "detail": "Breakfast or lunch money / festival food for one student group of about 15 (high school or college). Students eat before or after the march.",
+        "detail": "Breakfast for one student group of about 15. Groups arrive around 9:00 AM and finish by noon. Benefit: social media story — “Student breakfast presented by [You].”",
         "status": "open"
       },
       {
-        "id": "ucd-gas-parking",
-        "need": "Gas and parking for a UC Davis club",
+        "id": "college-gas-parking",
+        "need": "Gas and parking for a college club",
         "amount": 250,
         "slots": 2,
-        "detail": "Gas and downtown parking for one UC Davis club trip (~15 students, about five cars) — drivers get reimbursed without emptying the club treasury.",
+        "detail": "Gas and parking reimbursements for one college club of about 15. Benefit: social media story — “Student club travel presented by [You].”",
         "status": "open"
       },
       {
         "id": "staging-hub",
         "need": "Staging Hub",
-        "amount": 400,
+        "amount": 125,
         "slots": 1,
-        "detail": "Water, group signs, and name tags for the morning check-in hub (about 9:00–11:00).",
+        "detail": "Water, group signs, and name tags for the morning check-in hub. Benefit: social media story and a sponsor card on the check-in table — “Refreshments presented by [You].”",
         "status": "open"
       },
       {
         "id": "krewe-banner",
         "need": "Krewe Banner",
-        "amount": 450,
+        "amount": 500,
         "slots": 1,
-        "detail": "Reusable front banner (“Little Saigon Krewe” + cPALSs · VACOS · NVCC as short text, no logos) plus print of this sponsor’s logo banner, carried behind. Separate from the tabling/canopy banner.",
+        "detail": "Krewe banner: Little Saigon Krewe / Vietnamese Americans Celebrating Greater Sacramento. Benefit: social media story and a dedicated banner saying “Thank you [Your logo/name]” carried behind the krewe banner.",
         "status": "open"
       },
       {
-        "id": "spread-the-word",
-        "need": "Spread the Word",
-        "amount": 250,
-        "slots": 2,
-        "detail": "Short Instagram videos and posts, plus a small boost — your name in the captions and day-of tags.",
+        "id": "presenting",
+        "need": "Presenting sponsor",
+        "amount": 2500,
+        "slots": 1,
+        "detail": "Champion of the community. Benefit: social media story and a dedicated banner saying “Presenting sponsor [Your logo/name]” carried behind the krewe banner.",
         "status": "open"
       }
     ]
