@@ -1,0 +1,239 @@
+{
+  "kicker": "When we hosted, and when we marched",
+  "headline": "Parade history",
+  "lead": "The community has put Tết parades on the street. Vietnamese groups have also marched as a unit on someone else’s route — the train Little Saigon Krewe is building.",
+  "viLead": "Cộng đồng tổ chức diễn hành Tết. Các đơn vị Người Mỹ gốc Việt cũng đi trong diễn hành của người khác — đoàn mà Little Saigon Krewe đang xây.",
+  "buckets": [
+    {
+      "id": "host",
+      "label": "Host",
+      "vi": "Cộng đồng tổ chức diễn hành",
+      "blurb": "Little Saigon / Tết / Elk Grove Lunar New Year putting the parade on the calendar — designation weekend, branded corridor years, then the park."
+    },
+    {
+      "id": "march",
+      "label": "March",
+      "vi": "Đơn vị đi trong diễn hành của người khác",
+      "blurb": "Units on a civic route they did not host: Veterans Day, Golden Harvest, and the scout habit of showing up in uniform."
+    }
+  ],
+  "entries": [
+    {
+      "id": "host-2010",
+      "bucket": "host",
+      "year": "2010",
+      "kicker": "Host · Saturday, February 13, 2010",
+      "headline": "Little Saigon designation — and a New Year parade",
+      "body": "City and County ribbon cuttings, and a Tết parade down Stockton Blvd toward Florin. Neighbors filled the corridor that designation weekend — we marched in Little Saigon.",
+      "youtube": "ANC-khvKp8c",
+      "youtubeTitle": "2010 Little Saigon parade (J Lees)",
+      "links": [
+        {
+          "label": "Sacramento Press photo journal",
+          "href": "http://bigeducationape.blogspot.com/2010/02/sacramento-press-photos-tet-festival.html"
+        }
+      ]
+    },
+    {
+      "id": "host-2012",
+      "bucket": "host",
+      "year": "2012",
+      "kicker": "Host · Saturday, February 4, 2012",
+      "headline": "Little Saigon Street Festival Parade",
+      "body": "The corridor filled again — GSVACC, Florin Partnership, and many amateur cameras. Rain moved the weekend from January 21 to this Saturday. LITTLE SAIGON TV taped it; it remains the best-recorded Little Saigon Tết parade we have.",
+      "youtube": "RJj3ae7AQ9w",
+      "youtubeTitle": "2012 Tết parade (LITTLE SAIGON TV)",
+      "links": [
+        {
+          "label": "Sac City Express recap",
+          "href": "https://saccityexpress.com/21660/features/vietnamese-new-year-marks-history/"
+        }
+      ]
+    },
+    {
+      "id": "host-2013",
+      "bucket": "host",
+      "year": "2013",
+      "kicker": "Host · Saturday–Sunday, February 16–17, 2013",
+      "headline": "Diễn hành Xuân Quý Tỵ",
+      "body": "A corridor diễn hành and hội chợ on Stockton Blvd / Florin after the branded weekend. HyRo taped the street parade that Saturday.",
+      "youtube": "stOon8INhxw",
+      "youtubeTitle": "Sacramento 2013 — Tet Parade (HyRo)",
+      "links": [
+        {
+          "label": "SBTN — diễn hành + hội chợ",
+          "href": "https://www.youtube.com/watch?v=3MSGEIvwvqQ"
+        }
+      ]
+    },
+    {
+      "id": "host-2014",
+      "bucket": "host",
+      "year": "2014",
+      "kicker": "Host · Saturday–Sunday, February 15–16, 2014",
+      "headline": "Diễn hành Giáp Ngọ",
+      "body": "VACOS hosted diễn hành and hội chợ at NE Florin & Stockton Blvd (rain-moved). SBTN taped both the march and the lot.",
+      "youtube": "D7YkG2jEErs",
+      "youtubeTitle": "Diễn hành và Hội Chợ Tết Giáp Ngọ 2014 (SBTN)",
+      "links": [
+        {
+          "label": "Florin Partnership rain notice",
+          "href": "http://florinrdptshp.blogspot.com/2014/02/save-date-for-2014-tet-festival.html"
+        }
+      ]
+    },
+    {
+      "id": "host-2016",
+      "bucket": "host",
+      "year": "2016",
+      "kicker": "Host · Saturday, February 6, 2016",
+      "headline": "Little Saigon Tet Parade + Lunar Flower Festival",
+      "body": "Parade at 9 AM, Stockton Blvd & Fruitridge — the same Saturday as the lot festival. HeuFamilyEnt taped the march; KCRA named both hosts.",
+      "youtube": "8AjGTpvWePI",
+      "youtubeTitle": "Little Saigon Lunar Flower Fest 2016 — Parade (HeuFamilyEnt)",
+      "links": [
+        {
+          "label": "2016 KCRA",
+          "href": "https://www.kcra.com/article/tet-parade-lunar-flower-festival-in-sacramento/6250654"
+        }
+      ]
+    },
+    {
+      "id": "host-2017",
+      "bucket": "host",
+      "year": "2017",
+      "kicker": "Host · Saturday, January 28, 2017",
+      "headline": "Diễn hành Đinh Dậu",
+      "body": "The street march landed on Tết Saturday, from the Happy Garden lot along Stockton Blvd into the hội chợ. SN&R also billed a Florin & Stockton Blvd fair Saturday–Sunday, February 4–5 — a later weekend, not this tape.",
+      "youtube": "3jFhh_zZg-4",
+      "youtubeTitle": "Diễn hành Tết Đinh Dậu 2017 (vobidalatsacramento)",
+      "links": [
+        {
+          "label": "SN&R — Taste of Little Saigon",
+          "href": "https://www.newsreview.com/sacramento/content/taste-of-little-saigon/23589617/"
+        }
+      ]
+    },
+    {
+      "id": "host-2024",
+      "bucket": "host",
+      "year": "2024",
+      "kicker": "Host · Saturday–Sunday, February 10–11, 2024",
+      "headline": "Civic Tết at Elk Grove Park",
+      "body": "Civic Tết moves to Elk Grove Park on the Lunar New Year weekend. Nhịp Sống Cali taped the park parade.",
+      "youtube": "aWixB1PqwLk",
+      "youtubeTitle": "2024 Elk Grove Park Tết — Nhịp Sống Cali",
+      "links": [
+        {
+          "label": "2024 KCRA",
+          "href": "https://www.kcra.com/article/thousands-celebrate-lunar-new-year-free-festival-elk-grove/46716772"
+        }
+      ]
+    },
+    {
+      "id": "host-2026",
+      "bucket": "host",
+      "year": "2026",
+      "kicker": "Host · Saturday–Sunday, February 14–15, 2026",
+      "headline": "Mardi Gras twist at the park",
+      "body": "2026 added a Mardi Gras twist — that is where the krewe idea landed. The still is from the park parade, not Stockton Blvd.",
+      "image": "/assets/hero-03-car.jpg",
+      "imageAlt": "Pageant contestants waving from a light blue classic car in the Elk Grove Lunar New Year parade",
+      "links": [
+        {
+          "label": "eglny.com",
+          "href": "https://eglny.com"
+        }
+      ]
+    },
+    {
+      "id": "march-2006-vets",
+      "bucket": "march",
+      "year": "2006",
+      "kicker": "March · Sunday, November 12, 2006",
+      "headline": "Vietnamese units on the city Veterans Day route",
+      "body": "Hội cựu tù nhân, Thủ Đức, quân cảnh, thanh thiếu niên quân đội, and thiếu sinh quân marched with about a hundred other units. Not a Tết host year — a civic parade, Vietnamese blocks in the line.",
+      "youtubeTitle": "Diễn hành Ngày Cựu Chiến Binh tại Sacramento (Chau Truong)",
+      "youtube": [
+        {
+          "id": "c2sfqHeyig0",
+          "title": "Part 1 — Diễn hành Ngày Cựu Chiến Binh tại Sacramento"
+        },
+        {
+          "id": "D33N0fkdAAM",
+          "title": "Part 2 — Diễn hành Ngày Cựu Chiến Binh tại Sacramento"
+        },
+        {
+          "id": "-LsJCWslJcM",
+          "title": "Part 3 — Diễn hành ngày Cựu Chiến Binh tại Sacramento"
+        }
+      ]
+    },
+    {
+      "id": "march-ghp",
+      "bucket": "march",
+      "year": "2022–25",
+      "kicker": "March · Golden Harvest",
+      "headline": "cPALSs, NVCC, pageant — on Capitol Mall",
+      "body": "Golden Harvest Parade & Festival is at Capitol Mall, and has been running since 2022. Vietnamese entries already walk it: cPALSs / NVCC and Mrs. Vietnam (2022–23), Mrs. Vietnam and Xang Xu Liu (2024), then a thicker 2025 line (Viet Serenity Sisters, pageant, cPALSs, NVCC). Little Saigon Krewe’s first stop is the 2026 edition — as a train, not as the host.",
+      "images": [
+        {
+          "src": "/assets/history-golden-harvest-2025.jpg",
+          "alt": "Miss and Miss Teen Vietnam NorCal Sacramento Pageant walking Golden Harvest in áo dài, Saturday, November 1, 2025",
+          "title": "Miss & Miss Teen Vietnam NorCal Sacramento Pageant"
+        },
+        {
+          "src": "/assets/history-golden-harvest-2025-mrs-vietnam.jpg",
+          "alt": "Mrs. Vietnam Sacramento walking Golden Harvest in áo dài, Saturday, November 1, 2025",
+          "title": "Mrs. Vietnam Sacramento"
+        },
+        {
+          "src": "/assets/history-golden-harvest-2025-serenity-sisters.jpg",
+          "alt": "Viet Serenity Sisters in yellow áo dài with fans at Golden Harvest, Saturday, November 1, 2025",
+          "title": "Viet Serenity Sisters"
+        },
+        {
+          "src": "/assets/history-golden-harvest-2025-teng-fei.jpg",
+          "alt": "Teng Fei Lion Dance dragon and lions on Capitol Mall at Golden Harvest, Saturday, November 1, 2025",
+          "title": "Teng Fei Lion Dance"
+        }
+      ],
+      "linksLead": "Parade groups:",
+      "linksSep": ", ",
+      "links": [
+        {
+          "label": "2022",
+          "href": "https://goldenharvestparade.org/parade-groups-2022/"
+        },
+        {
+          "label": "2023",
+          "href": "https://goldenharvestparade.org/parade-groups-2023/"
+        },
+        {
+          "label": "2024",
+          "href": "https://goldenharvestparade.org/parade-groups-2024/"
+        },
+        {
+          "label": "2025",
+          "href": "https://goldenharvestparade.org/parade-groups-2025/"
+        }
+      ]
+    },
+    {
+      "id": "march-scouts-vets",
+      "bucket": "march",
+      "year": "2025",
+      "kicker": "March · scouts",
+      "headline": "Liên Đoàn Lạc Việt on Veterans Day",
+      "body": "Pack and Troop 243 already know how to be a unit on a civic street: uniforms, US and heritage flags, rows of youth. Their Veterans Day 2025 appearance is that grammar — precedent for a krewe train, not a community-hosted Tết parade.",
+      "image": "/assets/history-ldlv-veterans-day-2025.jpg",
+      "imageAlt": "Liên Đoàn Lạc Việt Pack and Troop 243 in uniform with US and heritage flags on Veterans Day 2025",
+      "links": [
+        {
+          "label": "Veterans Day 2025 album (Facebook)",
+          "href": "https://www.facebook.com/media/set/?set=a.25090351403958193&type=3"
+        }
+      ]
+    }
+  ]
+}

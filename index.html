@@ -3,280 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Little Saigon Krewe — Golden Harvest 2026</title>
-  <meta name="description" content="Little Saigon Krewe coordinates Vietnamese presence at Greater Sacramento civic parades. Golden Harvest Parade — Oct 24, 2026." />
+  <title>Little Saigon Krewe</title>
+  <meta name="description" content="Little Saigon Krewe is a coordinated Vietnamese American parade presence for Greater Sacramento — a journey from past marches toward a professionally run parade corps." />
   <link rel="canonical" href="https://krewe.cpalss.com/" />
   <meta property="og:title" content="Little Saigon Krewe" />
-  <meta property="og:description" content="Coordinating Vietnamese presence at Golden Harvest — Oct 24, 2026. Groups parade as a train, one after another." />
+  <meta property="og:description" content="A coordinated Vietnamese American parade presence for Greater Sacramento. First stop: Golden Harvest, Oct 24, 2026." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://krewe.cpalss.com/" />
+  <meta property="og:image" content="https://krewe.cpalss.com/assets/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Little Saigon Krewe" />
-  <meta name="twitter:description" content="Coordinating Vietnamese presence at Golden Harvest — Oct 24, 2026." />
+  <meta name="twitter:description" content="A coordinated Vietnamese American parade presence for Greater Sacramento." />
+  <meta name="twitter:image" content="https://krewe.cpalss.com/assets/og.jpg" />
+  <script src="/clean-urls.js"></script>
   <script>
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://krewe.cpalss.com/#org",
-        "name": "Little Saigon Krewe",
-        "url": "https://krewe.cpalss.com/",
-        "email": "krewe@cpalss.com",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Community Partners Advocate of Little Saigon Sacramento",
-          "url": "https://www.cpalss.com"
-        }
-      },
-      {
-        "@type": "Event",
-        "@id": "https://krewe.cpalss.com/#event",
-        "name": "Little Saigon Krewe at Golden Harvest Parade",
-        "url": "https://krewe.cpalss.com/",
-        "description": "Little Saigon Krewe coordinates Vietnamese presence at the Golden Harvest Parade — groups parade as a train, one after another.",
-        "startDate": "2026-10-24T09:00:00-07:00",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-          "@type": "Place",
-          "name": "Capitol Mall",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Sacramento",
-            "addressRegion": "CA",
-            "addressCountry": "US"
-          }
-        },
-        "organizer": { "@id": "https://krewe.cpalss.com/#org" }
-      }
-    ]
+    "@type": "Organization",
+    "@id": "https://krewe.cpalss.com/#org",
+    "name": "Little Saigon Krewe",
+    "url": "https://krewe.cpalss.com/",
+    "email": "krewe@cpalss.com",
+    "image": "https://krewe.cpalss.com/assets/og.jpg",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Community Partners Advocate of Little Saigon Sacramento",
+      "url": "https://www.cpalss.com"
+    }
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="/site.css" />
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <a class="wordmark" href="/">Little Saigon Krewe</a>
-    <button
-      type="button"
-      class="nav-toggle"
-      id="nav-toggle"
-      aria-expanded="false"
-      aria-controls="site-nav"
-      aria-label="Open menu"
-    >
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <span class="nav-toggle-bars" aria-hidden="true"></span>
     </button>
-    <nav class="site-nav" id="site-nav" aria-label="Page">
-      <a href="#golden-harvest">Golden Harvest Parade</a>
-      <a href="#faq">FAQ</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#march">Interest</a>
-      <a href="#registration">Registration</a>
-      <a href="#transit">Transit</a>
-      <a href="#champions">Champions</a>
-      <a href="#joining">Who’s joining</a>
-      <a href="#wishlist">Fund the Krewe</a>
+    <nav class="site-nav" id="site-nav" aria-label="Site">
+      <a href="/" aria-current="page">Story</a>
+      <a href="/history/">History</a>
+      <a href="/golden-harvest/">Golden Harvest</a>
+      <a href="/fund/">Fund</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-brand">
-      <div class="hero-atmosphere" aria-hidden="true"></div>
+    <section class="hero hero-carousel" aria-labelledby="hero-brand">
+      <div class="hero-slides" id="hero-slides" tabindex="0" aria-roledescription="carousel" aria-label="Parade photos"></div>
+      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner">
-        <p class="hero-kicker" id="hero-reveal-1">Golden Harvest · Oct 24, 2026 · Capitol Mall</p>
         <h1 class="hero-brand" id="hero-brand">Little Saigon Krewe</h1>
-        <p class="hero-line" id="hero-reveal-2">Đoàn diễn hành Cộng đồng Người Mỹ gốc Việt vùng Sacramento</p>
-        <div class="hero-cta" id="hero-reveal-3">
-          <a class="btn btn-primary" href="#march">Express interest</a>
-          <a class="btn btn-ghost" href="#golden-harvest">Event details</a>
+        <p class="hero-line" id="hero-tagline"></p>
+        <p class="hero-def" id="hero-def"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/golden-harvest/">March this fall</a>
+          <a class="btn btn-ghost" href="/history/">Parade history</a>
+          <a class="btn btn-ghost" href="/fund/">Fund the Krewe</a>
         </div>
+      </div>
+      <div class="hero-controls" id="hero-controls" hidden>
+        <button type="button" class="hero-arrow" id="hero-prev" aria-label="Previous photo">‹</button>
+        <div class="hero-dots" id="hero-dots"></div>
+        <button type="button" class="hero-arrow" id="hero-next" aria-label="Next photo">›</button>
       </div>
     </section>
 
-    <div class="doc-layout">
-      <nav class="toc" aria-label="On this page">
-        <p class="toc-label">On this page</p>
-        <a class="toc-link" href="#golden-harvest" data-toc-target="golden-harvest">Golden Harvest Parade</a>
-        <a class="toc-link" href="#faq" data-toc-target="faq">FAQ</a>
-        <a class="toc-link" href="#timeline" data-toc-target="timeline">Timeline</a>
-        <a class="toc-link" href="#march" data-toc-target="march">Interest</a>
-        <a class="toc-link" href="#registration" data-toc-target="registration">Registration</a>
-        <a class="toc-link" href="#transit" data-toc-target="transit">Transit</a>
-        <a class="toc-link" href="#champions" data-toc-target="champions">Champions</a>
-        <a class="toc-link" href="#joining" data-toc-target="joining">Who’s joining</a>
-        <a class="toc-link" href="#wishlist" data-toc-target="wishlist">Fund the Krewe</a>
-      </nav>
+    <div class="story-flow">
+      <section class="section section-story" id="journey" aria-labelledby="journey-title">
+        <div class="section-inner">
+          <h2 id="journey-title">The journey</h2>
+          <p class="section-lead">From past parade efforts, we grow toward a prestigious parade corps.</p>
+          <div class="story-chapters" id="story-chapters"></div>
+        </div>
+      </section>
 
-      <div class="doc-main">
-        <section class="section section-gh" id="golden-harvest" data-doc-section aria-labelledby="gh-title">
-          <div class="section-inner">
-            <h2 id="gh-title">Golden Harvest Parade</h2>
-            <p class="section-lead" id="gh-pitch-headline"></p>
-            <p id="gh-pitch-body"></p>
-            <dl class="event-facts" id="event-facts"></dl>
-            <p class="event-links">
-              <a id="gh-url" href="https://goldenharvestparade.org/" rel="noopener noreferrer">goldenharvestparade.org</a>
-            </p>
-          </div>
-        </section>
-
-        <section class="section section-faq" id="faq" data-doc-section aria-labelledby="faq-title">
-          <div class="section-inner">
-            <h2 id="faq-title">FAQ</h2>
-            <dl class="faq-list">
-              <div class="faq-item">
-                <dt>Why register groups separately?</dt>
-                <dd>Announcers call out each entry when it passes the stage. Separate registration keeps your group’s name and identity in that announcement — collapsing everyone into one entry would lose that. We’re arranging krewe groups to parade as a train, one after another. Smaller groups (under 15) should let us know first so we can band you into a single entry that meets Golden Harvest’s minimum; if you’re over 300, split and register each half separately.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>How do we get in the Little Saigon block?</dt>
-                <dd>Start with a <a href="#timeline">soft interest commit</a> to us — not a cold email to Golden Harvest. We’ll guide later gates (parental consent, then Golden Harvest registration with the note <strong>a LSK A team</strong>). Each group still registers under its own name; we batch questions so you have one front door. In early October we’ll work with parade coordinators on the order inside our block.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>Do we perform along the whole route?</dt>
-                <dd>No. Golden Harvest says parade teams may perform briefly — about <strong>2–3 minutes</strong> — in front of the <strong>main stage</strong> and a <strong>second small stage</strong>. The rest of Capitol Mall is a walking march. Detailed route information comes about two weeks before the parade.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>Are there changing rooms?</dt>
-                <dd>No. Golden Harvest does not provide changing rooms. Plan to arrive dress-ready. There is space on Capitol Mall for practice and warm-up before step-off.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>Is there a dress code?</dt>
-                <dd>Not currently — no required uniform. The parade is televised, though, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>What’s a krewe?</dt>
-                <dd>In New Orleans Mardi Gras tradition, a krewe is a social club that organizes to parade together — shared identity, costumes, and presence on the route. We borrow that idea: Vietnamese American groups showing up as a coordinated train at civic parades across Greater Sacramento.</dd>
-              </div>
-              <div class="faq-item">
-                <dt>What’s the motivation for Little Saigon Krewe?</dt>
-                <dd>A desire among members of the Vietnamese American community to express their culture and identity among the broader community. At the last <a href="https://eglny.com" rel="noopener noreferrer">Lunar New Year Tết Festival &amp; Parade</a> we introduced a Mardi Gras twist, and we learned about the concept of krewes. Around the same season is also Sambadrome in Rio de Janeiro, where people organize around samba schools — more like a cross between a parade army and a sports league. We are inspired.</dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-
-        <section class="section section-timeline" id="timeline" data-doc-section aria-labelledby="timeline-title">
-          <div class="section-inner">
-            <h2 id="timeline-title"></h2>
-            <p class="section-lead" id="timeline-intro"></p>
-            <ol class="timeline-list" id="timeline-list"></ol>
-          </div>
-        </section>
-
-        <section class="section section-march" id="march" data-doc-section aria-labelledby="march-title">
-          <div class="section-inner">
-            <h2 id="march-title">Express interest</h2>
-            <p class="section-lead">Schools, troupes, language programs, veterans, pageants, merchants, and Vietnamese-led partners — join the krewe presence at Golden Harvest. Costume OK; traditional optional.</p>
-            <p>Soft commit by <strong>Friday, August 28, 2026</strong>: email interest, officer/parade contact, and rough headcount. That is interest only — parental consent and Golden Harvest registration come later (see <a href="#timeline">Timeline</a>). Stay with us for questions; we’ll guide the rest.</p>
-            <a class="btn btn-primary" id="march-mailto" href="mailto:krewe@cpalss.com">Email krewe@cpalss.com</a>
-          </div>
-        </section>
-
-        <section class="section section-registration" id="registration" data-doc-section aria-labelledby="reg-title">
-          <div class="section-inner">
-            <h2 id="reg-title">Golden Harvest registration</h2>
-            <p class="section-lead">After soft interest (and youth parental consent when that form is live), each krewe group registers with Golden Harvest under its own name — not as one big cPALSs entry. We help you file correctly and get sequenced in the Little Saigon block.</p>
-            <ul class="plain-list">
-              <li>Complete online registration (or download the form) on the Golden Harvest site — <strong>when we ask you to</strong>, so smaller groups can band together first if needed.</li>
-              <li>Email your completed form to the parade coordinators (Lian Duan) and include the note <strong>a LSK A team</strong> so they place you in the Little Saigon Krewe sequence. CC <a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a> when you send it.</li>
-              <li>Group leaders sign a participant waiver. If a leader is under 18, a parent or guardian also signs the minor waiver. Minor marchers need a parent/guardian signature on the participant form. (Same idea as the 2025 packet — expect similar for 2026.) Little Saigon Krewe will also ask for a separate parental authorization for youth — that is a cPALSs gate, not Golden Harvest’s. This year families provide the ride downtown.</li>
-              <li>Marching groups: Golden Harvest asks for <strong>15–300</strong> people per entry (confirmed for 2026). If you don’t have 15, let us know before you register — we’ll band smaller groups together. If you’re over 300, split and register each half separately.</li>
-              <li>Arrive dress-ready — no changing rooms. Warm-up space is available on Capitol Mall. Optional brief performance (~2–3 minutes) at the main stage and a second small stage; detailed route about two weeks out.</li>
-            </ul>
-            <p class="event-links">
-              <a id="gh-reg" href="https://goldenharvestparade.org/parade-and-stage-proformance-registration/" rel="noopener noreferrer">Parade &amp; stage registration</a>
-              <span aria-hidden="true"> · </span>
-              <a href="https://goldenharvestparade.org/wp-content/uploads/2025/09/2025-GHP_Parade-information-Packet_V3.pdf" rel="noopener noreferrer">2025 packet (waivers · free RT)</a>
-            </p>
-          </div>
-        </section>
-
-        <section class="section section-transit" id="transit" data-doc-section aria-labelledby="transit-title">
-          <div class="section-inner">
-            <h2 id="transit-title"></h2>
-            <p class="section-lead" id="transit-intro"></p>
-            <h3 class="subhead" id="transit-staging-title"></h3>
-            <dl class="event-facts" id="transit-staging"></dl>
-            <h3 class="subhead" id="transit-path-title"></h3>
-            <ol class="transit-steps" id="transit-steps"></ol>
-            <h3 class="subhead" id="transit-parking-title"></h3>
-            <p class="parking-lead" id="transit-parking-lead"></p>
-            <dl class="event-facts" id="transit-parking"></dl>
-            <p class="parking-rates" id="transit-parking-rates"></p>
-            <figure class="transit-map" id="transit-map" hidden>
-              <iframe
-                id="transit-map-iframe"
-                title="Map: Cosumnes River College to 8th & Capitol Station"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              ></iframe>
-              <figcaption>
-                <span id="transit-map-title"></span>
-                <a id="transit-map-open" href="#" rel="noopener noreferrer">Open in Google Maps</a>
-              </figcaption>
-            </figure>
-            <ul class="transit-notes" id="transit-notes"></ul>
-            <p class="agency-note" id="transit-agency"></p>
-            <p class="event-links" id="transit-links"></p>
-          </div>
-        </section>
-
-        <section class="section section-champions" id="champions" data-doc-section aria-labelledby="champions-title">
-          <div class="section-inner">
-            <h2 id="champions-title"></h2>
-            <p class="section-lead" id="champions-body"></p>
-            <p class="champions-when" id="champions-when"></p>
-            <ul class="tribe-list" id="tribe-list"></ul>
-          </div>
-        </section>
-
-        <section class="section section-joining" id="joining" data-doc-section aria-labelledby="joining-title">
-          <div class="section-inner">
-            <h2 id="joining-title">Who’s joining</h2>
-            <p class="section-lead">Interest first, then commitment — confirmed groups join the krewe train at Golden Harvest.</p>
-            <div class="roster-grid">
-              <div class="roster-col">
-                <h3>Confirmed</h3>
-                <ul class="roster-list" id="roster-confirmed"></ul>
-              </div>
-              <div class="roster-col">
-                <h3>Interested</h3>
-                <ul class="roster-list" id="roster-interested"></ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-wishlist" id="wishlist" data-doc-section aria-labelledby="wishlist-title">
-          <div class="section-inner">
-            <h2 id="wishlist-title"></h2>
-            <p class="section-lead" id="wishlist-body"></p>
-            <ul class="wishlist-list" id="wishlist-list"></ul>
-          </div>
-        </section>
-      </div>
+      <section class="section section-krewe" id="what-is-a-krewe" aria-labelledby="krewe-title">
+        <div class="section-inner">
+          <h2 id="krewe-title"></h2>
+          <p id="krewe-body"></p>
+        </div>
+      </section>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a>, <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, and <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a></p>
+    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, and <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
     <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
-    <p class="footer-note">A proposed community parade presence — not an official joint nonprofit.</p>
   </footer>
 
-  <script src="doc-scroll.js" defer></script>
-  <script src="site.js" defer></script>
+  <script src="/site.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-09-04",
   "maxChampionsPerTribe": 3,
   "champions": [
     {
@@ -22,44 +22,6 @@
       "role": "Officer",
       "org": "Florin HS VSA",
       "status": "filled"
-    }
-  ],
-  "marchers": [
-    {
-      "org": "Cosumnes Oaks High School VSA",
-      "status": "interested",
-      "note": "~10 marchers · áo dài",
-      "tribe": "A"
-    },
-    {
-      "org": "Elk Grove High School VSA",
-      "status": "interested",
-      "note": "Following up · transport TBD",
-      "tribe": "A"
-    },
-    {
-      "org": "Florin High School VSA",
-      "status": "interested",
-      "note": "~15 marchers",
-      "tribe": "A"
-    },
-    {
-      "org": "Florin High School Asian Club",
-      "status": "interested",
-      "note": "Lion dance · headcount TBD",
-      "tribe": "C"
-    },
-    {
-      "org": "Pleasant Grove Lion Dance",
-      "status": "interested",
-      "note": "High interest to perform · headcount TBD",
-      "tribe": "C"
-    },
-    {
-      "org": "Northern California Loving Hearts Dance Group",
-      "status": "interested",
-      "note": "Will march (Dai 8/17) · headcount TBD",
-      "tribe": "C"
     }
   ]
 }
