@@ -1517,6 +1517,10 @@ body[data-page="home"] .hero-line {
   border-bottom: 1px solid var(--line);
 }
 
+.tribe-joiners .roster-org {
+  font-weight: 400;
+}
+
 .tribe-item .btn-tribe {
   margin-top: auto;
   width: 100%;
