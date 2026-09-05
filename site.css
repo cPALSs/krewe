@@ -1365,7 +1365,7 @@ body[data-page="home"] .hero-line {
 }
 
 .event-facts dt {
-  margin: 0;
+  margin: 0.3rem 0 0;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.06em;
