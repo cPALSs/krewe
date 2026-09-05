@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("lsk-lang");
+        if (saved === "vi" || saved === "en") {
+          document.documentElement.lang = saved;
+          return;
+        }
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language];
+        for (var i = 0; i < list.length; i++) {
+          if (String(list[i] || "").toLowerCase().indexOf("vi") === 0) {
+            document.documentElement.lang = "vi";
+            return;
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parade history — Little Saigon Krewe</title>
   <meta name="description" content="Tết parades the community put on the street, and Vietnamese groups marching as a unit on someone else’s route — Greater Sacramento." />
@@ -25,18 +45,38 @@
   <link rel="stylesheet" href="/site.css" />
 </head>
 <body class="page-inner" data-page="history">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="/">Little Saigon Krewe</a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="nav-toggle-bars" aria-hidden="true"></span>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Site">
-      <a href="/">Story</a>
-      <a href="/history/" aria-current="page">History</a>
-      <a href="/golden-harvest/">Golden Harvest</a>
-      <a href="/fund/">Fund</a>
+    <nav class="site-nav" id="site-nav" aria-label="Site" data-i18n-aria="nav.site">
+      <div class="site-nav-bar">
+        <a class="wordmark" href="/">Little Saigon Krewe</a>
+        <div class="site-nav-tools">
+          <div class="lang-switch">
+            <button type="button" class="lang-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-menu" data-i18n-aria="nav.language">
+              <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.75"/></svg>
+              <span class="sr-only" data-i18n="nav.language">Language</span>
+            </button>
+            <div class="lang-menu" id="lang-menu" hidden role="listbox">
+              <button type="button" role="option" data-set-lang="en">English</button>
+              <button type="button" role="option" data-set-lang="vi">Tiếng Việt</button>
+            </div>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-nav-backdrop" hidden aria-hidden="true"></div>
+      <div id="site-nav-drawer" class="site-nav-drawer" aria-hidden="true">
+        <div class="site-nav-links">
+          <a href="/" data-i18n="nav.story">Story</a>
+          <a href="/history/" aria-current="page" data-i18n="nav.history">History</a>
+          <a href="/golden-harvest/" data-i18n="nav.goldenHarvest">Golden Harvest</a>
+          <a href="/fund/" data-i18n="nav.fund">Fund</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -45,37 +85,36 @@
       <p class="hero-kicker" id="history-kicker"></p>
       <h1 id="history-headline">Parade history</h1>
       <p class="section-lead" id="history-lead"></p>
-      <p id="history-vi" lang="vi"></p>
     </header>
 
     <div class="doc-layout">
-      <nav class="toc" aria-label="On this page">
-        <p class="toc-label">On this page</p>
-        <a class="toc-link" href="#buckets" data-toc-target="buckets">Hosted, and marched</a>
-        <a class="toc-link" href="#host" data-toc-target="host">Host</a>
-        <a class="toc-link" href="#march" data-toc-target="march">March</a>
+      <nav class="toc" aria-label="On this page" data-i18n-aria="history.tocLabel">
+        <p class="toc-label" data-i18n="history.tocLabel">On this page</p>
+        <a class="toc-link" href="#buckets" data-toc-target="buckets" data-i18n="history.tocBuckets">Hosted, and marched</a>
+        <a class="toc-link" href="#host" data-toc-target="host" data-i18n="history.tocHost">Host</a>
+        <a class="toc-link" href="#march" data-toc-target="march" data-i18n="history.tocMarch">March</a>
       </nav>
 
       <div class="doc-main">
         <section class="section" id="buckets" data-doc-section aria-labelledby="buckets-title">
           <div class="section-inner">
-            <h2 id="buckets-title">Hosted, and marched</h2>
+            <h2 id="buckets-title" data-i18n="history.bucketsTitle">Hosted, and marched</h2>
             <div class="history-buckets" id="history-buckets"></div>
           </div>
         </section>
 
         <section class="section" id="host" data-doc-section aria-labelledby="host-title">
           <div class="section-inner">
-            <h2 id="host-title">Host a parade</h2>
-            <p class="section-lead">Little Saigon and later Elk Grove Lunar New Year on the calendar — the community putting a Tết march in the street.</p>
+            <h2 id="host-title" data-i18n="history.hostTitle">Host a parade</h2>
+            <p class="section-lead" data-i18n="history.hostLead">Little Saigon and later Elk Grove Lunar New Year on the calendar — the community putting a Tết march in the street.</p>
             <div class="history-list" id="history-host"></div>
           </div>
         </section>
 
         <section class="section" id="march" data-doc-section aria-labelledby="march-title">
           <div class="section-inner">
-            <h2 id="march-title">March as a unit</h2>
-            <p class="section-lead">Vietnamese groups on a route they did not host — a train that returns, not only a one-weekend host.</p>
+            <h2 id="march-title" data-i18n="history.marchTitle">March as a unit</h2>
+            <p class="section-lead" data-i18n="history.marchLead">Vietnamese groups on a route they did not host — a train that returns, not only a one-weekend host.</p>
             <div class="history-list" id="history-march"></div>
           </div>
         </section>
@@ -84,7 +123,7 @@
   </main>
 
   <footer class="site-footer">
-    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, and <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
+    <p><strong>Little Saigon Krewe</strong> — <span data-i18n="footer.incubated">incubated by</span> <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, <span data-i18n="footer.and">and</span> <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
     <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
   </footer>
 

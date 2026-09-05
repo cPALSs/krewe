@@ -2,18 +2,15 @@
   "kicker": "When we hosted, and when we marched",
   "headline": "Parade history",
   "lead": "The community has put Tết parades on the street. Vietnamese groups have also marched as a unit on someone else’s route — the train Little Saigon Krewe is building.",
-  "viLead": "Cộng đồng tổ chức diễn hành Tết. Các đơn vị Người Mỹ gốc Việt cũng đi trong diễn hành của người khác — đoàn mà Little Saigon Krewe đang xây.",
   "buckets": [
     {
       "id": "host",
       "label": "Host",
-      "vi": "Cộng đồng tổ chức diễn hành",
       "blurb": "Little Saigon / Tết / Elk Grove Lunar New Year putting the parade on the calendar — designation weekend, branded corridor years, then the park."
     },
     {
       "id": "march",
       "label": "March",
-      "vi": "Đơn vị đi trong diễn hành của người khác",
       "blurb": "Units on a civic route they did not host: Veterans Day, Golden Harvest, and the scout habit of showing up in uniform."
     }
   ],
@@ -55,13 +52,13 @@
       "bucket": "host",
       "year": "2013",
       "kicker": "Host · Saturday–Sunday, February 16–17, 2013",
-      "headline": "Diễn hành Xuân Quý Tỵ",
-      "body": "A corridor diễn hành and hội chợ on Stockton Blvd / Florin after the branded weekend. HyRo taped the street parade that Saturday.",
+      "headline": "Xuân Quý Tỵ Parade",
+      "body": "A corridor parade and hội chợ on Stockton Blvd / Florin after the branded weekend. HyRo taped the street parade that Saturday.",
       "youtube": "stOon8INhxw",
       "youtubeTitle": "Sacramento 2013 — Tet Parade (HyRo)",
       "links": [
         {
-          "label": "SBTN — diễn hành + hội chợ",
+          "label": "SBTN — parade + hội chợ",
           "href": "https://www.youtube.com/watch?v=3MSGEIvwvqQ"
         }
       ]
@@ -71,8 +68,8 @@
       "bucket": "host",
       "year": "2014",
       "kicker": "Host · Saturday–Sunday, February 15–16, 2014",
-      "headline": "Diễn hành Giáp Ngọ",
-      "body": "VACOS hosted diễn hành and hội chợ at NE Florin & Stockton Blvd (rain-moved). SBTN taped both the march and the lot.",
+      "headline": "Giáp Ngọ Parade",
+      "body": "VACOS hosted parade and hội chợ at NE Florin & Stockton Blvd (rain-moved). SBTN taped both the march and the lot.",
       "youtube": "D7YkG2jEErs",
       "youtubeTitle": "Diễn hành và Hội Chợ Tết Giáp Ngọ 2014 (SBTN)",
       "links": [
@@ -103,7 +100,7 @@
       "bucket": "host",
       "year": "2017",
       "kicker": "Host · Saturday, January 28, 2017",
-      "headline": "Diễn hành Đinh Dậu",
+      "headline": "Đinh Dậu Parade",
       "body": "The street march landed on Tết Saturday, from the Happy Garden lot along Stockton Blvd into the hội chợ. SN&R also billed a Florin & Stockton Blvd fair Saturday–Sunday, February 4–5 — a later weekend, not this tape.",
       "youtube": "3jFhh_zZg-4",
       "youtubeTitle": "Diễn hành Tết Đinh Dậu 2017 (vobidalatsacramento)",

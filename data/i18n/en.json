@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "home": {
+      "title": "Little Saigon Krewe",
+      "description": "Little Saigon Krewe is a coordinated Vietnamese American parade presence for Greater Sacramento — a journey from past marches toward a professionally run parade corps."
+    },
+    "history": {
+      "title": "Parade history — Little Saigon Krewe",
+      "description": "Tết parades the community put on the street, and Vietnamese groups marching as a unit on someone else’s route — Greater Sacramento."
+    },
+    "gh": {
+      "title": "Golden Harvest 2026 — Little Saigon Krewe",
+      "description": "Group officer playbook for Little Saigon Krewe at Golden Harvest Parade — Oct 24, 2026. Timeline, transit, and participant waivers."
+    },
+    "fund": {
+      "title": "Fund the Krewe — Little Saigon Krewe",
+      "description": "Sponsor student breakfast, travel, water, or banners for Little Saigon Krewe at Golden Harvest 2026. Checks to cPALSs, memo LSK 2026."
+    }
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "site": "Site",
+    "story": "Story",
+    "history": "History",
+    "goldenHarvest": "Golden Harvest",
+    "fund": "Fund",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "english": "English",
+    "vietnamese": "Tiếng Việt"
+  },
+  "footer": {
+    "incubated": "incubated by",
+    "and": "and"
+  },
+  "home": {
+    "heroLede": "A Vietnamese American parade krewe for Greater Sacramento",
+    "ctaMarch": "March this fall",
+    "ctaHistory": "Parade history",
+    "ctaFund": "Fund the Krewe",
+    "carouselLabel": "Parade photos",
+    "slideOf": "{n} of {total}",
+    "showPhoto": "Show photo {n}",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "journeyTitle": "The journey",
+    "definition": "A coordinated Vietnamese American parade presence for Greater Sacramento — groups marching together as a krewe. From past parade efforts, we grow toward a prestigious parade corps.",
+    "kreweHeadline": "What’s a krewe?",
+    "kreweBody": "In New Orleans Mardi Gras tradition, a krewe is a social club that organizes to parade together — shared identity, costumes, and presence on the route. We borrow that idea: Vietnamese American groups showing up as a coordinated train at civic parades across Greater Sacramento.",
+    "slides": [
+      "Language school banner and pageant sashes in the Elk Grove Lunar New Year parade",
+      "Youth carrying a Vietnamese American Community of Sacramento banner in the parade",
+      "Pageant contestants waving from a light blue classic car in the parade",
+      "Students carrying yellow banners across the parade route",
+      "Fan dancers marching in the parade",
+      "Vietnamese youth on the parade route holding a Hoa Sen Thức Tỉnh (Awakening of the Lotus) sign"
+    ],
+    "chapters": [
+      {
+        "kicker": "Where we start",
+        "headline": "A parade we used to host",
+        "body": "In 2010, neighbors marched Tết down Stockton Blvd on Little Saigon’s designation weekend. Two years later the community hosted a branded Little Saigon Tết parade weekend — a community parade, not a krewe. Elk Grove Lunar New Year 2026 tried that host spirit again. What it showed was how thin Vietnamese participation in parading had become. Little Saigon Krewe is how we start rebuilding a train.",
+        "youtubeTitle": "2012 Tết parade (LITTLE SAIGON TV)",
+        "cta": "Parade history"
+      },
+      {
+        "kicker": "Where we’re going",
+        "headline": "A professionally run parade corps",
+        "body": "Imagine winning awards. Getting recognition. Inspiring every generation to come. That is the krewe we are building — not a one-off photo line, a corps that shows up again and again.",
+        "imageAlt": "Language school banner and pageant sashes in the Elk Grove Lunar New Year parade"
+      },
+      {
+        "kicker": "How it happens",
+        "headline": "Arts, craft, and standing with our roots",
+        "body": "This only happens when we pour our hearts into our arts and crafts, come together to support each other, and stand tall with feet planted firmly with our roots.",
+        "imageAlt": "Fan dancers marching in the parade"
+      },
+      {
+        "kicker": "First stop",
+        "headline": "Golden Harvest — Saturday, October 24, 2026",
+        "body": "Little Saigon Krewe begins that journey at the Golden Harvest Parade on Capitol Mall. Check-in around 9:00. March at 11:00. Group officers: timelines, registration, and waivers live on the Golden Harvest page.",
+        "imageAlt": "Vietnamese youth on the parade route holding a Hoa Sen Thức Tỉnh (Awakening of the Lotus) sign",
+        "cta": "Officer details for Golden Harvest"
+      }
+    ]
+  },
+  "history": {
+    "kicker": "When we hosted, and when we marched",
+    "headline": "Parade history",
+    "lead": "The community has put Tết parades on the street. Vietnamese groups have also marched as a unit on someone else’s route — the train Little Saigon Krewe is building.",
+    "tocLabel": "On this page",
+    "tocBuckets": "Hosted, and marched",
+    "tocHost": "Host",
+    "tocMarch": "March",
+    "bucketsTitle": "Hosted, and marched",
+    "hostTitle": "Host a parade",
+    "hostLead": "Little Saigon and later Elk Grove Lunar New Year on the calendar — the community putting a Tết march in the street.",
+    "marchTitle": "March as a unit",
+    "marchLead": "Vietnamese groups on a route they did not host — a train that returns, not only a one-weekend host.",
+    "photoGroup": "Parade photos",
+    "videoGroup": "Parade videos",
+    "showPhotoN": "Show photo {n} of {total}",
+    "showVideoN": "Show video {n} of {total}",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "prevVideo": "Previous video",
+    "nextVideo": "Next video",
+    "buckets": {
+      "host": {
+        "label": "Host",
+        "blurb": "Little Saigon / Tết / Elk Grove Lunar New Year putting the parade on the calendar — designation weekend, branded corridor years, then the park."
+      },
+      "march": {
+        "label": "March",
+        "blurb": "Units on a civic route they did not host: Veterans Day, Golden Harvest, and the scout habit of showing up in uniform."
+      }
+    },
+    "entries": {
+      "host-2010": {
+        "kicker": "Host · Saturday, February 13, 2010",
+        "headline": "Little Saigon designation — and a New Year parade",
+        "body": "City and County ribbon cuttings, and a Tết parade down Stockton Blvd toward Florin. Neighbors filled the corridor that designation weekend — we marched in Little Saigon.",
+        "youtubeTitle": "2010 Little Saigon parade (J Lees)",
+        "links": ["Sacramento Press photo journal"]
+      },
+      "host-2012": {
+        "kicker": "Host · Saturday, February 4, 2012",
+        "headline": "Little Saigon Street Festival Parade",
+        "body": "The corridor filled again — GSVACC, Florin Partnership, and many amateur cameras. Rain moved the weekend from January 21 to this Saturday. LITTLE SAIGON TV taped it; it remains the best-recorded Little Saigon Tết parade we have.",
+        "youtubeTitle": "2012 Tết parade (LITTLE SAIGON TV)",
+        "links": ["Sac City Express recap"]
+      },
+      "host-2013": {
+        "kicker": "Host · Saturday–Sunday, February 16–17, 2013",
+        "headline": "Xuân Quý Tỵ Parade",
+        "body": "A corridor parade and hội chợ on Stockton Blvd / Florin after the branded weekend. HyRo taped the street parade that Saturday.",
+        "youtubeTitle": "Sacramento 2013 — Tết Parade (HyRo)",
+        "links": ["SBTN — parade + hội chợ"]
+      },
+      "host-2014": {
+        "kicker": "Host · Saturday–Sunday, February 15–16, 2014",
+        "headline": "Giáp Ngọ Parade",
+        "body": "VACOS hosted parade and hội chợ at NE Florin & Stockton Blvd (rain-moved). SBTN taped both the march and the lot.",
+        "youtubeTitle": "Diễn hành và Hội Chợ Tết Giáp Ngọ 2014 (SBTN)",
+        "links": ["Florin Partnership rain notice"]
+      },
+      "host-2016": {
+        "kicker": "Host · Saturday, February 6, 2016",
+        "headline": "Little Saigon Tet Parade + Lunar Flower Festival",
+        "body": "Parade at 9 AM, Stockton Blvd & Fruitridge — the same Saturday as the lot festival. HeuFamilyEnt taped the march; KCRA named both hosts.",
+        "youtubeTitle": "Little Saigon Lunar Flower Fest 2016 — Parade (HeuFamilyEnt)",
+        "links": ["2016 KCRA"]
+      },
+      "host-2017": {
+        "kicker": "Host · Saturday, January 28, 2017",
+        "headline": "Đinh Dậu Parade",
+        "body": "The street march landed on Tết Saturday, from the Happy Garden lot along Stockton Blvd into the hội chợ. SN&R also billed a Florin & Stockton Blvd fair Saturday–Sunday, February 4–5 — a later weekend, not this tape.",
+        "youtubeTitle": "Diễn hành Tết Đinh Dậu 2017 (vobidalatsacramento)",
+        "links": ["SN&R — Taste of Little Saigon"]
+      },
+      "host-2024": {
+        "kicker": "Host · Saturday–Sunday, February 10–11, 2024",
+        "headline": "Civic Tết at Elk Grove Park",
+        "body": "Civic Tết moves to Elk Grove Park on the Lunar New Year weekend. Nhịp Sống Cali taped the park parade.",
+        "youtubeTitle": "2024 Elk Grove Park Tết — Nhịp Sống Cali",
+        "links": ["2024 KCRA"]
+      },
+      "host-2026": {
+        "kicker": "Host · Saturday–Sunday, February 14–15, 2026",
+        "headline": "Mardi Gras twist at the park",
+        "body": "2026 added a Mardi Gras twist — that is where the krewe idea landed. The still is from the park parade, not Stockton Blvd.",
+        "imageAlt": "Pageant contestants waving from a light blue classic car in the Elk Grove Lunar New Year parade",
+        "links": ["eglny.com"]
+      },
+      "march-2006-vets": {
+        "kicker": "March · Sunday, November 12, 2006",
+        "headline": "Vietnamese units on the city Veterans Day route",
+        "body": "Hội cựu tù nhân, Thủ Đức, quân cảnh, thanh thiếu niên quân đội, and thiếu sinh quân marched with about a hundred other units. Not a Tết host year — a civic parade, Vietnamese blocks in the line.",
+        "youtubeTitle": "Diễn hành Ngày Cựu Chiến Binh tại Sacramento (Chau Truong)",
+        "videos": [
+          "Part 1 — Diễn hành Ngày Cựu Chiến Binh tại Sacramento",
+          "Part 2 — Diễn hành Ngày Cựu Chiến Binh tại Sacramento",
+          "Part 3 — Diễn hành ngày Cựu Chiến Binh tại Sacramento"
+        ]
+      },
+      "march-ghp": {
+        "kicker": "March · Golden Harvest",
+        "headline": "cPALSs, NVCC, pageant — on Capitol Mall",
+        "body": "Golden Harvest Parade & Festival is at Capitol Mall, and has been running since 2022. Vietnamese entries already walk it: cPALSs / NVCC and Mrs. Vietnam (2022–23), Mrs. Vietnam and Xang Xu Liu (2024), then a thicker 2025 line (Viet Serenity Sisters, pageant, cPALSs, NVCC). Little Saigon Krewe’s first stop is the 2026 edition — as a train, not as the host.",
+        "linksLead": "Parade groups:",
+        "imageAlts": [
+          "Miss and Miss Teen Vietnam NorCal Sacramento Pageant walking Golden Harvest in áo dài, Saturday, November 1, 2025",
+          "Mrs. Vietnam Sacramento walking Golden Harvest in áo dài, Saturday, November 1, 2025",
+          "Viet Serenity Sisters in yellow áo dài with fans at Golden Harvest, Saturday, November 1, 2025",
+          "Teng Fei Lion Dance dragon and lions on Capitol Mall at Golden Harvest, Saturday, November 1, 2025"
+        ],
+        "imageTitles": [
+          "Miss & Miss Teen Vietnam NorCal Sacramento Pageant",
+          "Mrs. Vietnam Sacramento",
+          "Viet Serenity Sisters",
+          "Teng Fei Lion Dance"
+        ]
+      },
+      "march-scouts-vets": {
+        "kicker": "March · scouts",
+        "headline": "Liên Đoàn Lạc Việt on Veterans Day",
+        "body": "Pack and Troop 243 already know how to be a unit on a civic street: uniforms, US and heritage flags, rows of youth. Their Veterans Day 2025 appearance is that grammar — precedent for a krewe train, not a community-hosted Tết parade.",
+        "imageAlt": "Liên Đoàn Lạc Việt Pack and Troop 243 in uniform with US and heritage flags on Veterans Day 2025",
+        "links": ["Veterans Day 2025 album (Facebook)"]
+      }
+    }
+  },
+  "gh": {
+    "title": "Golden Harvest Parade",
+    "tocLabel": "On this page",
+    "tocFacts": "Event facts",
+    "tocTimeline": "Timeline",
+    "tocFaq": "FAQ",
+    "tocTransit": "Transit",
+    "tocChampions": "Meet & Greet",
+    "factsTitle": "Event facts",
+    "faqTitle": "FAQ",
+    "mapOpen": "Open in Google Maps",
+    "mapIframeTitle": "Map: Cosumnes River College to 8th & Capitol Station",
+    "facts": {
+      "event": "Event",
+      "when": "When",
+      "where": "Where",
+      "theme": "Theme"
+    },
+    "event": {
+      "name": "Golden Harvest Parade & Music/Dance Festival",
+      "edition": "5th Annual",
+      "dateDisplay": "Saturday, October 24, 2026",
+      "timeNote": "Check-in ~9:00 · march 11:00 AM",
+      "venue": "Capitol Mall, Sacramento",
+      "theme": "Unity, Harmony, and Peace"
+    },
+    "pitch": {
+      "headline": "Check in around 9:00. March as a train.",
+      "body": "On Golden Harvest morning you’ll check in around 9:00, line up with peers who share your world — high school with high school, college with college — and march at 11:00 as a train of krewe groups, one after another. We are your front door to Golden Harvest: one place for questions. Each group still registers under its own name."
+    },
+    "portal": {
+      "headline": "Participant waivers",
+      "body": "Every marcher needs a participant waiver — adults consent for themselves; parents or guardians consent for minors. Officers sign in, register the club, and share the join link. This is the cPALSs gate, separate from Golden Harvest’s own participant forms.",
+      "button": "Open cPALSs Portal",
+      "cutoff": "Participant waivers due Saturday, October 17, 2026 — one week before the parade. No night-before or day-of paperwork."
+    },
+    "timeline": {
+      "headline": "How we get ready",
+      "intro": "Stay with Little Saigon Krewe for questions — we’ll batch anything Golden Harvest needs so your club doesn’t have to chase two organizations. Soft interest first; paperwork comes in later gates.",
+      "steps": [
+        {
+          "when": "Now — catch-up if you missed Aug 28",
+          "title": "Soft commit — interest",
+          "body": "The Aug 28 interest gate has passed — still email. Name an officer/parade contact and a rough headcount. Interest and contacts only — not final paperwork.",
+          "ctaLabel": "Email interest"
+        },
+        {
+          "when": "After soft commit · early–mid Sept target",
+          "title": "Adult consent",
+          "body": "Every marcher needs a participant waiver on portal.cpalss.com — adults consent for themselves; parents or guardians consent for minors. Officers register the club and share the join link. Due Sat Oct 17, 2026.",
+          "ctaLabel": "Open cPALSs Portal"
+        },
+        {
+          "when": "Mid–late Sept (guided)",
+          "title": "Golden Harvest unit registration",
+          "body": "Each group still files its own Golden Harvest registration (with the note a LSK A team). We’ll walk you through it and batch questions to the parade coordinators."
+        },
+        {
+          "when": "Early October",
+          "title": "Block order inside Little Saigon",
+          "body": "We work with Golden Harvest on the order of krewe groups in our parade train — based on who has actually filed."
+        },
+        {
+          "when": "Sat Oct 24, 2026 · hours estimated (2025 packet)",
+          "title": "Parade day",
+          "body": "2026 clock times are not locked yet. Hours below are estimated from the 2025 Golden Harvest parade packet. Meet & greet is Little Saigon Krewe’s staging window, facilitated by tribe champions. Staging map in Transit below.",
+          "itinerary": [
+            { "time": "9:00–10:45 AM", "label": "Check-in", "note": "9th St between L St and N St" },
+            { "time": "9:30–10:45 AM", "label": "Meet & greet", "note": "Facilitated by tribe champions at staging" },
+            { "time": "11:00 AM", "label": "March" },
+            { "time": "12:30 PM", "label": "Expected parade end" }
+          ]
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Should I register through the Golden Harvest site?",
+        "a": "No — register through Little Saigon Krewe first. Clubs can register with Golden Harvest on their own. Golden Harvest is looking for at least 15 members per group. Our job is to combine smaller groups so the combined headcount meets that minimum."
+      },
+      {
+        "q": "Is transportation provided?",
+        "a": "No. Groups arrange their own ride — drive, carpool, or take SacRT on their own. Little Saigon Krewe is not running a bus or a staffed light-rail escort. The 2025 parade packet had a SacRT free-ride coupon (not a krewe shuttle); look for whether 2026 repeats that."
+      },
+      {
+        "q": "Do we perform along the whole route?",
+        "aHtml": "No. Golden Harvest says parade teams may perform briefly — about <strong>2–3 minutes</strong> — in front of the <strong>main stage</strong> and a <strong>second small stage</strong>. The rest of Capitol Mall is a walking march. Detailed route information comes about two weeks before the parade."
+      },
+      {
+        "q": "Are there changing rooms?",
+        "a": "No. Golden Harvest does not provide changing rooms. Plan to arrive dress-ready. There is space on Capitol Mall for practice and warm-up before step-off."
+      },
+      {
+        "q": "Is there a dress code?",
+        "a": "Not currently — no required uniform. The parade is televised, though, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional."
+      }
+    ],
+    "transit": {
+      "headline": "Getting there",
+      "intro": "This year families drive, carpool, or take transit on their own. Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort.",
+      "pathTitle": "SacRT Blue Line — if your family rides together (not a krewe escort)",
+      "stagingTitle": "Onsite checkin (est. 2026)",
+      "parkingTitle": "If you’re driving (2025 packet)",
+      "parkingLead": "Carpools are encouraged. Street parking where available, or these lots near Capitol Mall (2025 rates — confirm in the 2026 packet):",
+      "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
+      "staging": [
+        ["Check-in", "9th St between L St and N St · 9:00–10:45"],
+        ["Marching groups (Tribes A–F)", "9th St between S Capitol Mall and N St"],
+        ["Float / vehicle line-up", "9th St between L St and N Capitol Mall — Tribe G"]
+      ],
+      "parking": [
+        ["Capitol Garage", "10th & L · 1303 10th St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+        ["City Hall Garage", "10th & I · 1000 I St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+        ["Y Parking Lot", "2nd & N · Crocker Art Museum", "~$1.50/hour, $6 max · 4-hour limit"]
+      ],
+      "steps": [
+        "Take a SacRT Elk Grove local bus toward Cosumnes River College (CRC) — the southern end of the Blue Line.",
+        "Board Blue Line light rail toward Watt / I-80 (downtown direction).",
+        "Exit at 8th & Capitol Station. Walk one block east to 9th St — check-in and marching line-up are on 9th at Capitol Mall.",
+        "Return: board Blue Line at 8th & Capitol toward Cosumnes River College (check the headsign), then Elk Grove bus home."
+      ],
+      "notes": [
+        "Saturday schedules differ from weekday rush-hour — Elk Grove weekday-only commuter buses (e.g. E13) won’t help parade morning. Use local EG routes + Blue Line, and verify times the week before.",
+        "Light rail uses one-way streets downtown; your outbound stop and return stop may differ.",
+        "Florin / South Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
+      ],
+      "links": [
+        "SacRT trip planner",
+        "Elk Grove bus service",
+        "Light rail to downtown (Blue Line / Elk Grove)",
+        "2025 GHP parade packet (waivers · free RT)"
+      ]
+    },
+    "champions": {
+      "headline": "Meet & Greet",
+      "body": "We’re rallying different organizations and clubs into tribes — high school with high school, college with college, and so on — so peers meet peers before we march. Each tribe has a champion who helps facilitate those connections: they hold the tribe sign and open the conversation.",
+      "when": "Sat Oct 24 · estimated 9:30–10:45 at staging",
+      "hostsLabel": "Champions",
+      "looking": "Looking for champion:",
+      "volunteer": "Volunteer",
+      "volunteerAria": "Volunteer to host Tribe {id}",
+      "vehicleBlock": "vehicle block",
+      "tribeLabel": "Tribe {id}",
+      "statusInterested": "interested",
+      "statusConfirmed": "confirmed"
+    },
+    "joiningIntro": "Interest first — we’ll switch the tag to confirmed when a group is locked.",
+    "tribes": {
+      "A": {
+        "name": "High school",
+        "peers": "High school clubs — VSAs and culture clubs; interclub bonding with a light cross-chapter mix",
+        "championProfile": "Someone vested in high school clubs (e.g. a campus VSA outreach lead)"
+      },
+      "B": {
+        "name": "College",
+        "peers": "Campus clubs, e.g. VSAs and VN CARES chapters",
+        "championProfile": "A campus club officer (VSA or VN CARES) who already convenes peers"
+      },
+      "C": {
+        "name": "Performance",
+        "peers": "Lion, dance, and troupe warm-up · spacing · music cues",
+        "championProfile": "An active dancer or lion lead who needs coordination anyway"
+      },
+      "D": {
+        "name": "Business",
+        "peers": "Chambers and merchants — meet peers on foot in the marching block",
+        "championProfile": "A merchant or chamber face who wants peers to meet each other"
+      },
+      "E": {
+        "name": "Family & heritage",
+        "peers": "Language school, scouts, pageant, veterans, elders",
+        "championProfile": "Someone already in the language / scout / pageant / elder orbit"
+      },
+      "F": {
+        "name": "Service",
+        "peers": "Mission-aligned nonprofits — awareness march grammar",
+        "championProfile": "A peer nonprofit lead (when two or more service orgs show)"
+      },
+      "G": {
+        "name": "Floats & vehicles",
+        "peers": "Anyone bringing a float, trailer, car, or pickup — stages on the vehicle block, separate from the marching line-up.",
+        "championProfile": "Someone bringing a vehicle entry, or comfortable running the vehicle line-up"
+      }
+    }
+  },
+  "fund": {
+    "kicker": "Golden Harvest · Oct 24, 2026",
+    "headline": "Fund the Krewe",
+    "body": "Cover breakfast, gas, water, or a banner so students and clubs can march. Cash check to cPALSs (memo LSK 2026) or in-kind that matches the gift. Ask which slots are still open before you commit.",
+    "packet": "2026 sponsorship packet (PDF)",
+    "giftsTitle": "Sponsor gifts",
+    "payableTo": "Payable to",
+    "memo": "Memo",
+    "ein": "EIN",
+    "empty": "No open wishlist items yet.",
+    "slotOne": "1 slot",
+    "slotMany": "{n} slots",
+    "fullyFunded": "Fully funded",
+    "sponsorGift": "Sponsor this gift",
+    "seePacket": "see packet",
+    "items": {
+      "food-15": {
+        "need": "Breakfast for 15 students",
+        "detail": "Breakfast for one student group of about 15. Groups arrive around 9:00 AM and finish by noon. Benefit: social media story — “Student breakfast presented by [You].”"
+      },
+      "college-gas-parking": {
+        "need": "Gas and parking for a college club",
+        "detail": "Gas and parking reimbursements for one college club of about 15. Benefit: social media story — “Student club travel presented by [You].”"
+      },
+      "staging-hub": {
+        "need": "Staging Hub",
+        "detail": "Water, group signs, and name tags for the morning check-in hub. Benefit: social media story and a sponsor card on the check-in table — “Refreshments presented by [You].”"
+      },
+      "krewe-banner": {
+        "need": "Krewe Banner",
+        "detail": "Krewe banner: Little Saigon Krewe / Vietnamese Americans Celebrating Greater Sacramento. Benefit: social media story and a dedicated banner saying “Thank you [Your logo/name]” carried behind the krewe banner."
+      },
+      "presenting": {
+        "need": "Presenting sponsor",
+        "detail": "Champion of the community. Benefit: social media story and a dedicated banner saying “Presenting sponsor [Your logo/name]” carried behind the krewe banner."
+      }
+    }
+  },
+  "mailto": {
+    "championSubject": "Tribe Champion — {tribe} — Golden Harvest 2026",
+    "championBody": "Hi Krewe team,\n\nI'd like to champion Tribe {tribeId} · {tribeName} for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nWhy this tribe fits me:\n\nThanks!",
+    "interestSubject": "Golden Harvest interest — LSK 2026",
+    "interestBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\n\nThanks!",
+    "marchSubject": "Golden Harvest interest — LSK 2026",
+    "marchBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\n\nThanks!",
+    "wishlistSubject": "Fund the Krewe — {need} — Golden Harvest 2026",
+    "wishlistBody": "Hi Krewe team,\n\nI'd like to sponsor this Fund the Krewe gift for Golden Harvest (Oct 24, 2026):\n\n{need}\nAmount: {amount}\n\nName:\nOrganization:\nBest contact:\nCash check · or in-kind (describe):\nHow you'd like to be named:\n\nThanks!"
+  },
+  "loadError": "Could not load site data. Please refresh, or email krewe@cpalss.com."
+}

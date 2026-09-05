@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("lsk-lang");
+        if (saved === "vi" || saved === "en") {
+          document.documentElement.lang = saved;
+          return;
+        }
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language];
+        for (var i = 0; i < list.length; i++) {
+          if (String(list[i] || "").toLowerCase().indexOf("vi") === 0) {
+            document.documentElement.lang = "vi";
+            return;
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fund the Krewe — Little Saigon Krewe</title>
   <meta name="description" content="Sponsor student breakfast, travel, water, or banners for Little Saigon Krewe at Golden Harvest 2026. Checks to cPALSs, memo LSK 2026." />
@@ -22,34 +42,54 @@
   <link rel="stylesheet" href="/site.css" />
 </head>
 <body class="page-inner" data-page="fund">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="/">Little Saigon Krewe</a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="nav-toggle-bars" aria-hidden="true"></span>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Site">
-      <a href="/">Story</a>
-      <a href="/history/">History</a>
-      <a href="/golden-harvest/">Golden Harvest</a>
-      <a href="/fund/" aria-current="page">Fund</a>
+    <nav class="site-nav" id="site-nav" aria-label="Site" data-i18n-aria="nav.site">
+      <div class="site-nav-bar">
+        <a class="wordmark" href="/">Little Saigon Krewe</a>
+        <div class="site-nav-tools">
+          <div class="lang-switch">
+            <button type="button" class="lang-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-menu" data-i18n-aria="nav.language">
+              <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.75"/></svg>
+              <span class="sr-only" data-i18n="nav.language">Language</span>
+            </button>
+            <div class="lang-menu" id="lang-menu" hidden role="listbox">
+              <button type="button" role="option" data-set-lang="en">English</button>
+              <button type="button" role="option" data-set-lang="vi">Tiếng Việt</button>
+            </div>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-nav-backdrop" hidden aria-hidden="true"></div>
+      <div id="site-nav-drawer" class="site-nav-drawer" aria-hidden="true">
+        <div class="site-nav-links">
+          <a href="/" data-i18n="nav.story">Story</a>
+          <a href="/history/" data-i18n="nav.history">History</a>
+          <a href="/golden-harvest/" data-i18n="nav.goldenHarvest">Golden Harvest</a>
+          <a href="/fund/" aria-current="page" data-i18n="nav.fund">Fund</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <header class="page-banner">
-      <p class="hero-kicker">Golden Harvest · Oct 24, 2026</p>
+      <p class="hero-kicker" data-i18n="fund.kicker">Golden Harvest · Oct 24, 2026</p>
       <h1 id="wishlist-title">Fund the Krewe</h1>
       <p class="section-lead" id="wishlist-body"></p>
       <p class="event-links">
-        <a id="packet-pdf" href="https://drive.google.com/file/d/1DpuRW3V9oupF3dAS3otI-AQwYJFw9Fal/view" rel="noopener noreferrer">2026 sponsorship packet (PDF)</a>
+        <a id="packet-pdf" href="https://drive.google.com/file/d/1DpuRW3V9oupF3dAS3otI-AQwYJFw9Fal/view" rel="noopener noreferrer" data-i18n="fund.packet">2026 sponsorship packet (PDF)</a>
       </p>
     </header>
 
     <section class="section section-wishlist" id="wishlist" aria-labelledby="gifts-title">
       <div class="section-inner">
-        <h2 id="gifts-title">Sponsor gifts</h2>
+        <h2 id="gifts-title" data-i18n="fund.giftsTitle">Sponsor gifts</h2>
         <ul class="wishlist-list" id="wishlist-list"></ul>
         <dl class="event-facts fund-payee" id="fund-payee"></dl>
       </div>
@@ -57,7 +97,7 @@
   </main>
 
   <footer class="site-footer">
-    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, and <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
+    <p><strong>Little Saigon Krewe</strong> — <span data-i18n="footer.incubated">incubated by</span> <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, <span data-i18n="footer.and">and</span> <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
     <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
   </footer>
 

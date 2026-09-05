@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("lsk-lang");
+        if (saved === "vi" || saved === "en") {
+          document.documentElement.lang = saved;
+          return;
+        }
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language];
+        for (var i = 0; i < list.length; i++) {
+          if (String(list[i] || "").toLowerCase().indexOf("vi") === 0) {
+            document.documentElement.lang = "vi";
+            return;
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Golden Harvest 2026 — Little Saigon Krewe</title>
   <meta name="description" content="Group officer playbook for Little Saigon Krewe at Golden Harvest Parade — Oct 24, 2026. Timeline, transit, and participant waivers." />
@@ -54,43 +74,63 @@
   <link rel="stylesheet" href="/site.css" />
 </head>
 <body class="page-inner" data-page="officers">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="/">Little Saigon Krewe</a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="nav-toggle-bars" aria-hidden="true"></span>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Site">
-      <a href="/">Story</a>
-      <a href="/history/">History</a>
-      <a href="/golden-harvest/" aria-current="page">Golden Harvest</a>
-      <a href="/fund/">Fund</a>
+    <nav class="site-nav" id="site-nav" aria-label="Site" data-i18n-aria="nav.site">
+      <div class="site-nav-bar">
+        <a class="wordmark" href="/">Little Saigon Krewe</a>
+        <div class="site-nav-tools">
+          <div class="lang-switch">
+            <button type="button" class="lang-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-menu" data-i18n-aria="nav.language">
+              <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.75"/></svg>
+              <span class="sr-only" data-i18n="nav.language">Language</span>
+            </button>
+            <div class="lang-menu" id="lang-menu" hidden role="listbox">
+              <button type="button" role="option" data-set-lang="en">English</button>
+              <button type="button" role="option" data-set-lang="vi">Tiếng Việt</button>
+            </div>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-nav-backdrop" hidden aria-hidden="true"></div>
+      <div id="site-nav-drawer" class="site-nav-drawer" aria-hidden="true">
+        <div class="site-nav-links">
+          <a href="/" data-i18n="nav.story">Story</a>
+          <a href="/history/" data-i18n="nav.history">History</a>
+          <a href="/golden-harvest/" aria-current="page" data-i18n="nav.goldenHarvest">Golden Harvest</a>
+          <a href="/fund/" data-i18n="nav.fund">Fund</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <header class="page-banner">
       <p class="hero-kicker" id="page-kicker"></p>
-      <h1>Golden Harvest Parade</h1>
+      <h1 data-i18n="gh.title">Golden Harvest Parade</h1>
       <p class="section-lead" id="gh-pitch-headline"></p>
       <p id="gh-pitch-body"></p>
     </header>
 
     <div class="doc-layout">
-      <nav class="toc" aria-label="On this page">
-        <p class="toc-label">On this page</p>
-        <a class="toc-link" href="#golden-harvest" data-toc-target="golden-harvest">Event facts</a>
-        <a class="toc-link" href="#timeline" data-toc-target="timeline">Timeline</a>
-        <a class="toc-link" href="#faq" data-toc-target="faq">FAQ</a>
-        <a class="toc-link" href="#transit" data-toc-target="transit">Transit</a>
-        <a class="toc-link" href="#champions" data-toc-target="champions">Meet &amp; Greet</a>
+      <nav class="toc" aria-label="On this page" data-i18n-aria="gh.tocLabel">
+        <p class="toc-label" data-i18n="gh.tocLabel">On this page</p>
+        <a class="toc-link" href="#golden-harvest" data-toc-target="golden-harvest" data-i18n="gh.tocFacts">Event facts</a>
+        <a class="toc-link" href="#timeline" data-toc-target="timeline" data-i18n="gh.tocTimeline">Timeline</a>
+        <a class="toc-link" href="#faq" data-toc-target="faq" data-i18n="gh.tocFaq">FAQ</a>
+        <a class="toc-link" href="#transit" data-toc-target="transit" data-i18n="gh.tocTransit">Transit</a>
+        <a class="toc-link" href="#champions" data-toc-target="champions" data-i18n="gh.tocChampions">Meet &amp; Greet</a>
       </nav>
 
       <div class="doc-main">
         <section class="section section-gh" id="golden-harvest" data-doc-section aria-labelledby="gh-title">
           <div class="section-inner">
-            <h2 id="gh-title">Event facts</h2>
+            <h2 id="gh-title" data-i18n="gh.factsTitle">Event facts</h2>
             <dl class="event-facts" id="event-facts"></dl>
             <p class="event-links">
               <a id="gh-url" href="https://goldenharvestparade.org/" rel="noopener noreferrer">goldenharvestparade.org</a>
@@ -108,27 +148,27 @@
 
         <section class="section section-faq" id="faq" data-doc-section aria-labelledby="faq-title">
           <div class="section-inner">
-            <h2 id="faq-title">FAQ</h2>
+            <h2 id="faq-title" data-i18n="gh.faqTitle">FAQ</h2>
             <dl class="faq-list">
               <div class="faq-item">
-                <dt>Should I register through the Golden Harvest site?</dt>
-                <dd>No — register through Little Saigon Krewe first. Clubs can register with Golden Harvest on their own. Golden Harvest is looking for at least 15 members per group. Our job is to combine smaller groups so the combined headcount meets that minimum.</dd>
+                <dt data-i18n="gh.faq.0.q">Should I register through the Golden Harvest site?</dt>
+                <dd data-i18n="gh.faq.0.a">No — register through Little Saigon Krewe first. Clubs can register with Golden Harvest on their own. Golden Harvest is looking for at least 15 members per group. Our job is to combine smaller groups so the combined headcount meets that minimum.</dd>
               </div>
               <div class="faq-item">
-                <dt>Is transportation provided?</dt>
-                <dd>No. Groups arrange their own ride — drive, carpool, or take SacRT on their own. Little Saigon Krewe is not running a bus or a staffed light-rail escort. The 2025 parade packet had a SacRT free-ride coupon (not a krewe shuttle); look for whether 2026 repeats that.</dd>
+                <dt data-i18n="gh.faq.1.q">Is transportation provided?</dt>
+                <dd data-i18n="gh.faq.1.a">No. Groups arrange their own ride — drive, carpool, or take SacRT on their own. Little Saigon Krewe is not running a bus or a staffed light-rail escort. The 2025 parade packet had a SacRT free-ride coupon (not a krewe shuttle); look for whether 2026 repeats that.</dd>
               </div>
               <div class="faq-item">
-                <dt>Do we perform along the whole route?</dt>
-                <dd>No. Golden Harvest says parade teams may perform briefly — about <strong>2–3 minutes</strong> — in front of the <strong>main stage</strong> and a <strong>second small stage</strong>. The rest of Capitol Mall is a walking march. Detailed route information comes about two weeks before the parade.</dd>
+                <dt data-i18n="gh.faq.2.q">Do we perform along the whole route?</dt>
+                <dd data-i18n-html="gh.faq.2.aHtml">No. Golden Harvest says parade teams may perform briefly — about <strong>2–3 minutes</strong> — in front of the <strong>main stage</strong> and a <strong>second small stage</strong>. The rest of Capitol Mall is a walking march. Detailed route information comes about two weeks before the parade.</dd>
               </div>
               <div class="faq-item">
-                <dt>Are there changing rooms?</dt>
-                <dd>No. Golden Harvest does not provide changing rooms. Plan to arrive dress-ready. There is space on Capitol Mall for practice and warm-up before step-off.</dd>
+                <dt data-i18n="gh.faq.3.q">Are there changing rooms?</dt>
+                <dd data-i18n="gh.faq.3.a">No. Golden Harvest does not provide changing rooms. Plan to arrive dress-ready. There is space on Capitol Mall for practice and warm-up before step-off.</dd>
               </div>
               <div class="faq-item">
-                <dt>Is there a dress code?</dt>
-                <dd>Not currently — no required uniform. The parade is televised, though, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional.</dd>
+                <dt data-i18n="gh.faq.4.q">Is there a dress code?</dt>
+                <dd data-i18n="gh.faq.4.a">Not currently — no required uniform. The parade is televised, though, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional.</dd>
               </div>
             </dl>
           </div>
@@ -150,13 +190,14 @@
               <iframe
                 id="transit-map-iframe"
                 title="Map: Cosumnes River College to 8th & Capitol Station"
+                data-i18n-title="gh.mapIframeTitle"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 allowfullscreen
               ></iframe>
               <figcaption>
                 <span id="transit-map-title"></span>
-                <a id="transit-map-open" href="#" rel="noopener noreferrer">Open in Google Maps</a>
+                <a id="transit-map-open" href="#" rel="noopener noreferrer" data-i18n="gh.mapOpen">Open in Google Maps</a>
               </figcaption>
             </figure>
             <ul class="transit-notes" id="transit-notes"></ul>
@@ -179,7 +220,7 @@
   </main>
 
   <footer class="site-footer">
-    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, and <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
+    <p><strong>Little Saigon Krewe</strong> — <span data-i18n="footer.incubated">incubated by</span> <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, <span data-i18n="footer.and">and</span> <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
     <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
   </footer>
 

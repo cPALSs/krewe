@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("lsk-lang");
+        if (saved === "vi" || saved === "en") {
+          document.documentElement.lang = saved;
+          return;
+        }
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language];
+        for (var i = 0; i < list.length; i++) {
+          if (String(list[i] || "").toLowerCase().indexOf("vi") === 0) {
+            document.documentElement.lang = "vi";
+            return;
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Little Saigon Krewe</title>
   <meta name="description" content="Little Saigon Krewe is a coordinated Vietnamese American parade presence for Greater Sacramento — a journey from past marches toward a professionally run parade corps." />
@@ -41,47 +61,70 @@
   <link rel="stylesheet" href="/site.css" />
 </head>
 <body data-page="home">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="/">Little Saigon Krewe</a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="nav-toggle-bars" aria-hidden="true"></span>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Site">
-      <a href="/" aria-current="page">Story</a>
-      <a href="/history/">History</a>
-      <a href="/golden-harvest/">Golden Harvest</a>
-      <a href="/fund/">Fund</a>
+    <nav class="site-nav" id="site-nav" aria-label="Site" data-i18n-aria="nav.site">
+      <div class="site-nav-bar">
+        <a class="wordmark" href="/">Little Saigon Krewe</a>
+        <div class="site-nav-tools">
+          <div class="lang-switch">
+            <button type="button" class="lang-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-menu" data-i18n-aria="nav.language">
+              <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.75"/></svg>
+              <span class="sr-only" data-i18n="nav.language">Language</span>
+            </button>
+            <div class="lang-menu" id="lang-menu" hidden role="listbox">
+              <button type="button" role="option" data-set-lang="en">English</button>
+              <button type="button" role="option" data-set-lang="vi">Tiếng Việt</button>
+            </div>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-nav-backdrop" hidden aria-hidden="true"></div>
+      <div id="site-nav-drawer" class="site-nav-drawer" aria-hidden="true">
+        <div class="site-nav-links">
+          <a href="/" aria-current="page" data-i18n="nav.story">Story</a>
+          <a href="/history/" data-i18n="nav.history">History</a>
+          <a href="/golden-harvest/" data-i18n="nav.goldenHarvest">Golden Harvest</a>
+          <a href="/fund/" data-i18n="nav.fund">Fund</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero hero-carousel" aria-labelledby="hero-brand">
-      <div class="hero-slides" id="hero-slides" tabindex="0" aria-roledescription="carousel" aria-label="Parade photos"></div>
+      <div class="hero-slides" id="hero-slides" tabindex="0" aria-roledescription="carousel" aria-label="Parade photos" data-i18n-aria="home.carouselLabel"></div>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner">
         <h1 class="hero-brand" id="hero-brand">Little Saigon Krewe</h1>
         <p class="hero-line" id="hero-tagline"></p>
-        <p class="hero-def" id="hero-def"></p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="/golden-harvest/">March this fall</a>
-          <a class="btn btn-ghost" href="/history/">Parade history</a>
-          <a class="btn btn-ghost" href="/fund/">Fund the Krewe</a>
+          <a class="btn btn-primary" href="/golden-harvest/" data-i18n="home.ctaMarch">March this fall</a>
+          <a class="btn btn-ghost" href="/history/" data-i18n="home.ctaHistory">Parade history</a>
+          <a class="btn btn-ghost" href="/fund/" data-i18n="home.ctaFund">Fund the Krewe</a>
         </div>
       </div>
       <div class="hero-controls" id="hero-controls" hidden>
-        <button type="button" class="hero-arrow" id="hero-prev" aria-label="Previous photo">‹</button>
+        <button type="button" class="hero-arrow hero-arrow-prev" id="hero-prev" aria-label="Previous photo" data-i18n-aria="home.prevPhoto">
+          <svg class="hero-arrow-chevron" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 4 L6 8 L10 12" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-dots" id="hero-dots"></div>
-        <button type="button" class="hero-arrow" id="hero-next" aria-label="Next photo">›</button>
+        <button type="button" class="hero-arrow hero-arrow-next" id="hero-next" aria-label="Next photo" data-i18n-aria="home.nextPhoto">
+          <svg class="hero-arrow-chevron" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 4 L10 8 L6 12" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
     </section>
 
     <div class="story-flow">
       <section class="section section-story" id="journey" aria-labelledby="journey-title">
         <div class="section-inner">
-          <h2 id="journey-title">The journey</h2>
-          <p class="section-lead">From past parade efforts, we grow toward a prestigious parade corps.</p>
+          <h2 id="journey-title" data-i18n="home.journeyTitle">The journey</h2>
+          <p class="section-lead" id="journey-intro"></p>
           <div class="story-chapters" id="story-chapters"></div>
         </div>
       </section>
@@ -96,7 +139,7 @@
   </main>
 
   <footer class="site-footer">
-    <p><strong>Little Saigon Krewe</strong> — incubated by <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, and <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
+    <p><strong>Little Saigon Krewe</strong> — <span data-i18n="footer.incubated">incubated by</span> <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, <span data-i18n="footer.and">and</span> <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
     <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
   </footer>
 
