@@ -10,7 +10,7 @@
     },
     "gh": {
       "title": "Golden Harvest 2026 — Little Saigon Krewe",
-      "description": "Group officer playbook for Little Saigon Krewe at Golden Harvest Parade — Oct 24, 2026. Timeline, transit, and participant waivers."
+      "description": "Group officer playbook for Little Saigon Krewe at Golden Harvest Parade — Saturday, October 24, 2026, 11:00 AM–12:30 PM. Timeline, transit, and participant waivers."
     },
     "fund": {
       "title": "Fund the Krewe — Little Saigon Krewe",
@@ -79,7 +79,7 @@
       {
         "kicker": "First stop",
         "headline": "Golden Harvest — Saturday, October 24, 2026",
-        "body": "Little Saigon Krewe begins that journey at the Golden Harvest Parade on Capitol Mall. Check-in around 9:00. March at 11:00. Group officers: timelines, registration, and waivers live on the Golden Harvest page.",
+        "body": "Little Saigon Krewe begins that journey at the Golden Harvest Parade on Capitol Mall. Walking groups stage on 10th St in front of the Capitol; vehicles on 9th. Parade 11:00 AM–12:30 PM. Group officers: timelines, registration, and waivers live on the Golden Harvest page.",
         "imageAlt": "Vietnamese youth on the parade route holding a Hoa Sen Thức Tỉnh (Awakening of the Lotus) sign",
         "cta": "Officer details for Golden Harvest"
       }
@@ -228,19 +228,25 @@
       "event": "Event",
       "when": "When",
       "where": "Where",
+      "festival": "Festival",
+      "staging": "Staging",
+      "route": "Route",
       "theme": "Theme"
     },
     "event": {
       "name": "Golden Harvest Parade & Music/Dance Festival",
       "edition": "5th Annual",
       "dateDisplay": "Saturday, October 24, 2026",
-      "timeNote": "Check-in ~9:00 · march 11:00 AM",
+      "timeNote": "Parade 11:00 AM–12:30 PM",
+      "festivalNote": "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St",
+      "stagingNote": "Walking groups in front of the Capitol on 10th St · vehicles on 9th St",
+      "routeNote": "Begins 9th & N St · ends 9th & Capitol Mall",
       "venue": "Capitol Mall, Sacramento",
       "theme": "Unity, Harmony, and Peace"
     },
     "pitch": {
-      "headline": "Check in around 9:00. March as a train.",
-      "body": "On Golden Harvest morning you’ll check in around 9:00, line up with peers who share your world — high school with high school, college with college — and march at 11:00 as a train of krewe groups, one after another. We are your front door to Golden Harvest: one place for questions. Each group still registers under its own name."
+      "headline": "Stage on 10th. March 11:00–12:30 as a train.",
+      "body": "On Golden Harvest morning, walking groups line up in front of the Capitol on 10th St (vehicles stage on 9th). Meet & greet and a group photo happen during staging. Then we march 11:00 AM–12:30 PM as a train of krewe groups, one after another. Festival runs 10:00 AM–4:30 PM on the west side of the Capitol. We are your front door to Golden Harvest: one place for questions. Each group still registers under its own name."
     },
     "portal": {
       "headline": "Participant waivers",
@@ -275,14 +281,13 @@
           "body": "We work with Golden Harvest on the order of krewe groups in our parade train — based on who has actually filed."
         },
         {
-          "when": "Sat Oct 24, 2026 · hours estimated (2025 packet)",
+          "when": "Sat Oct 24, 2026",
           "title": "Parade day",
-          "body": "2026 clock times are not locked yet. Hours below are estimated from the 2025 Golden Harvest parade packet. Meet & greet is Little Saigon Krewe’s staging window, facilitated by tribe champions. Staging map in Transit below.",
+          "body": "Parade hours for walking groups are 11:00 AM–12:30 PM. Meet & greet is Little Saigon Krewe’s staging window — also the group-photo opportunity — facilitated by tribe champions. Staging map in Transit below.",
           "itinerary": [
-            { "time": "9:00–10:45 AM", "label": "Check-in", "note": "9th St between L St and N St" },
-            { "time": "9:30–10:45 AM", "label": "Meet & greet", "note": "Facilitated by tribe champions at staging" },
-            { "time": "11:00 AM", "label": "March" },
-            { "time": "12:30 PM", "label": "Expected parade end" }
+            { "time": "Before 11:00 AM", "label": "Staging + Meet & greet", "note": "Walking groups: 10th St in front of the Capitol. Vehicles: 9th St. Group photo during this window." },
+            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Begins 9th & N St · ends 9th & Capitol Mall" },
+            { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "West side of Capitol, 10th St between L St and N St" }
           ]
         }
       ]
@@ -313,14 +318,16 @@
       "headline": "Getting there",
       "intro": "This year families drive, carpool, or take transit on their own. Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort.",
       "pathTitle": "SacRT Blue Line — if your family rides together (not a krewe escort)",
-      "stagingTitle": "Onsite checkin (est. 2026)",
+      "stagingTitle": "Onsite staging (2026)",
       "parkingTitle": "If you’re driving (2025 packet)",
       "parkingLead": "Carpools are encouraged. Street parking where available, or these lots near Capitol Mall (2025 rates — confirm in the 2026 packet):",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
-        ["Check-in", "9th St between L St and N St · 9:00–10:45"],
-        ["Marching groups (Tribes A–F)", "9th St between S Capitol Mall and N St"],
-        ["Float / vehicle line-up", "9th St between L St and N Capitol Mall — Tribe G"]
+        ["Walking groups (Tribes A–F)", "In front of the Capitol on 10th St"],
+        ["Float / vehicle line-up", "9th St — Tribe G"],
+        ["Meet & greet / group photo", "During staging, before the 11:00 AM march"],
+        ["Parade route", "Begins 9th & N St · ends 9th & Capitol Mall"],
+        ["Festival", "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St"]
       ],
       "parking": [
         ["Capitol Garage", "10th & L · 1303 10th St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
@@ -330,7 +337,7 @@
       "steps": [
         "Take a SacRT Elk Grove local bus toward Cosumnes River College (CRC) — the southern end of the Blue Line.",
         "Board Blue Line light rail toward Watt / I-80 (downtown direction).",
-        "Exit at 8th & Capitol Station. Walk one block east to 9th St — check-in and marching line-up are on 9th at Capitol Mall.",
+        "Exit at 8th & Capitol Station. Walking groups: two blocks east to 10th St in front of the Capitol. Vehicles: one block east to 9th St.",
         "Return: board Blue Line at 8th & Capitol toward Cosumnes River College (check the headsign), then Elk Grove bus home."
       ],
       "notes": [
@@ -347,8 +354,8 @@
     },
     "champions": {
       "headline": "Meet & Greet",
-      "body": "We’re rallying different organizations and clubs into tribes — high school with high school, college with college, and so on — so peers meet peers before we march. Each tribe has a champion who helps facilitate those connections: they hold the tribe sign and open the conversation.",
-      "when": "Sat Oct 24 · estimated 9:30–10:45 at staging",
+      "body": "We’re rallying different organizations and clubs into tribes — high school with high school, college with college, and so on — so peers meet peers before we march. Staging is also the group-photo window. Each tribe has a champion who helps facilitate those connections: they hold the tribe sign and open the conversation.",
+      "when": "Sat Oct 24 · during staging, before the 11:00 AM march · group photo",
       "hostsLabel": "Champions",
       "looking": "Looking for champion:",
       "volunteer": "Volunteer",
@@ -415,7 +422,7 @@
     "items": {
       "food-15": {
         "need": "Breakfast for 15 students",
-        "detail": "Breakfast for one student group of about 15. Groups arrive around 9:00 AM and finish by noon. Benefit: social media story — “Student breakfast presented by [You].”"
+        "detail": "Breakfast for one student group of about 15. Groups arrive before the 11:00 AM march. Benefit: social media story — “Student breakfast presented by [You].”"
       },
       "college-gas-parking": {
         "need": "Gas and parking for a college club",

@@ -738,8 +738,14 @@
       [labels.event || "Event", `${ev.edition || e.edition} ${ev.name || e.name}`],
       [labels.when || "When", `${dateDisplay} · ${ev.timeNote || e.timeNote}`],
       [labels.where || "Where", venue],
-      [labels.theme || "Theme", ev.theme || e.theme],
     ];
+    const festival = ev.festivalNote || e.festivalNote;
+    const staging = ev.stagingNote || e.stagingNote;
+    const route = ev.routeNote || e.routeNote;
+    if (festival) rows.push([labels.festival || "Festival", festival]);
+    if (staging) rows.push([labels.staging || "Staging", staging]);
+    if (route) rows.push([labels.route || "Route", route]);
+    rows.push([labels.theme || "Theme", ev.theme || e.theme]);
     facts.innerHTML = rows
       .map(([dt, dd]) => `<div><dt>${dt}</dt><dd>${dd}</dd></div>`)
       .join("");

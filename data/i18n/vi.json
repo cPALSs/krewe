@@ -10,7 +10,7 @@
     },
     "gh": {
       "title": "Golden Harvest 2026 — Little Saigon Krewe",
-      "description": "Playbook cho officer nhóm với Little Saigon Krewe tại Golden Harvest Parade — Oct 24, 2026. Timeline, transit, và waiver cho người đi diễn hành."
+      "description": "Playbook cho officer nhóm với Little Saigon Krewe tại Golden Harvest Parade — Saturday, October 24, 2026, 11:00 AM–12:30 PM. Timeline, transit, và waiver cho người đi diễn hành."
     },
     "fund": {
       "title": "Gây quỹ cho Krewe — Little Saigon Krewe",
@@ -79,7 +79,7 @@
       {
         "kicker": "Trạm đầu",
         "headline": "Golden Harvest — Saturday, October 24, 2026",
-        "body": "Little Saigon Krewe bắt đầu hành trình đó tại Golden Harvest Parade trên Capitol Mall. Check-in khoảng 9:00. March lúc 11:00. Officer nhóm: timeline, registration, và waiver nằm trên trang Golden Harvest.",
+        "body": "Little Saigon Krewe bắt đầu hành trình đó tại Golden Harvest Parade trên Capitol Mall. Nhóm walking stage trên 10th St trước Capitol; xe trên 9th. Parade 11:00 AM–12:30 PM. Officer nhóm: timeline, registration, và waiver nằm trên trang Golden Harvest.",
         "imageAlt": "Thanh niên Việt trên route diễn hành cầm bảng Hoa Sen Thức Tỉnh (Awakening of the Lotus)",
         "cta": "Chi tiết cho officer tại Golden Harvest"
       }
@@ -228,19 +228,25 @@
       "event": "Event",
       "when": "Khi nào",
       "where": "Ở đâu",
+      "festival": "Festival",
+      "staging": "Staging",
+      "route": "Route",
       "theme": "Theme"
     },
     "event": {
       "name": "Golden Harvest Parade & Music/Dance Festival",
       "edition": "Năm thứ 5",
       "dateDisplay": "Saturday, October 24, 2026",
-      "timeNote": "Check-in khoảng 9:00 · march 11:00 AM",
+      "timeNote": "Parade 11:00 AM–12:30 PM",
+      "festivalNote": "10:00 AM–4:30 PM · phía tây Capitol, 10th St giữa L St và N St",
+      "stagingNote": "Nhóm walking trước Capitol trên 10th St · xe trên 9th St",
+      "routeNote": "Bắt đầu 9th & N St · hết 9th & Capitol Mall",
       "venue": "Capitol Mall, Sacramento",
       "theme": "Unity, Harmony, and Peace"
     },
     "pitch": {
-      "headline": "Check-in khoảng 9:00. Đi như một train.",
-      "body": "Sáng Golden Harvest mình check-in khoảng 9:00, xếp hàng với peer cùng giới — high school với high school, college với college — rồi march lúc 11:00 như một train các nhóm krewe, nhóm này nối nhóm kia. Mình là cửa trước vào Golden Harvest: một chỗ hỏi. Mỗi nhóm vẫn register dưới tên của mình."
+      "headline": "Stage trên 10th. March 11:00–12:30 như một train.",
+      "body": "Sáng Golden Harvest, nhóm walking xếp hàng trước Capitol trên 10th St (xe stage trên 9th). Meet & greet và chụp hình nhóm trong lúc staging. Rồi mình march 11:00 AM–12:30 PM như một train các nhóm krewe, nhóm này nối nhóm kia. Festival chạy 10:00 AM–4:30 PM phía tây Capitol. Mình là cửa trước vào Golden Harvest: một chỗ hỏi. Mỗi nhóm vẫn register dưới tên của mình."
     },
     "portal": {
       "headline": "Waiver cho người đi",
@@ -275,14 +281,13 @@
           "body": "Mình làm việc với Golden Harvest về thứ tự các nhóm krewe trong diễn hành train — dựa trên ai đã file thật."
         },
         {
-          "when": "Sat Oct 24, 2026 · giờ ước lượng (packet 2025)",
+          "when": "Sat Oct 24, 2026",
           "title": "Ngày diễn hành",
-          "body": "Giờ 2026 chưa lock. Giờ dưới đây ước từ packet parade Golden Harvest 2025. Meet & greet là cửa staging của Little Saigon Krewe, do tribe champion convene. Map staging ở Transit bên dưới.",
+          "body": "Giờ parade cho nhóm walking là 11:00 AM–12:30 PM. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Map staging ở Transit bên dưới.",
           "itinerary": [
-            { "time": "9:00–10:45 AM", "label": "Check-in", "note": "9th St giữa L St và N St" },
-            { "time": "9:30–10:45 AM", "label": "Meet & greet", "note": "Tribe champion convene tại staging" },
-            { "time": "11:00 AM", "label": "March" },
-            { "time": "12:30 PM", "label": "Dự kiến hết diễn hành" }
+            { "time": "Trước 11:00 AM", "label": "Staging + Meet & greet", "note": "Nhóm walking: 10th St trước Capitol. Xe: 9th St. Chụp hình nhóm trong cửa này." },
+            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Bắt đầu 9th & N St · hết 9th & Capitol Mall" },
+            { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "Phía tây Capitol, 10th St giữa L St và N St" }
           ]
         }
       ]
@@ -313,14 +318,16 @@
       "headline": "Tới đó thế nào",
       "intro": "Năm nay gia đình tự lái, carpool, hoặc đi transit. Little Saigon Krewe không thuê charter bus hay escort light-rail có staff.",
       "pathTitle": "SacRT Blue Line — nếu gia đình đi chung (không phải escort của krewe)",
-      "stagingTitle": "Check-in tại chỗ (ước 2026)",
+      "stagingTitle": "Staging tại chỗ (2026)",
       "parkingTitle": "Nếu mình lái xe (packet 2025)",
       "parkingLead": "Nên carpool. Street parking nếu còn, hoặc mấy lot gần Capitol Mall (giá 2025 — coi lại trong packet 2026):",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
-        ["Check-in", "9th St giữa L St và N St · 9:00–10:45"],
-        ["Nhóm march (Tribe A–F)", "9th St giữa S Capitol Mall và N St"],
-        ["Hàng float / xe", "9th St giữa L St và N Capitol Mall — Tribe G"]
+        ["Nhóm walking (Tribe A–F)", "Trước Capitol trên 10th St"],
+        ["Hàng float / xe", "9th St — Tribe G"],
+        ["Meet & greet / chụp hình nhóm", "Trong lúc staging, trước parade 11:00 AM"],
+        ["Route diễn hành", "Bắt đầu 9th & N St · hết 9th & Capitol Mall"],
+        ["Festival", "10:00 AM–4:30 PM · phía tây Capitol, 10th St giữa L St và N St"]
       ],
       "parking": [
         ["Capitol Garage", "10th & L · 1303 10th St", "khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
@@ -330,7 +337,7 @@
       "steps": [
         "Lấy bus local SacRT Elk Grove về Cosumnes River College (CRC) — đầu phía nam của Blue Line.",
         "Lên light rail Blue Line về Watt / I-80 (hướng downtown).",
-        "Xuống 8th & Capitol Station. Đi bộ một block về phía đông tới 9th St — check-in và hàng march ở 9th tại Capitol Mall.",
+        "Xuống 8th & Capitol Station. Nhóm walking: đi bộ hai block về phía đông tới 10th St trước Capitol. Xe: một block về phía đông tới 9th St.",
         "Về: lên Blue Line ở 8th & Capitol về Cosumnes River College (xem headsign), rồi bus Elk Grove về nhà."
       ],
       "notes": [
@@ -347,8 +354,8 @@
     },
     "champions": {
       "headline": "Meet & Greet",
-      "body": "Mình gom tổ chức và club vào tribe — high school với high school, college với college, vậy đó — để peer gặp peer trước khi march. Mỗi tribe có champion giúp mở chuyện: họ cầm bảng tribe và bắt đầu conversation.",
-      "when": "Sat Oct 24 · ước 9:30–10:45 tại staging",
+      "body": "Mình gom tổ chức và club vào tribe — high school với high school, college với college, vậy đó — để peer gặp peer trước khi march. Cửa staging cũng là lúc chụp hình nhóm. Mỗi tribe có champion giúp mở chuyện: họ cầm bảng tribe và bắt đầu conversation.",
+      "when": "Sat Oct 24 · trong lúc staging, trước parade 11:00 AM · chụp hình nhóm",
       "hostsLabel": "Champion",
       "looking": "Đang tìm champion:",
       "volunteer": "Volunteer",
@@ -415,7 +422,7 @@
     "items": {
       "food-15": {
         "need": "Breakfast cho 15 học sinh",
-        "detail": "Breakfast cho một nhóm học sinh khoảng 15 người. Nhóm tới khoảng 9:00 AM và xong trước noon. Benefit: story trên social media — “Student breakfast presented by [You].”"
+        "detail": "Breakfast cho một nhóm học sinh khoảng 15 người. Nhóm tới trước parade 11:00 AM. Benefit: story trên social media — “Student breakfast presented by [You].”"
       },
       "college-gas-parking": {
         "need": "Gas và parking cho một club college",
