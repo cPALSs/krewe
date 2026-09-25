@@ -167,7 +167,7 @@
       "id": "B",
       "name": "College",
       "peers": "Campus clubs, e.g. VSAs and VN CARES chapters",
-      "championProfile": "A campus club officer (VSA or VN CARES) who already convenes peers",
+      "championProfile": "A campus club officer who already convenes peers",
       "block": "marching"
     },
     {
@@ -250,7 +250,17 @@
         "tribe": "C"
       },
       {
-        "name": "Red Lotus (Sacramento State VSA)",
+        "name": "Red Lotus Lion Dance (Sac State VSA)",
+        "status": "interested",
+        "tribe": "C"
+      },
+      {
+        "name": "UC Davis VSA",
+        "status": "interested",
+        "tribe": "B"
+      },
+      {
+        "name": "Viet Serenity Sisters",
         "status": "interested",
         "tribe": "C"
       }

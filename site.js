@@ -1165,6 +1165,18 @@
       .join("")}</ul>`;
   }
 
+  function renderFormationPeople() {
+    document.querySelectorAll(".formation-people").forEach((el) => {
+      const count = Number(el.dataset.count) || 0;
+      const cols = Number(el.dataset.cols) || 5;
+      el.style.gridTemplateColumns = `repeat(${cols}, 1.2rem)`;
+      el.replaceChildren();
+      for (let i = 0; i < count; i += 1) {
+        el.appendChild(document.createElement("span"));
+      }
+    });
+  }
+
   function renderJoiningNote(site) {
     const intro = document.getElementById("joining-intro");
     if (!intro) return;
@@ -1309,6 +1321,7 @@
       renderTransit(siteCache);
       renderChampions(siteCache, participantsCache || {});
       renderJoiningNote(siteCache);
+      renderFormationPeople();
       renderMarchMailto();
       observeReveal(".tribe-item, .tribe-joiners li, .timeline-item");
     } else if (page === "fund" && siteCache) {
@@ -1363,6 +1376,7 @@
         renderTransit(site);
         renderChampions(site, participants);
         renderJoiningNote(site);
+        renderFormationPeople();
         renderMarchMailto();
         observeReveal(".tribe-item, .tribe-joiners li, .timeline-item");
       } else if (page === "fund") {

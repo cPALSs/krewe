@@ -220,6 +220,7 @@
     "tocFaq": "FAQ",
     "tocTransit": "Transit",
     "tocChampions": "Meet & Greet",
+    "tocFormation": "Đội hình",
     "factsTitle": "Thông tin event",
     "faqTitle": "FAQ",
     "mapOpen": "Mở trên Google Maps",
@@ -366,6 +367,11 @@
       "statusConfirmed": "confirmed"
     },
     "joiningIntro": "Interest trước — mình đổi tag thành confirmed khi nhóm lock.",
+    "formationTitle": "Đội hình",
+    "formationNote": "Chưa chốt",
+    "formationLead": "Đầu train đi trước.",
+    "formationHost": "Walkers VACOS, NVCC, cPALSs",
+    "formationWalkers": "walkers",
     "tribes": {
       "A": {
         "name": "High school",
@@ -375,7 +381,7 @@
       "B": {
         "name": "College",
         "peers": "Club trên campus, ví dụ VSA và chapter VN CARES",
-        "championProfile": "Officer club trên campus (VSA hoặc VN CARES) đã hay gọi peer lại"
+        "championProfile": "Officer club trên campus đã hay gọi peer lại"
       },
       "C": {
         "name": "Performance",

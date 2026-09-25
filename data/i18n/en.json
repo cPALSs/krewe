@@ -220,6 +220,7 @@
     "tocFaq": "FAQ",
     "tocTransit": "Transit",
     "tocChampions": "Meet & Greet",
+    "tocFormation": "Formation",
     "factsTitle": "Event facts",
     "faqTitle": "FAQ",
     "mapOpen": "Open in Google Maps",
@@ -366,6 +367,11 @@
       "statusConfirmed": "confirmed"
     },
     "joiningIntro": "Interest first — we’ll switch the tag to confirmed when a group is locked.",
+    "formationTitle": "Formation",
+    "formationNote": "Not finalized",
+    "formationLead": "Front of the train first.",
+    "formationHost": "VACOS, NVCC, cPALSs walkers",
+    "formationWalkers": "walkers",
     "tribes": {
       "A": {
         "name": "High school",
@@ -375,7 +381,7 @@
       "B": {
         "name": "College",
         "peers": "Campus clubs, e.g. VSAs and VN CARES chapters",
-        "championProfile": "A campus club officer (VSA or VN CARES) who already convenes peers"
+        "championProfile": "A campus club officer who already convenes peers"
       },
       "C": {
         "name": "Performance",
