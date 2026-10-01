@@ -1147,6 +1147,14 @@ body[data-page="home"] .hero-line {
   color: var(--ink-muted);
 }
 
+.faq-item dd p {
+  margin: 0 0 0.75rem;
+}
+
+.faq-item dd p:last-child {
+  margin-bottom: 0;
+}
+
 .plain-list {
   margin: 0 0 1.5rem;
   padding-left: 1.2rem;

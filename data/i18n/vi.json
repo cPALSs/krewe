@@ -303,8 +303,12 @@
         "a": "Không. Mỗi nhóm tự lo ride — tự lái, carpool, hoặc đi SacRT. Little Saigon Krewe không chạy bus hay escort light-rail có người dẫn. Packet parade 2025 có coupon đi SacRT miễn phí (không phải shuttle của krewe); xem 2026 có làm lại không."
       },
       {
-        "q": "Mình có biểu diễn suốt route không?",
-        "aHtml": "Không. Golden Harvest cho đội diễn hành biểu diễn ngắn — khoảng <strong>2–3 phút</strong> — trước <strong>main stage</strong> và <strong>sân khấu nhỏ thứ hai</strong>. Phần còn lại của Capitol Mall là walking march. Chi tiết route khoảng hai tuần trước diễn hành."
+        "q": "Nhóm mình có bắt buộc phải biểu diễn không?",
+        "a": "Không — biểu diễn là tùy nhóm. Nhiều nhóm chỉ đi diễn hành với banner thôi. Nếu muốn biểu diễn thì có hai cách khác nhau: diễn ngắn trong lúc diễn hành, hoặc diễn lâu hơn trên main stage của festival sau diễn hành. Coi câu kế tiếp."
+      },
+      {
+        "q": "Biểu diễn lúc diễn hành khác biểu diễn trên stage thế nào?",
+        "aHtml": "<p><strong>Biểu diễn lúc diễn hành</strong> — trong lúc đi. Qua khỏi start line là nhóm được vừa đi vừa múa hay biểu diễn. Dọc route có thể có tới <strong>hai chỗ dừng</strong> — trước main stage và sân khấu nhỏ thứ hai — mỗi chỗ diễn <strong>tối đa 1 phút</strong>; lâu hơn là kẹt các nhóm phía sau. Chi tiết route khoảng hai tuần trước diễn hành.</p><p><strong>Biểu diễn trên stage</strong> — một slot riêng <strong>5–10 phút</strong> trên main stage của festival sau diễn hành, cho các nhóm được Golden Harvest chọn. Stage rộng <strong>24 × 36 ft</strong>, ngay mặt đất, có lót thảm cao su — không phải sân khấu nâng cao. Muốn được xét thì đánh dấu <em>Stage Performance</em> trên form đăng ký Golden Harvest, ghi loại tiết mục, số người diễn, và thời lượng. Hạn đăng ký stage là <strong>Thứ Năm, October 1, 2026</strong>.</p>"
       },
       {
         "q": "Có phòng thay đồ không?",
