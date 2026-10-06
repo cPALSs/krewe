@@ -79,7 +79,7 @@
       {
         "kicker": "First stop",
         "headline": "Golden Harvest — Saturday, October 24, 2026",
-        "body": "Little Saigon Krewe begins that journey at the Golden Harvest Parade on Capitol Mall. Walking groups stage on 10th St in front of the Capitol; vehicles on 9th. Parade 11:00 AM–12:30 PM. Group officers: timelines, registration, and waivers live on the Golden Harvest page.",
+        "body": "Little Saigon Krewe begins that journey at the Golden Harvest Parade on Capitol Mall. Groups check in 9:00–10:45 AM on 10th St in front of the Capitol, where walking groups line up; vehicles stage on 9th. Parade 11:00 AM–12:30 PM. Group officers: timelines, registration, and waivers live on the Golden Harvest page.",
         "imageAlt": "Vietnamese youth on the parade route holding a Hoa Sen Thức Tỉnh (Awakening of the Lotus) sign",
         "cta": "Officer details for Golden Harvest"
       }
@@ -238,20 +238,20 @@
       "name": "Golden Harvest Parade & Music/Dance Festival",
       "edition": "5th Annual",
       "dateDisplay": "Saturday, October 24, 2026",
-      "timeNote": "Parade 11:00 AM–12:30 PM",
+      "timeNote": "Parade 11:00 AM–12:30 PM · check-in 9:00–10:45 AM",
       "festivalNote": "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St",
-      "stagingNote": "Walking groups in front of the Capitol on 10th St · vehicles on 9th St",
-      "routeNote": "Begins 9th & N St · ends 9th & Capitol Mall",
+      "stagingNote": "Check in at the Golden Harvest desk on 10th St at Capitol Mall · walking groups line up on 10th St between L St and N St · floats and vehicles on 9th St between N St and Capitol Mall",
+      "routeNote": "From 10th St onto N St, then 9th St · steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall",
       "venue": "Capitol Mall, Sacramento",
       "theme": "Unity, Harmony, and Peace"
     },
     "pitch": {
-      "headline": "Stage on 10th. March 11:00–12:30 as a train.",
-      "body": "On Golden Harvest morning, walking groups line up in front of the Capitol on 10th St (vehicles stage on 9th). Meet & greet and a group photo happen during staging. Then we march 11:00 AM–12:30 PM as a train of krewe groups, one after another. Festival runs 10:00 AM–4:30 PM on the west side of the Capitol. We are your front door to Golden Harvest: one place for questions. Each group still registers under its own name."
+      "headline": "Check in on 10th by 10:45. March 11:00–12:30 as a train.",
+      "body": "On Golden Harvest morning, each group checks in at the Golden Harvest desk on 10th St in front of the Capitol between 9:00 and 10:45 AM, then lines up on 10th St (vehicles stage on 9th). Meet & greet and a group photo happen during staging. Then we march 11:00 AM–12:30 PM as a train of krewe groups, one after another. Festival runs 10:00 AM–4:30 PM on the west side of the Capitol. We are your front door to Golden Harvest: one place for questions. Each group still registers under its own name."
     },
     "portal": {
       "headline": "Participant waivers",
-      "body": "Every marcher needs a participant waiver — adults consent for themselves; parents or guardians consent for minors. Officers sign in, register the club, and share the join link. This is the cPALSs gate, separate from Golden Harvest’s own participant forms.",
+      "body": "Every marcher needs a participant waiver — adults consent for themselves; parents or guardians consent for minors. Officers sign in, register the club, and share the join link. It includes Golden Harvest’s 2026 Waiver and Release Form, so one signature covers both — we pass the signed waivers to Golden Harvest.",
       "button": "Open cPALSs Portal",
       "cutoff": "Participant waivers due Saturday, October 17, 2026 — one week before the parade. No night-before or day-of paperwork."
     },
@@ -266,15 +266,21 @@
           "ctaLabel": "Email interest"
         },
         {
-          "when": "After soft commit · early–mid Sept target",
-          "title": "Adult consent",
-          "body": "Every marcher needs a participant waiver on portal.cpalss.com — adults consent for themselves; parents or guardians consent for minors. Officers register the club and share the join link. Due Sat Oct 17, 2026.",
+          "when": "Due Sat Oct 17, 2026",
+          "title": "Participant waivers — every marcher",
+          "body": "Every marcher needs a participant waiver on portal.cpalss.com — adults consent for themselves; parents or guardians sign for high schoolers and other minors. Officers register the club and share the join link. It includes Golden Harvest’s 2026 Waiver and Release Form, so marchers sign once and we pass the waivers to Golden Harvest. Due Sat Oct 17, 2026.",
           "ctaLabel": "Open cPALSs Portal"
         },
         {
-          "when": "Mid–late Sept (guided)",
+          "when": "Due Thu Oct 15, 2026 (guided)",
           "title": "Golden Harvest unit registration",
-          "body": "Each group still files its own Golden Harvest registration (with the note a LSK A team). We’ll walk you through it and batch questions to the parade coordinators."
+          "body": "Each group still files its own Golden Harvest registration form and emails it to the parade coordinators (their emails are at the bottom of the form). Download the blank copy below — “LSK A team” is already filled in under Additional Information. Golden Harvest’s 2026 guidelines set marching groups at 20–300 people; the form still prints the older 15-person minimum and Oct 20 deadline, so go by the guidelines. Tell us your headcount and we’ll combine smaller groups so everyone clears 20. We batch questions to the coordinators.",
+          "ctaLabel": "Download registration form (PDF)"
+        },
+        {
+          "when": "Before parade day",
+          "title": "Pick your sign carrier",
+          "body": "Golden Harvest provides every team a team name sign. Name one person to carry it at the front of your group, and return it to the registration desk after the parade. There’s no separate Golden Harvest waiver to file — the cPALSs Portal waiver is Golden Harvest’s 2026 Waiver and Release Form."
         },
         {
           "when": "Early October",
@@ -284,10 +290,10 @@
         {
           "when": "Sat Oct 24, 2026",
           "title": "Parade day",
-          "body": "Parade hours for walking groups are 11:00 AM–12:30 PM. Meet & greet is Little Saigon Krewe’s staging window — also the group-photo opportunity — facilitated by tribe champions. Staging map in Transit below.",
+          "body": "Check in at the Golden Harvest desk on 10th St in front of the Capitol between 9:00 and 10:45 AM with your sign carrier. Meet & greet is Little Saigon Krewe’s staging window — also the group-photo opportunity — facilitated by tribe champions. Parade hours are 11:00 AM–12:30 PM. Staging details in Transit below.",
           "itinerary": [
-            { "time": "Before 11:00 AM", "label": "Staging + Meet & greet", "note": "Walking groups: 10th St in front of the Capitol. Vehicles: 9th St. Group photo during this window." },
-            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Begins 9th & N St · ends 9th & Capitol Mall" },
+            { "time": "9:00–10:45 AM", "label": "Check-in + staging + Meet & greet", "note": "Golden Harvest desk on 10th St at Capitol Mall. Walking groups line up on 10th St between L St and N St; vehicles on 9th St. Group photo during this window." },
+            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall" },
             { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "West side of Capitol, 10th St between L St and N St" }
           ]
         }
@@ -296,11 +302,15 @@
     "faq": [
       {
         "q": "Should I register through the Golden Harvest site?",
-        "a": "No — register through Little Saigon Krewe first. Clubs can register with Golden Harvest on their own. Golden Harvest is looking for at least 15 members per group. Our job is to combine smaller groups so the combined headcount meets that minimum."
+        "a": "No — register through Little Saigon Krewe first. Clubs can register with Golden Harvest on their own. Golden Harvest’s 2026 guidelines ask for at least 20 people per marching group (300 max), and applications are due Thursday, October 15, 2026. Our job is to combine smaller groups so the combined headcount meets that minimum."
+      },
+      {
+        "q": "Do we file Golden Harvest’s waiver separately?",
+        "a": "No. The cPALSs Portal waiver is Golden Harvest’s 2026 Waiver and Release Form, so each marcher signs once — adults for themselves, parents or guardians for high schoolers and other minors — by Saturday, October 17. We pass the signed waivers to Golden Harvest. The one other thing Golden Harvest needs from every team is a sign carrier: one person who carries the Golden Harvest team name sign at the front of your group and returns it to the registration desk after the parade."
       },
       {
         "q": "Is transportation provided?",
-        "a": "No. Groups arrange their own ride — drive, carpool, or take SacRT on their own. Little Saigon Krewe is not running a bus or a staffed light-rail escort. The 2025 parade packet had a SacRT free-ride coupon (not a krewe shuttle); look for whether 2026 repeats that."
+        "a": "No. Groups arrange their own ride — drive, carpool, or take SacRT on their own. Little Saigon Krewe is not running a bus or a staffed light-rail escort. SacRT is free on parade day, though: print or screenshot Golden Harvest’s free-ride flyer (linked under Transit) and show it to the bus operator or light-rail fare inspector. It’s good Saturday, October 24, 9:00 AM–6:30 PM, and one flyer covers a group traveling together."
       },
       {
         "q": "Do we have to perform?",
@@ -308,7 +318,7 @@
       },
       {
         "q": "What’s the difference between a parade performance and a stage performance?",
-        "aHtml": "<p><strong>Parade performance</strong> — during the march. Once your group passes the start line, you can dance or perform as you go. There may be up to <strong>two stops</strong> along the route — in front of the main stage and the second small stage — and each stop is <strong>1 minute at most</strong>; any longer and the groups behind you get stuck. Detailed route information comes about two weeks before the parade.</p><p><strong>Stage performance</strong> — a separate <strong>5–10 minute</strong> slot on the festival main stage after the parade, for groups Golden Harvest selects. The stage is <strong>24 × 36 ft</strong> at ground level on rubber mats, not a raised riser. To be considered, check <em>Stage Performance</em> on the Golden Harvest registration form and fill in performance type, number of performers, and program length. Stage registration is due <strong>Thursday, October 1, 2026</strong>.</p>"
+        "aHtml": "<p><strong>Parade performance</strong> — during the march. Once your group passes the start line, you can dance or perform as you go. Each group gets <strong>one stop, in front of the parade stage, for 1 minute at most</strong> — any longer and the groups behind you get stuck. Don’t stop elsewhere on the route for photos; take group photos during staging.</p><p><strong>Stage performance</strong> — a separate <strong>5–10 minute</strong> slot on the festival main stage after the parade, for groups Golden Harvest selects. The stage is <strong>24 × 36 ft</strong> at ground level on rubber mats, not a raised riser. To be considered, check <em>Stage Performance</em> on the Golden Harvest registration form and fill in performance type, number of performers, and program length. Stage registration is due <strong>Thursday, October 1, 2026</strong>.</p>"
       },
       {
         "q": "Are there changing rooms?",
@@ -316,36 +326,43 @@
       },
       {
         "q": "Is there a dress code?",
-        "a": "Not currently — no required uniform. The parade is televised, though, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional."
+        "a": "No required uniform, but Golden Harvest requires apparel suitable for all ages. The parade is televised, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional."
+      },
+      {
+        "q": "What’s not allowed in the parade?",
+        "a": "Golden Harvest’s rules: no sharp equipment, fireworks, or anything that could hurt someone. Don’t throw anything along the route. No inappropriate language or behavior. Floats, vehicles, and trailers must be under 40 ft long, 10 ft wide, and 13.5 ft tall, be insured, and have licensed drivers. Motorcycle groups need at least 10 motorcycles. Groups that don’t follow the guidelines can be removed from the parade."
       }
     ],
     "transit": {
       "headline": "Getting there",
-      "intro": "This year families drive, carpool, or take transit on their own. Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort.",
-      "pathTitle": "SacRT Blue Line — if your family rides together (not a krewe escort)",
+      "intro": "This year families drive, carpool, or take transit on their own. Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort. SacRT buses and light rail are free on parade day with Golden Harvest’s free-ride flyer (link below).",
+      "pathTitle": "SacRT Blue Line — free on parade day with the flyer (not a krewe escort)",
       "stagingTitle": "Onsite staging (2026)",
-      "parkingTitle": "If you’re driving (2025 packet)",
-      "parkingLead": "Carpools are encouraged. Street parking where available, or these lots near Capitol Mall (2025 rates — confirm in the 2026 packet):",
+      "parkingTitle": "If you’re driving (2026 packet)",
+      "parkingLead": "Carpools are encouraged. Golden Harvest’s 2026 packet lists these garages and lots. Street meters take coins, credit cards, and mobile-app payments. Rates shown are from 2025 — check what’s posted.",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
-        ["Walking groups (Tribes A–F)", "In front of the Capitol on 10th St"],
-        ["Float / vehicle line-up", "9th St — Tribe G"],
+        ["Check-in", "9:00–10:45 AM · Golden Harvest desk on 10th St at Capitol Mall, in front of the Capitol"],
+        ["Walking groups (Tribes A–F)", "Line up on 10th St between L St and N St"],
+        ["Float / vehicle line-up", "9th St between N St and Capitol Mall — Tribe G"],
         ["Meet & greet / group photo", "During staging, before the 11:00 AM march"],
-        ["Parade route", "Begins 9th & N St · ends 9th & Capitol Mall"],
+        ["Parade route", "From 10th St onto N St, then 9th St · steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall"],
         ["Festival", "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St"]
       ],
       "parking": [
-        ["Capitol Garage", "10th & L · 1303 10th St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-        ["City Hall Garage", "10th & I · 1000 I St", "~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-        ["Y Parking Lot", "2nd & N · Crocker Art Museum", "~$1.50/hour, $6 max · 4-hour limit"]
+        ["Capitol Garage", "10th & L · 1303 10th St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+        ["City Hall Garage", "10th & I · 1000 I St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
+        ["Priority Parking", "Near the Crocker Art Museum"]
       ],
       "steps": [
+        "Print or screenshot Golden Harvest’s free-ride flyer. One flyer covers a group traveling together — show it to the bus operator when you board, or to a fare inspector on light rail.",
         "Take a SacRT Elk Grove local bus toward Cosumnes River College (CRC) — the southern end of the Blue Line.",
         "Board Blue Line light rail toward Watt / I-80 (downtown direction).",
-        "Exit at 8th & Capitol Station. Walking groups: two blocks east to 10th St in front of the Capitol. Vehicles: one block east to 9th St.",
+        "Exit at 8th & Capitol Station. Walking groups: two blocks east to check-in on 10th St in front of the Capitol. Vehicles: one block east to 9th St.",
         "Return: board Blue Line at 8th & Capitol toward Cosumnes River College (check the headsign), then Elk Grove bus home."
       ],
       "notes": [
+        "The free-ride flyer is good Saturday, October 24, 9:00 AM–6:30 PM on SacRT buses and light rail. Leave early enough to reach check-in by 10:45 AM.",
         "Saturday schedules differ from weekday rush-hour — Elk Grove weekday-only commuter buses (e.g. E13) won’t help parade morning. Use local EG routes + Blue Line, and verify times the week before.",
         "Light rail uses one-way streets downtown; your outbound stop and return stop may differ.",
         "Florin / South Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
@@ -354,7 +371,9 @@
         "SacRT trip planner",
         "Elk Grove bus service",
         "Light rail to downtown (Blue Line / Elk Grove)",
-        "2025 GHP parade packet (waivers · free RT)"
+        "Golden Harvest free-ride flyer (SacRT)",
+        "2026 parade line-up map",
+        "2026 transportation & parking (PDF)"
       ]
     },
     "champions": {

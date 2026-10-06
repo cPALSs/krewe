@@ -79,7 +79,7 @@
       {
         "kicker": "Trạm đầu",
         "headline": "Golden Harvest — Saturday, October 24, 2026",
-        "body": "Little Saigon Krewe bắt đầu hành trình đó tại Golden Harvest Parade trên Capitol Mall. Nhóm walking stage trên 10th St trước Capitol; xe trên 9th. Parade 11:00 AM–12:30 PM. Officer nhóm: timeline, registration, và waiver nằm trên trang Golden Harvest.",
+        "body": "Little Saigon Krewe bắt đầu hành trình đó tại Golden Harvest Parade trên Capitol Mall. Các nhóm check-in 9:00–10:45 AM trên 10th St trước Capitol, cũng là chỗ nhóm walking xếp hàng; xe stage trên 9th. Parade 11:00 AM–12:30 PM. Officer nhóm: timeline, registration, và waiver nằm trên trang Golden Harvest.",
         "imageAlt": "Thanh niên Việt trên route diễn hành cầm bảng Hoa Sen Thức Tỉnh (Awakening of the Lotus)",
         "cta": "Chi tiết cho officer tại Golden Harvest"
       }
@@ -238,20 +238,20 @@
       "name": "Golden Harvest Parade & Music/Dance Festival",
       "edition": "Năm thứ 5",
       "dateDisplay": "Saturday, October 24, 2026",
-      "timeNote": "Parade 11:00 AM–12:30 PM",
+      "timeNote": "Parade 11:00 AM–12:30 PM · check-in 9:00–10:45 AM",
       "festivalNote": "10:00 AM–4:30 PM · phía tây Capitol, 10th St giữa L St và N St",
-      "stagingNote": "Nhóm walking trước Capitol trên 10th St · xe trên 9th St",
-      "routeNote": "Bắt đầu 9th & N St · hết 9th & Capitol Mall",
+      "stagingNote": "Check-in ở bàn Golden Harvest trên 10th St ngay Capitol Mall · nhóm walking xếp hàng trên 10th St giữa L St và N St · float và xe trên 9th St giữa N St và Capitol Mall",
+      "routeNote": "Từ 10th St quẹo qua N St, rồi 9th St · xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall",
       "venue": "Capitol Mall, Sacramento",
       "theme": "Unity, Harmony, and Peace"
     },
     "pitch": {
-      "headline": "Stage trên 10th. March 11:00–12:30 như một train.",
-      "body": "Sáng Golden Harvest, nhóm walking xếp hàng trước Capitol trên 10th St (xe stage trên 9th). Meet & greet và chụp hình nhóm trong lúc staging. Rồi mình march 11:00 AM–12:30 PM như một train các nhóm krewe, nhóm này nối nhóm kia. Festival chạy 10:00 AM–4:30 PM phía tây Capitol. Mình là cửa trước vào Golden Harvest: một chỗ hỏi. Mỗi nhóm vẫn register dưới tên của mình."
+      "headline": "Check-in trên 10th trước 10:45. March 11:00–12:30 như một train.",
+      "body": "Sáng Golden Harvest, mỗi nhóm check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, rồi xếp hàng trên 10th St (xe stage trên 9th). Meet & greet và chụp hình nhóm trong lúc staging. Rồi mình march 11:00 AM–12:30 PM như một train các nhóm krewe, nhóm này nối nhóm kia. Festival chạy 10:00 AM–4:30 PM phía tây Capitol. Mình là cửa trước vào Golden Harvest: một chỗ hỏi. Mỗi nhóm vẫn register dưới tên của mình."
     },
     "portal": {
       "headline": "Waiver cho người đi",
-      "body": "Ai đi diễn hành cũng cần waiver — người lớn consent cho mình; ba mẹ hoặc guardian consent cho minor. Officer sign in, register club, rồi share link join. Đây là cửa của cPALSs, riêng với form của Golden Harvest.",
+      "body": "Ai đi diễn hành cũng cần waiver — người lớn consent cho mình; ba mẹ hoặc guardian consent cho minor. Officer sign in, register club, rồi share link join. Waiver này có luôn 2026 Waiver and Release Form của Golden Harvest, nên ký một lần là đủ cho cả hai — mình chuyển waiver đã ký cho Golden Harvest.",
       "button": "Mở cPALSs Portal",
       "cutoff": "Waiver tới hạn Saturday, October 17, 2026 — một tuần trước diễn hành. Không nhận giấy đêm trước hoặc ngày diễn hành."
     },
@@ -266,15 +266,21 @@
           "ctaLabel": "Email interest"
         },
         {
-          "when": "Sau soft commit · nhắm early–mid Sept",
-          "title": "Consent người lớn",
-          "body": "Ai đi diễn hành cũng cần waiver trên portal.cpalss.com — người lớn consent cho mình; ba mẹ hoặc guardian consent cho minor. Officer register club rồi share link join. Deadline Sat Oct 17, 2026.",
+          "when": "Deadline Sat Oct 17, 2026",
+          "title": "Waiver cho từng người đi",
+          "body": "Ai đi diễn hành cũng cần waiver trên portal.cpalss.com — người lớn consent cho mình; ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18. Officer register club rồi share link join. Waiver này có luôn 2026 Waiver and Release Form của Golden Harvest, nên mỗi người chỉ ký một lần và mình chuyển waiver cho Golden Harvest. Deadline Sat Oct 17, 2026.",
           "ctaLabel": "Mở cPALSs Portal"
         },
         {
-          "when": "Mid–late Sept (có người dẫn)",
+          "when": "Deadline Thu Oct 15, 2026 (có người dẫn)",
           "title": "Registration đơn vị với Golden Harvest",
-          "body": "Mỗi nhóm vẫn file registration Golden Harvest của mình (ghi chú là LSK A team). Mình sẽ đi với anh chị và gom câu hỏi gửi parade coordinator."
+          "body": "Mỗi nhóm vẫn file form registration Golden Harvest của mình rồi email cho parade coordinator (email của họ ở cuối form). Tải bản trống bên dưới — phần Additional Information đã ghi sẵn “LSK A team”. Guideline 2026 của Golden Harvest cho mỗi nhóm walking từ 20 tới 300 người; form vẫn in con số cũ là tối thiểu 15 người và deadline Oct 20, nên cứ theo guideline. Báo mình headcount, mình gom nhóm nhỏ lại cho nhóm nào cũng đủ 20. Mình gom câu hỏi gửi coordinator.",
+          "ctaLabel": "Tải form registration (PDF)"
+        },
+        {
+          "when": "Trước ngày diễn hành",
+          "title": "Cử người cầm bảng tên",
+          "body": "Golden Harvest phát cho mỗi team một bảng tên team. Cử một người cầm bảng đi đầu nhóm, và trả bảng lại bàn registration sau diễn hành. Không cần nộp waiver Golden Harvest riêng — waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest."
         },
         {
           "when": "Early October",
@@ -284,10 +290,10 @@
         {
           "when": "Sat Oct 24, 2026",
           "title": "Ngày diễn hành",
-          "body": "Giờ parade cho nhóm walking là 11:00 AM–12:30 PM. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Map staging ở Transit bên dưới.",
+          "body": "Check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, đi cùng người cầm bảng tên. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Giờ parade là 11:00 AM–12:30 PM. Chi tiết staging ở Transit bên dưới.",
           "itinerary": [
-            { "time": "Trước 11:00 AM", "label": "Staging + Meet & greet", "note": "Nhóm walking: 10th St trước Capitol. Xe: 9th St. Chụp hình nhóm trong cửa này." },
-            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Bắt đầu 9th & N St · hết 9th & Capitol Mall" },
+            { "time": "9:00–10:45 AM", "label": "Check-in + staging + Meet & greet", "note": "Bàn Golden Harvest trên 10th St ngay Capitol Mall. Nhóm walking xếp hàng trên 10th St giữa L St và N St; xe trên 9th St. Chụp hình nhóm trong cửa này." },
+            { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall" },
             { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "Phía tây Capitol, 10th St giữa L St và N St" }
           ]
         }
@@ -296,11 +302,15 @@
     "faq": [
       {
         "q": "Mình có nên register trên site Golden Harvest không?",
-        "a": "Không — register qua Little Saigon Krewe trước. Club muốn register thẳng với Golden Harvest cũng được. Golden Harvest muốn mỗi nhóm ít nhất 15 người. Việc của mình là gom nhóm nhỏ lại cho đủ headcount đó."
+        "a": "Không — register qua Little Saigon Krewe trước. Club muốn register thẳng với Golden Harvest cũng được. Guideline 2026 của Golden Harvest muốn mỗi nhóm walking ít nhất 20 người (tối đa 300), và hạn nộp đơn là Thứ Năm, October 15, 2026. Việc của mình là gom nhóm nhỏ lại cho đủ headcount đó."
+      },
+      {
+        "q": "Mình có phải nộp waiver Golden Harvest riêng không?",
+        "a": "Không. Waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest, nên mỗi người đi chỉ ký một lần — người lớn tự ký, ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18 — trước Thứ Bảy, October 17. Mình chuyển waiver đã ký cho Golden Harvest. Thứ duy nhất khác Golden Harvest cần từ mỗi team là người cầm bảng tên: một người cầm bảng tên team do Golden Harvest phát, đi đầu nhóm, rồi trả bảng lại bàn registration sau diễn hành."
       },
       {
         "q": "Có xe đưa đón không?",
-        "a": "Không. Mỗi nhóm tự lo ride — tự lái, carpool, hoặc đi SacRT. Little Saigon Krewe không chạy bus hay escort light-rail có người dẫn. Packet parade 2025 có coupon đi SacRT miễn phí (không phải shuttle của krewe); xem 2026 có làm lại không."
+        "a": "Không. Mỗi nhóm tự lo ride — tự lái, carpool, hoặc đi SacRT. Little Saigon Krewe không chạy bus hay escort light-rail có người dẫn. Nhưng ngày diễn hành đi SacRT miễn phí: in ra hoặc chụp màn hình flyer free ride của Golden Harvest (link ở phần Transit) rồi đưa tài xế bus hoặc người soát vé light rail coi. Flyer dùng được Thứ Bảy, October 24, 9:00 AM–6:30 PM, và một flyer là đủ cho cả nhóm đi chung."
       },
       {
         "q": "Nhóm mình có bắt buộc phải biểu diễn không?",
@@ -308,7 +318,7 @@
       },
       {
         "q": "Biểu diễn lúc diễn hành khác biểu diễn trên stage thế nào?",
-        "aHtml": "<p><strong>Biểu diễn lúc diễn hành</strong> — trong lúc đi. Qua khỏi start line là nhóm được vừa đi vừa múa hay biểu diễn. Dọc route có thể có tới <strong>hai chỗ dừng</strong> — trước main stage và sân khấu nhỏ thứ hai — mỗi chỗ diễn <strong>tối đa 1 phút</strong>; lâu hơn là kẹt các nhóm phía sau. Chi tiết route khoảng hai tuần trước diễn hành.</p><p><strong>Biểu diễn trên stage</strong> — một slot riêng <strong>5–10 phút</strong> trên main stage của festival sau diễn hành, cho các nhóm được Golden Harvest chọn. Stage rộng <strong>24 × 36 ft</strong>, ngay mặt đất, có lót thảm cao su — không phải sân khấu nâng cao. Muốn được xét thì đánh dấu <em>Stage Performance</em> trên form đăng ký Golden Harvest, ghi loại tiết mục, số người diễn, và thời lượng. Hạn đăng ký stage là <strong>Thứ Năm, October 1, 2026</strong>.</p>"
+        "aHtml": "<p><strong>Biểu diễn lúc diễn hành</strong> — trong lúc đi. Qua khỏi start line là nhóm được vừa đi vừa múa hay biểu diễn. Mỗi nhóm được <strong>dừng một chỗ, trước parade stage, tối đa 1 phút</strong> — lâu hơn là kẹt các nhóm phía sau. Đừng dừng chỗ khác trên route để chụp hình; chụp hình nhóm lúc staging.</p><p><strong>Biểu diễn trên stage</strong> — một slot riêng <strong>5–10 phút</strong> trên main stage của festival sau diễn hành, cho các nhóm được Golden Harvest chọn. Stage rộng <strong>24 × 36 ft</strong>, ngay mặt đất, có lót thảm cao su — không phải sân khấu nâng cao. Muốn được xét thì đánh dấu <em>Stage Performance</em> trên form đăng ký Golden Harvest, ghi loại tiết mục, số người diễn, và thời lượng. Hạn đăng ký stage là <strong>Thứ Năm, October 1, 2026</strong>.</p>"
       },
       {
         "q": "Có phòng thay đồ không?",
@@ -316,36 +326,43 @@
       },
       {
         "q": "Có dress code không?",
-        "a": "Hiện chưa — không bắt buộc uniform. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc."
+        "a": "Không bắt buộc uniform, nhưng Golden Harvest yêu cầu đồ mặc phù hợp mọi lứa tuổi. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc."
+      },
+      {
+        "q": "Diễn hành cấm những gì?",
+        "a": "Luật của Golden Harvest: không mang đồ bén nhọn, pháo, hay bất cứ thứ gì có thể làm người khác bị thương. Không ném đồ gì dọc route. Không nói năng hay làm gì không đàng hoàng. Float, xe, và trailer phải dài dưới 40 ft, rộng dưới 10 ft, cao dưới 13.5 ft, có bảo hiểm, và tài xế có bằng lái. Nhóm xe mô-tô cần ít nhất 10 chiếc. Nhóm nào không theo guideline có thể bị mời ra khỏi diễn hành."
       }
     ],
     "transit": {
       "headline": "Tới đó thế nào",
-      "intro": "Năm nay gia đình tự lái, carpool, hoặc đi transit. Little Saigon Krewe không thuê charter bus hay escort light-rail có staff.",
-      "pathTitle": "SacRT Blue Line — nếu gia đình đi chung (không phải escort của krewe)",
+      "intro": "Năm nay gia đình tự lái, carpool, hoặc đi transit. Little Saigon Krewe không thuê charter bus hay escort light-rail có staff. Ngày diễn hành đi bus và light rail SacRT miễn phí với flyer free ride của Golden Harvest (link bên dưới).",
+      "pathTitle": "SacRT Blue Line — miễn phí ngày diễn hành với flyer (không phải escort của krewe)",
       "stagingTitle": "Staging tại chỗ (2026)",
-      "parkingTitle": "Nếu mình lái xe (packet 2025)",
-      "parkingLead": "Nên carpool. Street parking nếu còn, hoặc mấy lot gần Capitol Mall (giá 2025 — coi lại trong packet 2026):",
+      "parkingTitle": "Nếu mình lái xe (packet 2026)",
+      "parkingLead": "Nên carpool. Packet 2026 của Golden Harvest có mấy garage và lot này. Đồng hồ street parking nhận tiền cắc, credit card, và trả qua app. Giá ghi là giá 2025 — coi giá niêm yết tại chỗ.",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
-        ["Nhóm walking (Tribe A–F)", "Trước Capitol trên 10th St"],
-        ["Hàng float / xe", "9th St — Tribe G"],
+        ["Check-in", "9:00–10:45 AM · bàn Golden Harvest trên 10th St ngay Capitol Mall, trước Capitol"],
+        ["Nhóm walking (Tribe A–F)", "Xếp hàng trên 10th St giữa L St và N St"],
+        ["Hàng float / xe", "9th St giữa N St và Capitol Mall — Tribe G"],
         ["Meet & greet / chụp hình nhóm", "Trong lúc staging, trước parade 11:00 AM"],
-        ["Route diễn hành", "Bắt đầu 9th & N St · hết 9th & Capitol Mall"],
+        ["Route diễn hành", "Từ 10th St quẹo qua N St, rồi 9th St · xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall"],
         ["Festival", "10:00 AM–4:30 PM · phía tây Capitol, 10th St giữa L St và N St"]
       ],
       "parking": [
-        ["Capitol Garage", "10th & L · 1303 10th St", "khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
-        ["City Hall Garage", "10th & I · 1000 I St", "khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
-        ["Y Parking Lot", "2nd & N · Crocker Art Museum", "khoảng $1.50/giờ, tối đa $6 · giới hạn 4 giờ"]
+        ["Capitol Garage", "10th & L · 1303 10th St", "2025: khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
+        ["City Hall Garage", "10th & I · 1000 I St", "2025: khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
+        ["Priority Parking", "Gần Crocker Art Museum"]
       ],
       "steps": [
+        "In ra hoặc chụp màn hình flyer free ride của Golden Harvest. Một flyer đủ cho cả nhóm đi chung — đưa tài xế bus coi lúc lên xe, hoặc đưa người soát vé trên light rail.",
         "Lấy bus local SacRT Elk Grove về Cosumnes River College (CRC) — đầu phía nam của Blue Line.",
         "Lên light rail Blue Line về Watt / I-80 (hướng downtown).",
-        "Xuống 8th & Capitol Station. Nhóm walking: đi bộ hai block về phía đông tới 10th St trước Capitol. Xe: một block về phía đông tới 9th St.",
+        "Xuống 8th & Capitol Station. Nhóm walking: đi bộ hai block về phía đông tới chỗ check-in trên 10th St trước Capitol. Xe: một block về phía đông tới 9th St.",
         "Về: lên Blue Line ở 8th & Capitol về Cosumnes River College (xem headsign), rồi bus Elk Grove về nhà."
       ],
       "notes": [
+        "Flyer free ride dùng được Thứ Bảy, October 24, 9:00 AM–6:30 PM trên bus và light rail SacRT. Đi sớm cho kịp check-in trước 10:45 AM.",
         "Saturday schedule khác weekday giờ cao điểm — bus commuter Elk Grove chỉ weekday (ví dụ E13) không giúp sáng diễn hành. Dùng tuyến EG local + Blue Line, và check giờ tuần trước.",
         "Light rail downtown đi one-way; trạm đi và trạm về có thể khác.",
         "Người ở Florin / South Sacramento thường khỏi cần chân bus Elk Grove — lên Blue Line gần nhà hơn."
@@ -354,7 +371,9 @@
         "SacRT trip planner",
         "Bus Elk Grove",
         "Light rail vào downtown (Blue Line / Elk Grove)",
-        "Packet parade GHP 2025 (waiver · free RT)"
+        "Flyer free ride SacRT của Golden Harvest",
+        "Map xếp hàng diễn hành 2026",
+        "Transportation & parking 2026 (PDF)"
       ]
     },
     "champions": {

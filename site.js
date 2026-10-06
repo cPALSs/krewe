@@ -1080,9 +1080,13 @@
           if (subject) href = mailto(subject, mailBody || "");
         }
         const btnClass = step.ctaClass || (step.ctaMailto ? "btn btn-primary" : "btn btn-ghost");
-        const extra = href.startsWith("mailto:")
+        let extra = href.startsWith("mailto:")
           ? ""
           : ' rel="noopener noreferrer"';
+        if (step.ctaDownload) {
+          const name = step.ctaDownload === true ? "" : String(step.ctaDownload);
+          extra += ` download="${escapeHtml(name)}"`;
+        }
         const cta =
           href && ctaLabel
             ? `<p class="timeline-cta"><a class="${escapeHtml(btnClass)}" href="${escapeHtml(href)}"${extra}>${escapeHtml(ctaLabel)}</a></p>`
