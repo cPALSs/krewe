@@ -280,7 +280,7 @@
         {
           "when": "Before parade day",
           "title": "Pick your sign carrier",
-          "body": "Golden Harvest provides every team a team name sign. Name one person to carry it at the front of your group, and return it to the registration desk after the parade. There’s no separate Golden Harvest waiver to file — the cPALSs Portal waiver is Golden Harvest’s 2026 Waiver and Release Form."
+          "body": "Golden Harvest provides every team a team name sign, so banners are optional — Golden Harvest doesn’t provide banners, but you’re welcome to bring your own. Name one person to carry the team sign at the front of your group and return it to the registration desk after the parade. There’s no separate Golden Harvest waiver to file — the cPALSs Portal waiver is Golden Harvest’s 2026 Waiver and Release Form."
         },
         {
           "when": "Early October",
@@ -314,7 +314,7 @@
       },
       {
         "q": "Do we have to perform?",
-        "a": "No — performing is optional. Many groups simply march with their banner. If you do want to perform, there are two different options: a short performance during the parade, or a longer main-stage slot at the festival afterward. See the next question."
+        "a": "No — performing is optional. Many groups simply march behind their Golden Harvest team sign. If you do want to perform, there are two different options: a short performance during the parade, or a longer main-stage slot at the festival afterward. See the next question."
       },
       {
         "q": "What’s the difference between a parade performance and a stage performance?",
@@ -326,11 +326,15 @@
       },
       {
         "q": "Is there a dress code?",
-        "a": "No required uniform, but Golden Harvest requires apparel suitable for all ages. The parade is televised, so dress in a way that shows your club or group identity (colors, shirts, banners, traditional wear if you like). Costume OK; traditional optional."
+        "a": "No required uniform, but Golden Harvest requires apparel suitable for all ages. The parade is televised, so dress in a way that shows your club or group identity (colors, shirts, a banner if you have one, traditional wear if you like). Costume OK; traditional optional."
       },
       {
         "q": "What’s not allowed in the parade?",
         "a": "Golden Harvest’s rules: no sharp equipment, fireworks, or anything that could hurt someone. Don’t throw anything along the route. No inappropriate language or behavior. Floats, vehicles, and trailers must be under 40 ft long, 10 ft wide, and 13.5 ft tall, be insured, and have licensed drivers. Motorcycle groups need at least 10 motorcycles. Groups that don’t follow the guidelines can be removed from the parade."
+      },
+      {
+        "q": "Do we need a banner?",
+        "a": "No — banners are optional. Golden Harvest gives every group a team name sign, and that sign leads your group on the route. Pick one person to carry it at the front of your group and return it to the registration desk after the parade. If your club already has a banner, you’re welcome to bring it too."
       }
     ],
     "transit": {
@@ -392,7 +396,7 @@
     "joiningIntro": "Interest first — we’ll switch the tag to confirmed when a group is locked.",
     "formationTitle": "Formation",
     "formationNote": "Not finalized",
-    "formationLead": "Front of the train first.",
+    "formationLead": "Front of the train first. Each group marches behind its Golden Harvest team sign; banners are optional.",
     "formationHost": "VACOS, NVCC, cPALSs walkers",
     "formationWalkers": "walkers",
     "tribes": {

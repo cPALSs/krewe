@@ -280,7 +280,7 @@
         {
           "when": "Trước ngày diễn hành",
           "title": "Cử người cầm bảng tên",
-          "body": "Golden Harvest phát cho mỗi team một bảng tên team. Cử một người cầm bảng đi đầu nhóm, và trả bảng lại bàn registration sau diễn hành. Không cần nộp waiver Golden Harvest riêng — waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest."
+          "body": "Golden Harvest phát cho mỗi team một bảng tên team, nên banner là tùy nhóm — Golden Harvest không phát banner, nhưng nhóm nào có banner riêng thì cứ mang theo. Cử một người cầm bảng tên đi đầu nhóm và trả bảng lại bàn registration sau diễn hành. Không cần nộp waiver Golden Harvest riêng — waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest."
         },
         {
           "when": "Early October",
@@ -314,7 +314,7 @@
       },
       {
         "q": "Nhóm mình có bắt buộc phải biểu diễn không?",
-        "a": "Không — biểu diễn là tùy nhóm. Nhiều nhóm chỉ đi diễn hành với banner thôi. Nếu muốn biểu diễn thì có hai cách khác nhau: diễn ngắn trong lúc diễn hành, hoặc diễn lâu hơn trên main stage của festival sau diễn hành. Coi câu kế tiếp."
+        "a": "Không — biểu diễn là tùy nhóm. Nhiều nhóm chỉ đi diễn hành sau bảng tên team của Golden Harvest thôi. Nếu muốn biểu diễn thì có hai cách khác nhau: diễn ngắn trong lúc diễn hành, hoặc diễn lâu hơn trên main stage của festival sau diễn hành. Coi câu kế tiếp."
       },
       {
         "q": "Biểu diễn lúc diễn hành khác biểu diễn trên stage thế nào?",
@@ -326,11 +326,15 @@
       },
       {
         "q": "Có dress code không?",
-        "a": "Không bắt buộc uniform, nhưng Golden Harvest yêu cầu đồ mặc phù hợp mọi lứa tuổi. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc."
+        "a": "Không bắt buộc uniform, nhưng Golden Harvest yêu cầu đồ mặc phù hợp mọi lứa tuổi. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner nếu có, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc."
       },
       {
         "q": "Diễn hành cấm những gì?",
         "a": "Luật của Golden Harvest: không mang đồ bén nhọn, pháo, hay bất cứ thứ gì có thể làm người khác bị thương. Không ném đồ gì dọc route. Không nói năng hay làm gì không đàng hoàng. Float, xe, và trailer phải dài dưới 40 ft, rộng dưới 10 ft, cao dưới 13.5 ft, có bảo hiểm, và tài xế có bằng lái. Nhóm xe mô-tô cần ít nhất 10 chiếc. Nhóm nào không theo guideline có thể bị mời ra khỏi diễn hành."
+      },
+      {
+        "q": "Nhóm mình có cần banner không?",
+        "a": "Không — banner là tùy nhóm. Golden Harvest phát cho mỗi nhóm một bảng tên team, và bảng đó dẫn đầu nhóm trên route. Cử một người cầm bảng đi đầu nhóm và trả bảng lại bàn registration sau diễn hành. Club nào đã có banner thì cứ mang theo."
       }
     ],
     "transit": {
@@ -392,7 +396,7 @@
     "joiningIntro": "Interest trước — mình đổi tag thành confirmed khi nhóm lock.",
     "formationTitle": "Đội hình",
     "formationNote": "Chưa chốt",
-    "formationLead": "Đầu train đi trước.",
+    "formationLead": "Đầu train đi trước. Mỗi nhóm đi sau bảng tên team của Golden Harvest; banner là tùy nhóm.",
     "formationHost": "Walkers VACOS, NVCC, cPALSs",
     "formationWalkers": "walkers",
     "tribes": {
