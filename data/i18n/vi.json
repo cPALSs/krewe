@@ -391,9 +391,10 @@
       "vehicleBlock": "khối xe",
       "tribeLabel": "Tribe {id}",
       "statusInterested": "interested",
-      "statusConfirmed": "confirmed"
+      "statusConfirmed": "confirmed",
+      "statusRegistered": "registered"
     },
-    "joiningIntro": "Interest trước — mình đổi tag thành confirmed khi nhóm lock.",
+    "joiningIntro": "Interest trước — mình đổi tag thành registered khi nhóm đã nộp đơn parade Golden Harvest.",
     "formationTitle": "Đội hình",
     "formationNote": "Chưa chốt",
     "formationLead": "Đầu train đi trước. Mỗi nhóm đi sau bảng tên team của Golden Harvest; banner là tùy nhóm.",

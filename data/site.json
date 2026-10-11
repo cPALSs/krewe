@@ -220,7 +220,7 @@
     "when": "Sat Oct 24 · during staging, before the 11:00 AM march · group photo"
   },
   "joining": {
-    "intro": "Interest first — we’ll switch the tag to confirmed when a group is locked.",
+    "intro": "Interest first — we’ll switch the tag to registered once a group’s Golden Harvest parade application is in.",
     "groups": [
       {
         "name": "Asian American Business Club (AABC)",
@@ -229,7 +229,7 @@
       },
       {
         "name": "Cosumnes Oaks High School VSA",
-        "status": "interested",
+        "status": "registered",
         "tribe": "A"
       },
       {
@@ -239,12 +239,12 @@
       },
       {
         "name": "Florin High School Asian Club",
-        "status": "interested",
+        "status": "registered",
         "tribe": "A"
       },
       {
         "name": "Florin High School VSA",
-        "status": "interested",
+        "status": "registered",
         "tribe": "A"
       },
       {
@@ -259,7 +259,7 @@
       },
       {
         "name": "Red Lotus Lion Dance (Sac State VSA)",
-        "status": "interested",
+        "status": "registered",
         "tribe": "B"
       },
       {
@@ -274,7 +274,7 @@
       },
       {
         "name": "Viet Serenity Sisters",
-        "status": "interested",
+        "status": "registered",
         "tribe": "C"
       }
     ]

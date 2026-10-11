@@ -1120,10 +1120,17 @@
     a.href = mailto(t("mailto.marchSubject"), t("mailto.marchBody"));
   }
 
+  const JOINER_STATUS_RANK = { registered: 0, confirmed: 1, interested: 2 };
+
   function joinerStatus(group) {
-    return String(group?.status || "interested").toLowerCase() === "confirmed"
-      ? "confirmed"
-      : "interested";
+    const status = String(group?.status || "interested").toLowerCase();
+    return status in JOINER_STATUS_RANK ? status : "interested";
+  }
+
+  function joinerStatusLabel(status) {
+    if (status === "registered") return t("gh.champions.statusRegistered");
+    if (status === "confirmed") return t("gh.champions.statusConfirmed");
+    return t("gh.champions.statusInterested");
   }
 
   function joinerName(group) {
@@ -1132,8 +1139,8 @@
 
   function sortJoiners(groups) {
     return [...groups].sort((a, b) => {
-      const ac = joinerStatus(a) === "confirmed" ? 0 : 1;
-      const bc = joinerStatus(b) === "confirmed" ? 0 : 1;
+      const ac = JOINER_STATUS_RANK[joinerStatus(a)];
+      const bc = JOINER_STATUS_RANK[joinerStatus(b)];
       if (ac !== bc) return ac - bc;
       return joinerName(a).localeCompare(joinerName(b), "en", {
         sensitivity: "base",
@@ -1160,9 +1167,7 @@
         return `<li>
               <span class="roster-org">${escapeHtml(joinerName(g))}</span>
               <span class="roster-tag is-${status}">${escapeHtml(
-          status === "confirmed"
-            ? t("gh.champions.statusConfirmed")
-            : t("gh.champions.statusInterested")
+          joinerStatusLabel(status)
         )}</span>
             </li>`;
       })

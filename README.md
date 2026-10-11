@@ -35,7 +35,7 @@ Push to `main` deploys via `.github/workflows/deploy-pages.yml`.
 
 | File | What to edit |
 |------|----------------|
-| `data/site.json` | Brand, **hero.slides**, **story** chapters, event, officer pitch, **portal**, timeline, tribes, **joining.groups** (`interested` / `confirmed`), **wishlist**, transit, mailto templates |
+| `data/site.json` | Brand, **hero.slides**, **story** chapters, event, officer pitch, **portal**, timeline, tribes, **joining.groups** (`interested` / `registered` once the GH parade application is filed / `confirmed`), **wishlist**, transit, mailto templates |
 | `data/history.json` | Host vs march entries, YouTube ids, public links |
 | `data/participants.json` | Champion seats (up to **3** filled rows per tribe) |
 | `assets/` | Compressed parade stills for the home carousel and story chapters |

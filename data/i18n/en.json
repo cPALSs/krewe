@@ -391,9 +391,10 @@
       "vehicleBlock": "vehicle block",
       "tribeLabel": "Tribe {id}",
       "statusInterested": "interested",
-      "statusConfirmed": "confirmed"
+      "statusConfirmed": "confirmed",
+      "statusRegistered": "registered"
     },
-    "joiningIntro": "Interest first — we’ll switch the tag to confirmed when a group is locked.",
+    "joiningIntro": "Interest first — we’ll switch the tag to registered once a group’s Golden Harvest parade application is in.",
     "formationTitle": "Formation",
     "formationNote": "Not finalized",
     "formationLead": "Front of the train first. Each group marches behind its Golden Harvest team sign; banners are optional.",

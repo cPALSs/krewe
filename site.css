@@ -1841,7 +1841,8 @@ body[data-page="home"] .hero-line {
   color: var(--ink-muted);
 }
 
-.roster-tag.is-confirmed {
+.roster-tag.is-confirmed,
+.roster-tag.is-registered {
   color: var(--gold);
 }
 
