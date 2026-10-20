@@ -223,18 +223,8 @@
     "intro": "Interest first — we’ll switch the tag to registered once a group’s Golden Harvest parade application is in.",
     "groups": [
       {
-        "name": "Asian American Business Club (AABC)",
-        "status": "interested",
-        "tribe": "D"
-      },
-      {
         "name": "Cosumnes Oaks High School VSA",
         "status": "registered",
-        "tribe": "A"
-      },
-      {
-        "name": "Elk Grove High School VSA",
-        "status": "interested",
         "tribe": "A"
       },
       {
@@ -248,23 +238,13 @@
         "tribe": "A"
       },
       {
-        "name": "Northern California Loving Hearts Dance Group",
-        "status": "interested",
-        "tribe": "C"
-      },
-      {
         "name": "Red Lotus Lion Dance (Sac State VSA)",
         "status": "registered",
         "tribe": "B"
       },
       {
-        "name": "Sheldon High School VSA",
-        "status": "interested",
-        "tribe": "A"
-      },
-      {
         "name": "UC Davis VSA",
-        "status": "interested",
+        "status": "registered",
         "tribe": "B"
       },
       {
