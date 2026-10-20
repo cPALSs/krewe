@@ -228,6 +228,11 @@
         "tribe": "A"
       },
       {
+        "name": "Defenna Foundation",
+        "status": "interested",
+        "tribe": "F"
+      },
+      {
         "name": "Florin High School Asian Club",
         "status": "registered",
         "tribe": "A"
@@ -238,9 +243,29 @@
         "tribe": "A"
       },
       {
+        "name": "Lac Hong Vietnamese School",
+        "status": "interested",
+        "tribe": "E"
+      },
+      {
+        "name": "Loving Hearts Dance Group (Vòng Tay Nhân Ái)",
+        "status": "interested",
+        "tribe": "C"
+      },
+      {
+        "name": "Miss & Miss Teen Vietnam Northern California (MV NORCAL)",
+        "status": "interested",
+        "tribe": "E"
+      },
+      {
         "name": "Red Lotus Lion Dance (Sac State VSA)",
         "status": "registered",
         "tribe": "B"
+      },
+      {
+        "name": "Sheldon High School VSA",
+        "status": "interested",
+        "tribe": "A"
       },
       {
         "name": "UC Davis VSA",
