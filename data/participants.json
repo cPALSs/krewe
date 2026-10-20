@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-10-20",
   "maxChampionsPerTribe": 3,
   "champions": [
     {
@@ -21,6 +21,13 @@
       "name": "Abran",
       "role": "Officer",
       "org": "Florin HS VSA",
+      "status": "filled"
+    },
+    {
+      "tribe": "B",
+      "name": "Tommy Phan",
+      "role": "Facilitator",
+      "org": "Red Lotus",
       "status": "filled"
     }
   ]
