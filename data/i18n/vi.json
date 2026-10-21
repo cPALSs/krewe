@@ -290,8 +290,9 @@
         {
           "when": "Sat Oct 24, 2026",
           "title": "Ngày diễn hành",
-          "body": "Check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, đi cùng người cầm bảng tên. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Giờ parade là 11:00 AM–12:30 PM. Chi tiết staging ở Transit bên dưới.",
+          "body": "Check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, đi cùng người cầm bảng tên. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Giờ parade là 11:00 AM–12:30 PM. Thời tiết dự kiến 9:00 AM–1:00 PM: nắng, khoảng 56°F lúc 9 AM rồi ấm lên khoảng 70°F lúc 1 PM (dự báo tính tới Oct 21). Chi tiết staging ở Transit bên dưới.",
           "itinerary": [
+            { "time": "9:00 AM–1:00 PM", "label": "Thời tiết dự kiến", "note": "Nắng · ~56°F lúc 9 AM tới ~70°F lúc 1 PM (tính tới Oct 21)" },
             { "time": "9:00–10:45 AM", "label": "Check-in + staging + Meet & greet", "note": "Bàn Golden Harvest trên 10th St ngay Capitol Mall. Nhóm walking xếp hàng trên 10th St giữa L St và N St; xe trên 9th St. Chụp hình nhóm trong cửa này." },
             { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall" },
             { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "Phía tây Capitol, 10th St giữa L St và N St" }
@@ -326,7 +327,7 @@
       },
       {
         "q": "Có dress code không?",
-        "a": "Không bắt buộc uniform, nhưng Golden Harvest yêu cầu đồ mặc phù hợp mọi lứa tuổi. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner nếu có, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc."
+        "a": "Không bắt buộc uniform, nhưng Golden Harvest yêu cầu đồ mặc phù hợp mọi lứa tuổi. Diễn hành có lên TV, nên mặc sao thấy club hoặc nhóm mình (màu, áo, banner nếu có, đồ truyền thống nếu muốn). Costume được; đồ truyền thống không bắt buộc. Buổi sáng hơi lạnh — mang theo áo khoác mỏng lúc check-in và staging. Không có locker để gửi áo khi bắt đầu march, nên nhờ ai đó giữ giúp."
       },
       {
         "q": "Diễn hành cấm những gì?",
@@ -396,7 +397,7 @@
       "statusConfirmed": "confirmed",
       "statusRegistered": "registered"
     },
-    "joiningIntro": "Interest trước — mình đổi tag thành registered khi nhóm đã nộp đơn parade Golden Harvest.",
+    "joiningIntro": "Danh sách nhóm registered cuối cho Golden Harvest 2026 — host form đã đóng.",
     "formationTitle": "Đội hình",
     "formationNote": "Chưa chốt",
     "formationLead": "Đầu train đi trước. Mỗi nhóm đi sau bảng tên team của Golden Harvest; banner là tùy nhóm.",

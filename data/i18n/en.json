@@ -290,8 +290,9 @@
         {
           "when": "Sat Oct 24, 2026",
           "title": "Parade day",
-          "body": "Check in at the Golden Harvest desk on 10th St in front of the Capitol between 9:00 and 10:45 AM with your sign carrier. Meet & greet is Little Saigon Krewe’s staging window — also the group-photo opportunity — facilitated by tribe champions. Parade hours are 11:00 AM–12:30 PM. Staging details in Transit below.",
+          "body": "Check in at the Golden Harvest desk on 10th St in front of the Capitol between 9:00 and 10:45 AM with your sign carrier. Meet & greet is Little Saigon Krewe’s staging window — also the group-photo opportunity — facilitated by tribe champions. Parade hours are 11:00 AM–12:30 PM. Expected weather for 9:00 AM–1:00 PM: sunny, about 56°F at 9 AM warming to around 70°F by 1 PM (forecast as of Oct 21). Staging details in Transit below.",
           "itinerary": [
+            { "time": "9:00 AM–1:00 PM", "label": "Expected weather", "note": "Sunny · ~56°F at 9 AM to ~70°F by 1 PM (as of Oct 21)" },
             { "time": "9:00–10:45 AM", "label": "Check-in + staging + Meet & greet", "note": "Golden Harvest desk on 10th St at Capitol Mall. Walking groups line up on 10th St between L St and N St; vehicles on 9th St. Group photo during this window." },
             { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall" },
             { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "West side of Capitol, 10th St between L St and N St" }
@@ -326,7 +327,7 @@
       },
       {
         "q": "Is there a dress code?",
-        "a": "No required uniform, but Golden Harvest requires apparel suitable for all ages. The parade is televised, so dress in a way that shows your club or group identity (colors, shirts, a banner if you have one, traditional wear if you like). Costume OK; traditional optional."
+        "a": "No required uniform, but Golden Harvest requires apparel suitable for all ages. The parade is televised, so dress in a way that shows your club or group identity (colors, shirts, a banner if you have one, traditional wear if you like). Costume OK; traditional optional. Mornings can be a bit chilly — bring a light jacket for check-in and staging. We don’t have lockers to store jackets once we start marching, so arrange for someone to look after them."
       },
       {
         "q": "What’s not allowed in the parade?",
@@ -396,7 +397,7 @@
       "statusConfirmed": "confirmed",
       "statusRegistered": "registered"
     },
-    "joiningIntro": "Interest first — we’ll switch the tag to registered once a group’s Golden Harvest parade application is in.",
+    "joiningIntro": "Final registered units for Golden Harvest 2026 — host forms are closed.",
     "formationTitle": "Formation",
     "formationNote": "Not finalized",
     "formationLead": "Front of the train first. Each group marches behind its Golden Harvest team sign; banners are optional.",
