@@ -342,21 +342,22 @@
       "intro": "This year families drive, carpool, or take transit on their own. Little Saigon Krewe is not running a chartered bus or a staffed light-rail escort. SacRT buses and light rail are free on parade day with Golden Harvest’s free-ride flyer (link below).",
       "pathTitle": "SacRT Blue Line — free on parade day with the flyer (not a krewe escort)",
       "stagingTitle": "Onsite staging (2026)",
-      "parkingTitle": "If you’re driving (2026 packet)",
-      "parkingLead": "Carpools are encouraged. Golden Harvest’s 2026 packet lists these garages and lots. Street meters take coins, credit cards, and mobile-app payments. Rates shown are from 2025 — check what’s posted.",
+      "parkingTitle": "If you’re driving",
+      "parkingLead": "Carpools are encouraged. Book Golden Harvest event parking near Capitol Mall on ParkWhiz — lots typically run $10–$15. Street meters take coins, credit cards, and mobile-app payments.",
+      "parkingLinkLabel": "Book event parking (ParkWhiz)",
+      "parkingRates": "Typical event rates: $10–$15 · prices vary by lot",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
         ["Check-in", "9:00–10:45 AM · Golden Harvest desk on 10th St at Capitol Mall, in front of the Capitol"],
-        ["Walking groups (Tribes A–F)", "Line up on 10th St between L St and N St"],
-        ["Float / vehicle line-up", "9th St between N St and Capitol Mall — Tribe G"],
+        ["Walking groups (Tribes A–E)", "Line up on 10th St between L St and N St"],
+        ["Float / vehicle line-up", "9th St between N St and Capitol Mall — Tribe F"],
         ["Meet & greet / group photo", "During staging, before the 11:00 AM march"],
         ["Parade route", "From 10th St onto N St, then 9th St · steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall"],
         ["Festival", "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St"]
       ],
       "parking": [
-        ["Capitol Garage", "10th & L · 1303 10th St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-        ["City Hall Garage", "10th & I · 1000 I St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-        ["Priority Parking", "Near the Crocker Art Museum"]
+        ["Capitol Garage", "1303 10th St", "$15", "https://www.parkwhiz.com/p/sacramento-parking/1125-10th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"],
+        ["400 Capitol Mall", "1312 5th St", "$10", "https://www.parkwhiz.com/p/sacramento-parking/1312-5th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"]
       ],
       "steps": [
         "Print or screenshot Golden Harvest’s free-ride flyer. One flyer covers a group traveling together — show it to the bus operator when you board, or to a fare inspector on light rail.",
@@ -372,6 +373,7 @@
         "Florin / South Sacramento riders can often skip the Elk Grove bus leg and board Blue Line closer to home."
       ],
       "links": [
+        "Golden Harvest event parking (ParkWhiz)",
         "SacRT trip planner",
         "Elk Grove bus service",
         "Light rail to downtown (Blue Line / Elk Grove)",
@@ -412,9 +414,9 @@
         "championProfile": "A campus club officer who already convenes peers"
       },
       "C": {
-        "name": "Performance",
-        "peers": "Lion, dance, and troupe warm-up · spacing · music cues",
-        "championProfile": "An active dancer or lion lead who needs coordination anyway"
+        "name": "Performance & heritage",
+        "peers": "Lion, dance, and troupe · language school, scouts, pageant, veterans, elders",
+        "championProfile": "An active dancer or lion lead, or someone already in the language / scout / pageant / elder orbit"
       },
       "D": {
         "name": "Business",
@@ -422,16 +424,11 @@
         "championProfile": "A merchant or chamber face who wants peers to meet each other"
       },
       "E": {
-        "name": "Family & heritage",
-        "peers": "Language school, scouts, pageant, veterans, elders",
-        "championProfile": "Someone already in the language / scout / pageant / elder orbit"
-      },
-      "F": {
         "name": "Service",
         "peers": "Mission-aligned nonprofits — awareness march grammar",
         "championProfile": "A peer nonprofit lead (when two or more service orgs show)"
       },
-      "G": {
+      "F": {
         "name": "Floats & vehicles",
         "peers": "Anyone bringing a float, trailer, car, or pickup — stages on the vehicle block, separate from the marching line-up.",
         "championProfile": "Someone bringing a vehicle entry, or comfortable running the vehicle line-up"

@@ -342,21 +342,22 @@
       "intro": "Năm nay gia đình tự lái, carpool, hoặc đi transit. Little Saigon Krewe không thuê charter bus hay escort light-rail có staff. Ngày diễn hành đi bus và light rail SacRT miễn phí với flyer free ride của Golden Harvest (link bên dưới).",
       "pathTitle": "SacRT Blue Line — miễn phí ngày diễn hành với flyer (không phải escort của krewe)",
       "stagingTitle": "Staging tại chỗ (2026)",
-      "parkingTitle": "Nếu mình lái xe (packet 2026)",
-      "parkingLead": "Nên carpool. Packet 2026 của Golden Harvest có mấy garage và lot này. Đồng hồ street parking nhận tiền cắc, credit card, và trả qua app. Giá ghi là giá 2025 — coi giá niêm yết tại chỗ.",
+      "parkingTitle": "Nếu mình lái xe",
+      "parkingLead": "Nên carpool. Book parking sự kiện Golden Harvest gần Capitol Mall trên ParkWhiz — lot thường khoảng $10–$15. Đồng hồ street parking nhận tiền cắc, credit card, và trả qua app.",
+      "parkingLinkLabel": "Book parking sự kiện (ParkWhiz)",
+      "parkingRates": "Giá sự kiện thường: $10–$15 · giá tùy lot",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",
       "staging": [
         ["Check-in", "9:00–10:45 AM · bàn Golden Harvest trên 10th St ngay Capitol Mall, trước Capitol"],
-        ["Nhóm walking (Tribe A–F)", "Xếp hàng trên 10th St giữa L St và N St"],
-        ["Hàng float / xe", "9th St giữa N St và Capitol Mall — Tribe G"],
+        ["Nhóm walking (Tribe A–E)", "Xếp hàng trên 10th St giữa L St và N St"],
+        ["Hàng float / xe", "9th St giữa N St và Capitol Mall — Tribe F"],
         ["Meet & greet / chụp hình nhóm", "Trong lúc staging, trước parade 11:00 AM"],
         ["Route diễn hành", "Từ 10th St quẹo qua N St, rồi 9th St · xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall"],
         ["Festival", "10:00 AM–4:30 PM · phía tây Capitol, 10th St giữa L St và N St"]
       ],
       "parking": [
-        ["Capitol Garage", "10th & L · 1303 10th St", "2025: khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
-        ["City Hall Garage", "10th & I · 1000 I St", "2025: khoảng $2 / nửa giờ, tối đa $7/ngày (6 AM–5 PM)"],
-        ["Priority Parking", "Gần Crocker Art Museum"]
+        ["Capitol Garage", "1303 10th St", "$15", "https://www.parkwhiz.com/p/sacramento-parking/1125-10th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"],
+        ["400 Capitol Mall", "1312 5th St", "$10", "https://www.parkwhiz.com/p/sacramento-parking/1312-5th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"]
       ],
       "steps": [
         "In ra hoặc chụp màn hình flyer free ride của Golden Harvest. Một flyer đủ cho cả nhóm đi chung — đưa tài xế bus coi lúc lên xe, hoặc đưa người soát vé trên light rail.",
@@ -372,6 +373,7 @@
         "Người ở Florin / South Sacramento thường khỏi cần chân bus Elk Grove — lên Blue Line gần nhà hơn."
       ],
       "links": [
+        "Parking sự kiện Golden Harvest (ParkWhiz)",
         "SacRT trip planner",
         "Bus Elk Grove",
         "Light rail vào downtown (Blue Line / Elk Grove)",
@@ -412,9 +414,9 @@
         "championProfile": "Officer club trên campus đã hay gọi peer lại"
       },
       "C": {
-        "name": "Performance",
-        "peers": "Warm-up lân, múa, và troupe · khoảng cách · music cue",
-        "championProfile": "Dancer hoặc lion lead đang hoạt động, anyway cũng phải coordinate"
+        "name": "Performance & heritage",
+        "peers": "Lân, múa, và troupe · trường Việt ngữ, scout, pageant, cựu chiến binh, người lớn tuổi",
+        "championProfile": "Dancer hoặc lion lead đang hoạt động, hoặc người đã ở vòng trường Việt / scout / pageant / người lớn tuổi"
       },
       "D": {
         "name": "Business",
@@ -422,16 +424,11 @@
         "championProfile": "Mặt merchant hoặc chamber muốn peer gặp nhau"
       },
       "E": {
-        "name": "Gia đình & heritage",
-        "peers": "Trường Việt ngữ, scout, pageant, cựu chiến binh, người lớn tuổi",
-        "championProfile": "Người đã ở vòng trường Việt / scout / pageant / người lớn tuổi"
-      },
-      "F": {
         "name": "Service",
         "peers": "Nonprofit cùng mission — ngữ pháp đi diễn hành awareness",
         "championProfile": "Lead nonprofit peer (khi có từ hai org service trở lên)"
       },
-      "G": {
+      "F": {
         "name": "Float & xe",
         "peers": "Ai mang float, trailer, car, hoặc pickup — stage ở khối xe, riêng với hàng march.",
         "championProfile": "Người mang entry xe, hoặc quen chạy hàng xe"

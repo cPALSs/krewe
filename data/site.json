@@ -180,9 +180,9 @@
     },
     {
       "id": "C",
-      "name": "Performance",
-      "peers": "Lion, dance, and troupe warm-up · spacing · music cues",
-      "championProfile": "An active dancer or lion lead who needs coordination anyway",
+      "name": "Performance & heritage",
+      "peers": "Lion, dance, and troupe · language school, scouts, pageant, veterans, elders",
+      "championProfile": "An active dancer or lion lead, or someone already in the language / scout / pageant / elder orbit",
       "block": "marching"
     },
     {
@@ -194,20 +194,13 @@
     },
     {
       "id": "E",
-      "name": "Family & heritage",
-      "peers": "Language school, scouts, pageant, veterans, elders",
-      "championProfile": "Someone already in the language / scout / pageant / elder orbit",
-      "block": "marching"
-    },
-    {
-      "id": "F",
       "name": "Service",
       "peers": "Mission-aligned nonprofits — awareness march grammar",
       "championProfile": "A peer nonprofit lead (when two or more service orgs show)",
       "block": "marching"
     },
     {
-      "id": "G",
+      "id": "F",
       "name": "Floats & vehicles",
       "peers": "Anyone bringing a float, trailer, car, or pickup — stages on the vehicle block, separate from the marching line-up.",
       "championProfile": "Someone bringing a vehicle entry, or comfortable running the vehicle line-up",
@@ -230,7 +223,7 @@
       {
         "name": "Defenna Foundation",
         "status": "interested",
-        "tribe": "F"
+        "tribe": "E"
       },
       {
         "name": "Florin High School Asian Club",
@@ -245,7 +238,7 @@
       {
         "name": "Lac Hong Vietnamese School",
         "status": "interested",
-        "tribe": "E"
+        "tribe": "C"
       },
       {
         "name": "Loving Hearts Dance Group (Vòng Tay Nhân Ái)",
@@ -255,7 +248,7 @@
       {
         "name": "Miss & Miss Teen Vietnam Northern California (MV NORCAL)",
         "status": "registered",
-        "tribe": "E"
+        "tribe": "C"
       },
       {
         "name": "Red Lotus Lion Dance (Sac State VSA)",
@@ -283,7 +276,7 @@
     "championSubject": "Tribe Champion — {tribe} — Golden Harvest 2026",
     "championBody": "Hi Krewe team,\n\nI'd like to champion Tribe {tribeId} · {tribeName} for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nWhy this tribe fits me:\n\nThanks!",
     "championGeneralSubject": "Tribe Champion — Golden Harvest 2026",
-    "championGeneralBody": "Hi Krewe team,\n\nI'd like to be a Tribe Champion for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nPreferred tribe (A–G), if you have one:\nWhy this fits me:\n\nThanks!",
+    "championGeneralBody": "Hi Krewe team,\n\nI'd like to be a Tribe Champion for Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nName:\nOrganization / role:\nBest contact:\nPreferred tribe (A–F), if you have one:\nWhy this fits me:\n\nThanks!",
     "interestSubject": "Golden Harvest interest — LSK 2026",
     "interestBody": "Hi Krewe team,\n\nOur group is interested in marching with Little Saigon Krewe at Golden Harvest (Oct 24, 2026).\n\nOrganization:\nContact name:\nBest email / phone:\nRough headcount:\n\nThanks!",
     "marchSubject": "Golden Harvest interest — LSK 2026",
@@ -347,18 +340,20 @@
     "stagingTitle": "Onsite staging (2026)",
     "staging": [
       ["Check-in", "9:00–10:45 AM · Golden Harvest desk on 10th St at Capitol Mall, in front of the Capitol"],
-      ["Walking groups (Tribes A–F)", "Line up on 10th St between L St and N St"],
-      ["Float / vehicle line-up", "9th St between N St and Capitol Mall — Tribe G"],
+      ["Walking groups (Tribes A–E)", "Line up on 10th St between L St and N St"],
+      ["Float / vehicle line-up", "9th St between N St and Capitol Mall — Tribe F"],
       ["Meet & greet / group photo", "During staging, before the 11:00 AM march"],
       ["Parade route", "From 10th St onto N St, then 9th St · steps off at 9th St & Capitol Mall · U-turn at 6th St · ends at 9th St & Capitol Mall"],
       ["Festival", "10:00 AM–4:30 PM · west side of Capitol, 10th St between L St and N St"]
     ],
-    "parkingTitle": "If you’re driving (2026 packet)",
-    "parkingLead": "Carpools are encouraged. Golden Harvest’s 2026 packet lists these garages and lots. Street meters take coins, credit cards, and mobile-app payments. Rates shown are from 2025 — check what’s posted.",
+    "parkingTitle": "If you’re driving",
+    "parkingLead": "Carpools are encouraged. Book Golden Harvest event parking near Capitol Mall on ParkWhiz — lots typically run $10–$15. Street meters take coins, credit cards, and mobile-app payments.",
+    "parkingUrl": "https://www.parkwhiz.com/sacramento-capitol-mall-parking/golden-harvest-festival-1777277/?seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964",
+    "parkingLinkLabel": "Book event parking (ParkWhiz)",
+    "parkingRates": "Typical event rates: $10–$15 · prices vary by lot",
     "parking": [
-      ["Capitol Garage", "10th & L · 1303 10th St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-      ["City Hall Garage", "10th & I · 1000 I St", "2025: ~$2 / half hour, $7 daily max (6 AM–5 PM)"],
-      ["Priority Parking", "Near the Crocker Art Museum"]
+      ["Capitol Garage", "1303 10th St", "$15", "https://www.parkwhiz.com/p/sacramento-parking/1125-10th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"],
+      ["400 Capitol Mall", "1312 5th St", "$10", "https://www.parkwhiz.com/p/sacramento-parking/1312-5th-st/?event_id=1777277&seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"]
     ],
     "steps": [
       "Print or screenshot Golden Harvest’s free-ride flyer. One flyer covers a group traveling together — show it to the bus operator when you board, or to a fare inspector on light rail.",
@@ -380,6 +375,10 @@
       "openUrl": "https://www.google.com/maps/dir/?api=1&origin=Cosumnes+River+College+Station,+Sacramento,+CA&destination=8th+%26+Capitol+Station,+Sacramento,+CA&travelmode=transit"
     },
     "links": [
+      {
+        "label": "Golden Harvest event parking (ParkWhiz)",
+        "url": "https://www.parkwhiz.com/sacramento-capitol-mall-parking/golden-harvest-festival-1777277/?seller_id=2402%2C2403%2C2345%2C2371%2C2372%2C2373%2C2374%2C2377%2C5964"
+      },
       {
         "label": "SacRT trip planner",
         "url": "https://www.sacrt.com/trip-planner/"

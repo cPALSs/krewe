@@ -1004,20 +1004,33 @@
     if (parkingRows && parkingRows.length) {
       parkingTitle.textContent = copy.parkingTitle || tr.parkingTitle || "";
       parkingTitle.hidden = false;
-      parkingLead.textContent = copy.parkingLead || tr.parkingLead || "";
-      parkingLead.hidden = !(copy.parkingLead || tr.parkingLead);
+      const lead = copy.parkingLead || tr.parkingLead || "";
+      const parkingUrl = tr.parkingUrl;
+      const parkingLinkLabel =
+        copy.parkingLinkLabel || tr.parkingLinkLabel || "";
+      if (lead && parkingUrl && parkingLinkLabel) {
+        parkingLead.innerHTML = `${escapeHtml(lead)} <a href="${escapeHtml(parkingUrl)}" rel="noopener noreferrer">${escapeHtml(parkingLinkLabel)}</a>`;
+        parkingLead.hidden = false;
+      } else {
+        parkingLead.textContent = lead;
+        parkingLead.hidden = !lead;
+      }
       parkingEl.hidden = false;
       parkingEl.innerHTML = parkingRows
         .map((row) => {
-          const [dt, place, rates] = row;
-          const dd = rates
-            ? `${escapeHtml(place)}<span class="parking-meta">${escapeHtml(rates)}</span>`
+          const [dt, place, rates, placeUrl] = row;
+          const placeHtml = placeUrl
+            ? `<a href="${escapeHtml(placeUrl)}" rel="noopener noreferrer">${escapeHtml(place)}</a>`
             : escapeHtml(place);
+          const dd = rates
+            ? `${placeHtml}<span class="parking-meta">${escapeHtml(rates)}</span>`
+            : placeHtml;
           return `<div><dt>${escapeHtml(dt)}</dt><dd>${dd}</dd></div>`;
         })
         .join("");
-      parkingRates.textContent = tr.parkingRates || "";
-      parkingRates.hidden = !tr.parkingRates;
+      const ratesNote = copy.parkingRates || tr.parkingRates || "";
+      parkingRates.textContent = ratesNote;
+      parkingRates.hidden = !ratesNote;
     } else {
       parkingTitle.hidden = true;
       parkingLead.hidden = true;
