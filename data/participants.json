@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "maxChampionsPerTribe": 3,
   "champions": [
     {
@@ -11,7 +11,7 @@
     },
     {
       "tribe": "A",
-      "name": "Henry",
+      "name": "Rita Vang",
       "role": "Officer",
       "org": "Florin HS VSA",
       "status": "filled"
