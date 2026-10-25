@@ -22,7 +22,7 @@
     "site": "Trang",
     "story": "Câu chuyện",
     "history": "Lịch sử",
-    "goldenHarvest": "Golden Harvest",
+    "goldenHarvest": "Diễn hành vừa rồi",
     "fund": "Gây quỹ",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu",
@@ -36,7 +36,7 @@
   },
   "home": {
     "heroLede": "Đoàn diễn hành Người Mỹ gốc Việt vùng Sacramento",
-    "ctaMarch": "Đi diễn hành mùa thu này",
+    "ctaMarch": "Ảnh diễn hành vừa rồi",
     "ctaHistory": "Lịch sử diễn hành",
     "ctaFund": "Gây quỹ cho Krewe",
     "carouselLabel": "Ảnh diễn hành",
@@ -49,55 +49,109 @@
     "kreweHeadline": "Krewe là gì?",
     "kreweBody": "Trong truyền thống Mardi Gras ở New Orleans, krewe là club đi diễn hành chung — cùng identity, costume, và mặt trên route. Mình mượn ý đó: các nhóm Người Mỹ gốc Việt ra đường như một đoàn train tại các civic diễn hành khắp Greater Sacramento.",
     "slides": [
-      "Banner trường Việt ngữ và sash hoa hậu trong diễn hành Elk Grove Lunar New Year",
-      "Các em cầm banner Vietnamese American Community of Sacramento trong diễn hành",
-      "Thí sinh hoa hậu vẫy từ chiếc classic car xanh nhạt trong diễn hành",
-      "Học sinh cầm banner vàng đi trên route diễn hành",
-      "Đội múa quạt đi trong diễn hành",
-      "Thanh niên Việt trên route diễn hành cầm bảng Hoa Sen Thức Tỉnh (Awakening of the Lotus)"
+      "Little Saigon Krewe đi Golden Harvest với banner VACOS và cờ heritage trên Capitol Mall",
+      "Nhóm diễn hành với banner Duc Huong và bà con Người Mỹ gốc Việt trên Capitol Mall",
+      "Đoàn krewe cầm banner nhà tài trợ Duc Huong Sandwiches trên Capitol Mall",
+      "Cờ heritage, banner Duc Huong, và banner trường Việt ngữ Lạc Hồng trong đoàn krewe"
     ],
     "chapters": [
       {
         "kicker": "Chỗ mình bắt đầu",
         "headline": "Diễn hành mình từng host",
-        "body": "Năm 2010, bà con đi diễn hành Tết trên Stockton Blvd vào weekend City công nhận Little Saigon. Hai năm sau cộng đồng host một weekend diễn hành Tết Little Saigon có brand — diễn hành của cộng đồng, không phải krewe. Elk Grove Lunar New Year 2026 thử lại tinh thần host đó. Nó cho thấy phần Người Việt đi diễn hành đã mỏng thế nào. Little Saigon Krewe là cách mình bắt đầu dựng lại một train.",
+        "body": "Năm 2010 bà con diễn hành Tết trên Stockton Blvd vào weekend công nhận Little Saigon. Hai năm sau có diễn hành Tết Little Saigon do cộng đồng host. Lunar New Year Tết 2026 thử host lại một lần nữa, nhưng cho thấy diễn hành của người Việt Mỹ đã mỏng.",
         "youtubeTitle": "Diễn hành Tết 2012 (LITTLE SAIGON TV)",
         "cta": "Lịch sử diễn hành"
       },
       {
         "kicker": "Chỗ mình đang tới",
         "headline": "Một diễn hành corps chạy chuyên nghiệp",
-        "body": "Tưởng tượng mình thắng giải. Được công nhận. Truyền cảm hứng cho từng thế hệ. Đó là krewe mình đang xây — không phải hàng chụp hình một lần, mà một corps ra đường lần này tới lần khác.",
-        "imageAlt": "Banner trường Việt ngữ và sash hoa hậu trong diễn hành Elk Grove Lunar New Year"
+        "body": "Little Saigon Krewe là nỗ lực làm diễn hành trở lại thật tuyệt. Tưởng tượng mình thắng giải. Được công nhận. Truyền cảm hứng cho từng thế hệ.",
+        "imageAlt": "Thí sinh hoa hậu vẫy tay trên xe cổ màu xanh nhạt trong diễn hành"
       },
       {
-        "kicker": "Làm sao ra được",
-        "headline": "Nghệ thuật, craft, và đứng với gốc rễ",
-        "body": "Chỉ xảy ra khi mình đổ hết tâm huyết vào arts và crafts, tới cùng nâng đỡ nhau, và đứng thẳng hai chân bám chắc gốc rễ.",
-        "imageAlt": "Đội múa quạt đi trong diễn hành"
-      },
-      {
-        "kicker": "Trạm đầu",
+        "kicker": "Diễn hành vừa rồi",
         "headline": "Golden Harvest — Saturday, October 24, 2026",
-        "body": "Little Saigon Krewe bắt đầu hành trình đó tại Golden Harvest Parade trên Capitol Mall. Các nhóm check-in 9:00–10:45 AM trên 10th St trước Capitol, cũng là chỗ nhóm walking xếp hàng; xe stage trên 9th. Parade 11:00 AM–12:30 PM. Officer nhóm: timeline, registration, và waiver nằm trên trang Golden Harvest.",
-        "imageAlt": "Thanh niên Việt trên route diễn hành cầm bảng Hoa Sen Thức Tỉnh (Awakening of the Lotus)",
-        "cta": "Chi tiết cho officer tại Golden Harvest"
+        "body": "Train đầu của Little Saigon Krewe đi Capitol Mall tại Golden Harvest — Duc Huong Sandwiches là presenting sponsor.",
+        "imageAlt": "Đoàn krewe cầm banner nhà tài trợ Duc Huong Sandwiches trên Capitol Mall",
+        "cta": "Kho media"
       }
     ]
   },
+  "gallery": {
+    "kicker": "Saturday, October 24, 2026",
+    "headline": "Golden Harvest Parade",
+    "presentedBy": "Presented by",
+    "officerCta": "Trang organizer",
+    "facts": {
+      "event": "Event",
+      "when": "When",
+      "where": "Where",
+      "theme": "Theme"
+    },
+    "event": {
+      "name": "Golden Harvest Parade & Music/Dance Festival",
+      "edition": "Năm thứ 5",
+      "dateDisplay": "Saturday, October 24, 2026",
+      "venue": "Capitol Mall, Sacramento",
+      "theme": "Unity, Harmony, and Peace"
+    },
+    "heroAlt": "Little Saigon Krewe diễn hành Golden Harvest với banner VACOS và cờ di sản trên Capitol Mall",
+    "sponsorName": "Duc Huong Sandwiches",
+    "listLabel": "Ảnh và video diễn hành",
+    "lightboxLabel": "Ảnh diễn hành",
+    "lightboxVideoLabel": "Video diễn hành",
+    "close": "Đóng",
+    "prevPhoto": "Ảnh trước",
+    "nextPhoto": "Ảnh sau",
+    "prevItem": "Mục trước",
+    "nextItem": "Mục sau",
+    "openPhoto": "Mở ảnh {n}",
+    "openVideo": "Mở video diễn hành",
+    "orgsTitle": "Nhóm đã diễn hành"
+  },
+  "mediaHub": {
+    "kicker": "Kho media",
+    "headline": "Media",
+    "lead": "Ảnh diễn hành từ các lần Little Saigon Krewe ra đường. Timeline và tape đầy đủ cũng nằm ở History.",
+    "gh2026Title": "Golden Harvest Parade",
+    "gh2026Blurb": "Train đầu của Little Saigon Krewe trên Capitol Mall",
+    "eglny2026Title": "Nét Mardi Gras ở park",
+    "eglny2026Blurb": "Elk Grove Lunar New Year Tết — host tại Elk Grove Park",
+    "historyLink": "Lịch sử diễn hành"
+  },
+  "galleryPages": {
+    "eglny2026": {
+      "kicker": "Saturday–Sunday, February 14–15, 2026",
+      "headline": "Nét Mardi Gras ở park",
+      "officerCta": "Trang festival",
+      "facts": {
+        "event": "Sự kiện",
+        "when": "Thời gian",
+        "where": "Địa điểm",
+        "theme": "Chủ đề"
+      },
+      "event": {
+        "name": "Elk Grove Lunar New Year Tết",
+        "dateDisplay": "Thứ Bảy–Chủ Nhật, 14–15 tháng 2, 2026",
+        "venue": "Elk Grove Park, Elk Grove",
+        "theme": "Tết gặp Mardi Gras"
+      },
+      "heroAlt": "Banner trường Việt ngữ và dải pageant trong diễn hành Elk Grove Lunar New Year",
+      "listLabel": "Ảnh diễn hành",
+      "lightboxLabel": "Ảnh diễn hành",
+      "close": "Đóng",
+      "prevPhoto": "Ảnh trước",
+      "nextPhoto": "Ảnh sau",
+      "prevItem": "Trước",
+      "nextItem": "Sau",
+      "openPhoto": "Mở ảnh {n}"
+    }
+  },
   "history": {
-    "kicker": "Khi mình host, và khi mình đi diễn hành",
+    "kicker": "Host, và đi diễn hành",
     "headline": "Lịch sử diễn hành",
-    "lead": "Cộng đồng tổ chức diễn hành Tết. Các đơn vị Người Mỹ gốc Việt cũng đi trong diễn hành của người khác — đoàn mà Little Saigon Krewe đang xây.",
+    "lead": "Cộng đồng tổ chức diễn hành Tết. Các đơn vị Người Mỹ gốc Việt cũng đi trong diễn hành của người khác — đoàn mà Little Saigon Krewe đang xây. Năm mới nhất trước.",
     "tocLabel": "Trong trang này",
-    "tocBuckets": "Host, và đi diễn hành",
-    "tocHost": "Host",
-    "tocMarch": "March",
-    "bucketsTitle": "Host, và đi diễn hành",
-    "hostTitle": "Host một diễn hành",
-    "hostLead": "Little Saigon rồi Elk Grove Lunar New Year trên lịch — cộng đồng đưa diễn hành Tết ra đường.",
-    "marchTitle": "Đi diễn hành theo đoàn",
-    "marchLead": "Các nhóm Người Việt trên route mình không host — một train trở lại, không chỉ host một weekend.",
     "photoGroup": "Ảnh diễn hành",
     "videoGroup": "Video diễn hành",
     "showPhotoN": "Xem ảnh {n} trên {total}",
@@ -106,16 +160,6 @@
     "nextPhoto": "Ảnh sau",
     "prevVideo": "Video trước",
     "nextVideo": "Video sau",
-    "buckets": {
-      "host": {
-        "label": "Host",
-        "blurb": "Little Saigon / Tết / Elk Grove Lunar New Year đưa diễn hành lên lịch — weekend công nhận, mấy năm brand trên corridor, rồi tới park."
-      },
-      "march": {
-        "label": "March",
-        "blurb": "Đơn vị đi trên civic route mình không host: Veterans Day, Golden Harvest, và thói quen scout ra đường mặc uniform."
-      }
-    },
     "entries": {
       "host-2010": {
         "kicker": "Host · Saturday, February 13, 2010",
@@ -171,7 +215,7 @@
         "headline": "Nét Mardi Gras ở park",
         "body": "Năm 2026 thêm nét Mardi Gras — đó là chỗ ý krewe đáp xuống. Enjoy Life quay diễn hành trong park, không phải Stockton Blvd.",
         "youtubeTitle": "Tết Elk Grove Park 2026 — Enjoy Life",
-        "links": ["eglny.com"]
+        "links": ["Kho media đầy đủ", "eglny.com"]
       },
       "march-2006-vets": {
         "kicker": "March · Sunday, November 12, 2006",
@@ -185,11 +229,29 @@
           "ARVN — Diễn hành Veterans Day tại Sacramento (Hisimu)"
         ]
       },
-      "march-ghp": {
-        "kicker": "March · Golden Harvest",
-        "headline": "cPALSs, NVCC, pageant — trên Capitol Mall",
-        "body": "Golden Harvest Parade & Festival ở Capitol Mall, chạy từ 2022. Người Việt đã đi rồi: cPALSs / NVCC và Mrs. Vietnam (2022–23), Mrs. Vietnam và Xang Xu Liu (2024), rồi hàng 2025 dày hơn (Viet Serenity Sisters, pageant, cPALSs, NVCC). Trạm đầu của Little Saigon Krewe là edition 2026 — đi như một train, không phải host.",
-        "linksLead": "Các nhóm diễn hành:",
+      "march-ghp-2026": {
+        "kicker": "March · Saturday, October 24, 2026",
+        "headline": "Train đầu của Little Saigon Krewe — Golden Harvest",
+        "body": "Các nhóm check-in trên 10th St và đi trên Capitol Mall như một krewe train — Duc Huong Sandwiches là presenting sponsor, trường Việt ngữ Lạc Hồng, VACOS, và các org bạn đi chung. Không phải host: một đơn vị trên route của người khác.",
+        "links": ["Kho media đầy đủ", "Trang organizer"],
+        "imageAlts": [
+          "Đoàn krewe với banner nhà tài trợ Duc Huong Sandwiches trên Capitol Mall",
+          "Chụp nhóm với banner nhà tài trợ Duc Huong Sandwiches",
+          "Cờ heritage, banner Duc Huong, và banner trường Việt ngữ Lạc Hồng trong đoàn krewe",
+          "Little Saigon Krewe tại Golden Harvest Parade trên Capitol Mall"
+        ],
+        "imageTitles": [
+          "Nhà tài trợ Duc Huong",
+          "Nhóm với banner tài trợ",
+          "Cờ và banner",
+          "Trên route"
+        ]
+      },
+      "march-ghp-2025": {
+        "kicker": "March · Golden Harvest · Saturday, November 1, 2025",
+        "headline": "Hàng Người Việt dày hơn trên Capitol Mall",
+        "body": "Edition Golden Harvest 2025 đã có Viet Serenity Sisters, pageant, cPALSs, và NVCC trên route — tiền lệ cho krewe train năm sau.",
+        "links": ["Các nhóm diễn hành 2025"],
         "imageAlts": [
           "Miss and Miss Teen Vietnam NorCal Sacramento Pageant đi Golden Harvest trong áo dài, Saturday, November 1, 2025",
           "Mrs. Vietnam Sacramento đi Golden Harvest trong áo dài, Saturday, November 1, 2025",
@@ -203,8 +265,21 @@
           "Teng Fei Lion Dance"
         ]
       },
+      "march-ghp-2024": {
+        "kicker": "March · Golden Harvest 2024",
+        "headline": "Mrs. Vietnam và Xang Xu Liu trên Capitol Mall",
+        "body": "Người Việt tiếp tục đi Golden Harvest — Mrs. Vietnam và Xang Xu Liu trong hàng 2024.",
+        "links": ["Các nhóm diễn hành 2024"]
+      },
+      "march-ghp-2022-23": {
+        "kicker": "March · Golden Harvest 2022–2023",
+        "headline": "cPALSs, NVCC, pageant — những năm đầu trên Capitol Mall",
+        "body": "Golden Harvest Parade & Festival chạy trên Capitol Mall từ 2022. Người Việt đã đi: cPALSs / NVCC và Mrs. Vietnam trong hai edition đầu.",
+        "linksLead": "Các nhóm diễn hành:",
+        "links": ["2022", "2023"]
+      },
       "march-scouts-vets": {
-        "kicker": "March · scout",
+        "kicker": "March · Veterans Day 2025",
         "headline": "Liên Đoàn Lạc Việt vào Veterans Day",
         "body": "Pack và Troop 243 đã biết đi như một đơn vị trên civic street: uniform, cờ Mỹ và cờ heritage, hàng thanh thiếu niên. Lần ra Veterans Day 2025 là ngữ pháp đó — tiền lệ cho một krewe train, không phải diễn hành Tết do cộng đồng host.",
         "imageAlt": "Liên Đoàn Lạc Việt Pack và Troop 243 mặc uniform với cờ Mỹ và cờ heritage ngày Veterans Day 2025",
@@ -216,6 +291,7 @@
     "title": "Golden Harvest Parade",
     "tocLabel": "Trong trang này",
     "tocFacts": "Thông tin event",
+    "tocWaivers": "Waiver",
     "tocTimeline": "Timeline",
     "tocFaq": "FAQ",
     "tocTransit": "Transit",
@@ -253,7 +329,8 @@
       "headline": "Waiver cho người đi",
       "body": "Ai đi diễn hành cũng cần waiver — người lớn consent cho mình; ba mẹ hoặc guardian consent cho minor. Officer sign in, register club, rồi share link join. Waiver này có luôn 2026 Waiver and Release Form của Golden Harvest, nên ký một lần là đủ cho cả hai — mình chuyển waiver đã ký cho Golden Harvest.",
       "button": "Mở cPALSs Portal",
-      "cutoff": "Waiver tới hạn Friday, October 23, 2026 — một ngày trước diễn hành. Không nhận giấy ngày diễn hành."
+      "waiverPacketButton": "Waiver chung Golden Harvest & LSK (PDF)",
+      "cutoff": "Waiver digital tới hạn Friday, October 23, 2026. Ai trễ thì in ra và mang tới sáng Thứ Bảy."
     },
     "timeline": {
       "headline": "Mình chuẩn bị thế nào",
@@ -268,8 +345,9 @@
         {
           "when": "Deadline Fri Oct 23, 2026",
           "title": "Waiver cho từng người đi",
-          "body": "Ai đi diễn hành cũng cần waiver trên portal.cpalss.com — người lớn consent cho mình; ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18. Officer register club rồi share link join. Waiver này có luôn 2026 Waiver and Release Form của Golden Harvest, nên mỗi người chỉ ký một lần và mình chuyển waiver cho Golden Harvest. Deadline Fri Oct 23, 2026.",
-          "ctaLabel": "Mở cPALSs Portal"
+          "body": "Ai đi diễn hành cũng cần waiver trên portal.cpalss.com — người lớn consent cho mình; ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18. Officer register club rồi share link join. Waiver này có luôn 2026 Waiver and Release Form của Golden Harvest, nên mỗi người chỉ ký một lần và mình chuyển waiver cho Golden Harvest. Digital deadline Fri Oct 23, 2026 — ai trễ thì in ra và mang tới sáng Thứ Bảy.",
+          "ctaLabel": "Mở cPALSs Portal",
+          "ctaSecondaryLabel": "Waiver chung Golden Harvest & LSK (PDF)"
         },
         {
           "when": "Deadline Tue Oct 20, 2026 (có người dẫn)",
@@ -290,9 +368,9 @@
         {
           "when": "Sat Oct 24, 2026",
           "title": "Ngày diễn hành",
-          "body": "Check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, đi cùng người cầm bảng tên. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Giờ parade là 11:00 AM–12:30 PM. Thời tiết dự kiến 9:00 AM–1:00 PM: nắng, khoảng 56°F lúc 9 AM rồi ấm lên khoảng 70°F lúc 1 PM (dự báo tính tới Oct 21). Chi tiết staging ở Transit bên dưới.",
+          "body": "Check-in ở bàn Golden Harvest trên 10th St trước Capitol trong khoảng 9:00–10:45 AM, đi cùng người cầm bảng tên. Meet & greet là cửa staging của Little Saigon Krewe — cũng là lúc chụp hình nhóm — do tribe champion convene. Giờ parade là 11:00 AM–12:30 PM. Thời tiết dự kiến 9:00 AM–1:00 PM: nắng trời trong, khoảng 54°F lúc 9 AM rồi ấm lên khoảng 64°F lúc 11 AM và ~70°F lúc 1 PM (dự báo tính tới Oct 23). Chi tiết staging ở Transit bên dưới.",
           "itinerary": [
-            { "time": "9:00 AM–1:00 PM", "label": "Thời tiết dự kiến", "note": "Nắng · ~56°F lúc 9 AM tới ~70°F lúc 1 PM (tính tới Oct 21)" },
+            { "time": "9:00 AM–1:00 PM", "label": "Thời tiết dự kiến", "note": "Nắng · ~54°F lúc 9 AM tới ~64°F lúc 11 AM / ~70°F lúc 1 PM (tính tới Oct 23)" },
             { "time": "9:00–10:45 AM", "label": "Check-in + staging + Meet & greet", "note": "Bàn Golden Harvest trên 10th St ngay Capitol Mall. Nhóm walking xếp hàng trên 10th St giữa L St và N St; xe trên 9th St. Chụp hình nhóm trong cửa này." },
             { "time": "11:00 AM–12:30 PM", "label": "Parade", "note": "Xuất phát ở 9th St & Capitol Mall · quay đầu ở 6th St · hết ở 9th St & Capitol Mall" },
             { "time": "10:00 AM–4:30 PM", "label": "Festival", "note": "Phía tây Capitol, 10th St giữa L St và N St" }
@@ -307,7 +385,7 @@
       },
       {
         "q": "Mình có phải nộp waiver Golden Harvest riêng không?",
-        "a": "Không. Waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest, nên mỗi người đi chỉ ký một lần — người lớn tự ký, ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18 — trước Thứ Sáu, October 23. Mình chuyển waiver đã ký cho Golden Harvest. Thứ duy nhất khác Golden Harvest cần từ mỗi team là người cầm bảng tên: một người cầm bảng tên team do Golden Harvest phát, đi đầu nhóm, rồi trả bảng lại bàn registration sau diễn hành."
+        "a": "Không. Waiver trên cPALSs Portal chính là 2026 Waiver and Release Form của Golden Harvest, nên mỗi người đi chỉ ký một lần — người lớn tự ký, ba mẹ hoặc guardian ký cho học sinh high school và các em dưới 18 — digital trước Thứ Sáu, October 23. Ai trễ thì in ra và mang tới sáng Thứ Bảy. Mình chuyển waiver đã ký cho Golden Harvest. Thứ duy nhất khác Golden Harvest cần từ mỗi team là người cầm bảng tên: một người cầm bảng tên team do Golden Harvest phát, đi đầu nhóm, rồi trả bảng lại bàn registration sau diễn hành."
       },
       {
         "q": "Có xe đưa đón không?",
@@ -344,7 +422,7 @@
       "pathTitle": "SacRT Blue Line — miễn phí ngày diễn hành với flyer (không phải escort của krewe)",
       "stagingTitle": "Staging tại chỗ (2026)",
       "parkingTitle": "Nếu mình lái xe",
-      "parkingLead": "Nên carpool. Book parking sự kiện Golden Harvest gần Capitol Mall trên ParkWhiz — lot thường khoảng $10–$15. Đồng hồ street parking nhận tiền cắc, credit card, và trả qua app.",
+      "parkingLead": "Nên carpool. Hai lựa chọn: street parking có đồng hồ (phải pop-in / nạp lại mỗi 2 giờ), hoặc parking sự kiện Golden Harvest giá cố định trên ParkWhiz — lot thường khoảng $10–$15. Đồng hồ street parking nhận tiền cắc, credit card, và trả qua app.",
       "parkingLinkLabel": "Book parking sự kiện (ParkWhiz)",
       "parkingRates": "Giá sự kiện thường: $10–$15 · giá tùy lot",
       "mapTitle": "Blue Line: Cosumnes River College → 8th & Capitol Station",

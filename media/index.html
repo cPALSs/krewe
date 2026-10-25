@@ -2,15 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=/history/" />
-  <link rel="canonical" href="https://krewe.cpalss.com/history/" />
-  <title>History — Little Saigon Krewe</title>
-  <script src="/clean-urls.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5C6ZWSH9JD"></script>
+  <script src="/analytics.js"></script>
   <script>
-    location.replace("/history/" + location.search + location.hash);
+    (function () {
+      try {
+        var saved = localStorage.getItem("lsk-lang");
+        if (saved === "vi" || saved === "en") {
+          document.documentElement.lang = saved;
+          return;
+        }
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language];
+        for (var i = 0; i < list.length; i++) {
+          if (String(list[i] || "").toLowerCase().indexOf("vi") === 0) {
+            document.documentElement.lang = "vi";
+            return;
+          }
+        }
+      } catch (e) {}
+    })();
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media — Little Saigon Krewe</title>
+  <meta name="description" content="Media archives from Little Saigon Krewe parade appearances." />
+  <link rel="canonical" href="https://krewe.cpalss.com/media/" />
+  <meta property="og:title" content="Media — Little Saigon Krewe" />
+  <meta property="og:description" content="Media archives from Little Saigon Krewe parade appearances." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://krewe.cpalss.com/media/" />
+  <meta property="og:image" content="https://krewe.cpalss.com/assets/og.jpg" />
+  <script src="/clean-urls.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/site.css" />
 </head>
-<body>
-  <p><a href="/history/">Parade history lives at /history/.</a></p>
+<body class="page-inner" data-page="media-hub">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="site-nav" id="site-nav" aria-label="Site" data-i18n-aria="nav.site">
+      <div class="site-nav-bar">
+        <a class="wordmark" href="/">Little Saigon Krewe</a>
+        <div class="site-nav-tools">
+          <div class="lang-switch">
+            <button type="button" class="lang-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-menu" data-i18n-aria="nav.language">
+              <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.75"/></svg>
+              <span class="sr-only" data-i18n="nav.language">Language</span>
+            </button>
+            <div class="lang-menu" id="lang-menu" hidden role="listbox">
+              <button type="button" role="option" data-set-lang="en">English</button>
+              <button type="button" role="option" data-set-lang="vi">Tiếng Việt</button>
+            </div>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.openMenu">Open menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="site-nav-backdrop" hidden aria-hidden="true"></div>
+      <div id="site-nav-drawer" class="site-nav-drawer" aria-hidden="true">
+        <div class="site-nav-links">
+          <a href="/" data-i18n="nav.story">Story</a>
+          <a href="/history/" data-i18n="nav.history">History</a>
+          <a href="/media/golden-harvest-2026/" data-i18n="nav.goldenHarvest">Last Parade</a>
+          <a href="/fund/" data-i18n="nav.fund">Fund</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-banner">
+      <p class="hero-kicker" data-i18n="mediaHub.kicker">Media archives</p>
+      <h1 data-i18n="mediaHub.headline">Media</h1>
+      <p class="section-lead" data-i18n="mediaHub.lead">Parade photos from Little Saigon Krewe appearances. Full timeline and tape also live on History.</p>
+    </header>
+
+    <section class="section">
+      <div class="section-inner">
+        <ul class="media-hub-list">
+          <li>
+            <a class="media-hub-card" href="/media/golden-harvest-2026/">
+              <span class="media-hub-card-thumb" style="background-image: url('/assets/golden-harvest-2026/2026-golden_harvest-001-thumb.jpg')" aria-hidden="true"></span>
+              <span class="media-hub-card-copy">
+                <span class="story-kicker">Saturday, October 24, 2026</span>
+                <strong data-i18n="mediaHub.gh2026Title">Golden Harvest Parade</strong>
+                <span data-i18n="mediaHub.gh2026Blurb">Little Saigon Krewe’s first train on Capitol Mall</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="media-hub-card" href="/media/eglny-2026/">
+              <span class="media-hub-card-thumb" style="background-image: url('/assets/eglny-2026/2026-eglny-03-car-thumb.jpg')" aria-hidden="true"></span>
+              <span class="media-hub-card-copy">
+                <span class="story-kicker">Saturday–Sunday, February 14–15, 2026</span>
+                <strong data-i18n="mediaHub.eglny2026Title">Mardi Gras twist at the park</strong>
+                <span data-i18n="mediaHub.eglny2026Blurb">Elk Grove Lunar New Year Tết — hosted at Elk Grove Park</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="media-hub-history">
+          <a href="/history/" data-i18n="mediaHub.historyLink">Parade history</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Little Saigon Krewe</strong> — <span data-i18n="footer.incubated">incubated by</span> <a href="https://vacos.org/" rel="noopener noreferrer">VACOS</a>, <a href="https://www.facebook.com/norcalvietnamesechamber/" rel="noopener noreferrer">NVCC</a>, <span data-i18n="footer.and">and</span> <a href="https://www.cpalss.com" rel="noopener noreferrer">cPALSs</a></p>
+    <p><a href="mailto:krewe@cpalss.com">krewe@cpalss.com</a></p>
+  </footer>
+
+  <script src="/site.js" defer></script>
 </body>
 </html>

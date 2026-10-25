@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "poster": "/assets/golden-harvest-2026/hero-poster.jpg",
+    "alt": "Little Saigon Krewe marching Golden Harvest with the VACOS banner and heritage flags on Capitol Mall"
+  },
+  "kicker": "Saturday, October 24, 2026",
+  "headline": "Golden Harvest Parade",
+  "event": {
+    "name": "Golden Harvest Parade & Music/Dance Festival",
+    "edition": "5th Annual",
+    "dateDisplay": "Saturday, October 24, 2026",
+    "venue": "Capitol Mall, Sacramento",
+    "theme": "Unity, Harmony, and Peace"
+  },
+  "presentingSponsor": {
+    "name": "Duc Huong Sandwiches",
+    "logo": "/assets/golden-harvest-2026/duc-huong-logo.png"
+  },
+  "officerHref": "/golden-harvest/",
+  "officerCta": "Organizer page",
+  "orgs": [
+    { "name": "cPALSs" },
+    { "name": "Cosumnes Oaks High School VSA" },
+    {
+      "name": "Florin High School Asian Club",
+      "nameVi": "Câu lạc bộ Á Châu Trường Florin"
+    },
+    { "name": "Florin High School VSA" },
+    {
+      "name": "Lạc Hồng Vietnamese School",
+      "nameVi": "Trung Tâm Việt Ngữ Lạc Hồng"
+    },
+    {
+      "name": "Loving Hearts Dance Group (Vòng Tay Nhân Ái)",
+      "nameVi": "Nhóm múa Vòng Tay Nhân Ái"
+    },
+    {
+      "name": "Miss & Miss Teen Vietnam Northern California (MV NORCAL)",
+      "nameVi": "Hoa Hậu & Hoa Hậu Teen Việt Nam Bắc California (MV NORCAL)"
+    },
+    {
+      "name": "Mrs. Vietnam NorCal Sacramento Pageant",
+      "nameVi": "Hoa Hậu Phu Nhân Việt Nam Bắc Cali tại Sacramento"
+    },
+    { "name": "Northern California Vietnamese Chamber of Commerce (NVCC)" },
+    { "name": "Red Lotus Lion Dance (Sac State VSA)" },
+    { "name": "UC Davis VSA" },
+    { "name": "Viet Serenity Sisters" },
+    { "name": "Vietnamese American Community of Sacramento (VACOS)" }
+  ],
+  "photos": [
+    {
+      "type": "video",
+      "src": "/assets/golden-harvest-2026/hero.mp4",
+      "poster": "/assets/golden-harvest-2026/hero-poster.jpg",
+      "thumb": "/assets/golden-harvest-2026/hero-poster.jpg",
+      "alt": "Little Saigon Krewe marching Golden Harvest with the VACOS banner and heritage flags on Capitol Mall"
+    },
+    {
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-001.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-001-thumb.jpg",
+      "alt": "Krewe marchers carrying the Duc Huong Sandwiches proud sponsor banner on Capitol Mall, with Lạc Hồng language school banner and áo dài behind them"
+    },
+    {
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-003.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-003-thumb.jpg",
+      "alt": "Group photo with the Duc Huong Sandwiches proud sponsor banner on Capitol Mall"
+    },
+    {
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-007.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-007-thumb.jpg",
+      "alt": "Heritage flag, Duc Huong sponsor banner, and Lạc Hồng language school banner in the krewe train"
+    },
+    {
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-008.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-008-thumb.jpg",
+      "alt": "Little Saigon Krewe at Golden Harvest Parade on Capitol Mall"
+    }
+  ]
+}

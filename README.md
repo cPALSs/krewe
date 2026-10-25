@@ -3,18 +3,20 @@
 Live: [https://krewe.cpalss.com](https://krewe.cpalss.com)  
 Repo: [cPALSs/krewe](https://github.com/cPALSs/krewe)
 
-Static GitHub Pages site. Four surfaces:
+Static GitHub Pages site. Surfaces:
 
 | Path | Audience |
 |------|----------|
-| [`/`](https://krewe.cpalss.com/) | Story — what LSK is, recent photo carousel, journey |
-| [`/history/`](https://krewe.cpalss.com/history/) | Parade history — **host** a Tết parade vs **march** as a unit |
+| [`/`](https://krewe.cpalss.com/) | Story — what LSK is, recent photo/video carousel, journey |
+| [`/history/`](https://krewe.cpalss.com/history/) | Parade history — year TOC (newest first), host + march events |
+| [`/media/`](https://krewe.cpalss.com/media/) | Media archive hub |
+| [`/media/golden-harvest-2026/`](https://krewe.cpalss.com/media/golden-harvest-2026/) | Golden Harvest 2026 media archive (lightbox) |
 | [`/golden-harvest/`](https://krewe.cpalss.com/golden-harvest/) | Group officers — timeline, FAQ, transit, [portal.cpalss.com](https://portal.cpalss.com) participant waivers |
 | [`/fund/`](https://krewe.cpalss.com/fund/) | Sponsors — Fund the Krewe gifts |
 
-`/media/` redirects to `/history/`. `#history` and `#media` on the homepage do too.
+Homepage `#media` → `/media/`; `#history` → `/history/`.
 
-First campaign: **Golden Harvest Parade**, Sat Oct 24, 2026.
+Last parade campaign: **Golden Harvest Parade**, Sat Oct 24, 2026.
 
 ## Edit / preview / publish
 
@@ -35,10 +37,11 @@ Push to `main` deploys via `.github/workflows/deploy-pages.yml`.
 
 | File | What to edit |
 |------|----------------|
-| `data/site.json` | Brand, **hero.slides**, **story** chapters, event, officer pitch, **portal**, timeline, tribes, **joining.groups** (`interested` / `registered` once the GH parade application is filed / `confirmed`), **wishlist**, transit, mailto templates |
-| `data/history.json` | Host vs march entries, YouTube ids, public links |
+| `data/site.json` | Brand, **hero.slides** (optional `type: "video"`), **story** chapters, event, officer pitch, **portal**, timeline, tribes, **joining.groups**, **wishlist**, transit, mailto templates |
+| `data/history.json` | `years[]` → entries (YouTube / up to 4 stills / links) |
+| `data/media/golden-harvest-2026.json` | Media archive list (`src`, `thumb`, `alt`) |
 | `data/participants.json` | Champion seats (up to **3** filled rows per tribe) |
-| `assets/` | Compressed parade stills for the home carousel and story chapters |
+| `assets/` · `assets/golden-harvest-2026/` | Home carousel, history stills, GH 2026 gallery |
 
 **Fund the Krewe (`wishlist`):** gift cards with `amount`, `slots`, optional `slotsFilled`. Set `status` to `open` · `pledged` · `fulfilled`. Keep in sync with the GH sponsorship packet seed.  
 **Waivers:** public door is `portalUrl` (`https://portal.cpalss.com`). Do not hardcode per-club `/j/{token}` join links.  
@@ -57,7 +60,7 @@ Visitor pages must not link monorepo paths or private vault docs.
 | **High school** | **First name only** (+ optional `role`). No last names. |
 | **College** / adults | Full name OK (+ optional `role`). |
 
-Org/club name is fine either way. Full HS names stay on internal sheets only (vault: Little Saigon Krewe → Working with local VSAs → Public student names).
+Org/club name is fine either way. Full HS names stay on internal sheets only (vault: Little Saigon Krewe → Working with local VSAs → Public student names). Agent skill: [`.cursor/skills/public-student-names`](../../../.cursor/skills/public-student-names/SKILL.md).
 
 ## DNS
 

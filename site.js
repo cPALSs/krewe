@@ -4,7 +4,7 @@
     wishlist: "/fund/",
     "golden-harvest": "/golden-harvest/",
     history: "/history/",
-    media: "/history/",
+    media: "/media/",
     faq: "/golden-harvest/#faq",
     timeline: "/golden-harvest/#timeline",
     waivers: "/golden-harvest/#timeline",
@@ -17,6 +17,23 @@
 
   function pageName() {
     return document.body?.dataset.page || "";
+  }
+
+  function galleryMediaJsonPath() {
+    const attr = document.body?.dataset.media;
+    if (attr) {
+      return attr.startsWith("/") ? attr : `/${attr}`;
+    }
+    const path = location.pathname.replace(/\/+$/, "");
+    const match = path.match(/\/media\/([^/]+)$/);
+    if (match) return `/data/media/${match[1]}.json`;
+    return "/data/media/golden-harvest-2026.json";
+  }
+
+  function galleryI18nCopy() {
+    const key = document.body?.dataset.galleryI18n || "";
+    if (key) return t(`galleryPages.${key}`) || {};
+    return t("gallery") || {};
   }
 
   function redirectLegacyHashes() {
@@ -54,6 +71,7 @@
   let I18N_EN = {};
   let siteCache = null;
   let historyCache = null;
+  let galleryCache = null;
   let participantsCache = null;
 
   function getPath(obj, path) {
@@ -351,7 +369,7 @@
   }
 
   function renderHistoryPhoto(entry) {
-    const items = historyPhotoItems(entry);
+    const items = historyPhotoItems(entry).slice(0, 4);
     if (!items.length) return "";
     if (items.length === 1) {
       return `<figure class="history-photo" style="background-image: url('${escapeHtml(items[0].src)}')"><img src="${escapeHtml(items[0].src)}" alt="${escapeHtml(items[0].alt || "")}" loading="lazy" /></figure>`;
@@ -578,37 +596,428 @@
       note.hidden = !history.note;
     }
 
-    const bucketsEl = document.getElementById("history-buckets");
-    if (bucketsEl && history.buckets?.length) {
-      bucketsEl.innerHTML = history.buckets
-        .map((b) => {
-          const copy = t(`history.buckets.${b.id}`) || {};
-          const label = copy.label || b.label;
-          const blurb = copy.blurb || b.blurb;
-          return `
-        <article class="history-bucket">
-          <p class="story-kicker">${escapeHtml(label)}</p>
-          <p>${escapeHtml(blurb)}</p>
-        </article>`;
-        })
-        .join("");
+    const years = history.years || [];
+    const toc = document.getElementById("history-toc");
+    const yearsEl = document.getElementById("history-years");
+    if (!yearsEl) return;
+
+    if (toc) {
+      const labelText = t("history.tocLabel") || "On this page";
+      toc.innerHTML = `<p class="toc-label" data-i18n="history.tocLabel">${escapeHtml(labelText)}</p>`;
+      years.forEach((year) => {
+        const a = document.createElement("a");
+        a.className = "toc-link";
+        a.href = `#${year.id}`;
+        a.setAttribute("data-toc-target", year.id);
+        a.textContent = year.title || year.id;
+        toc.appendChild(a);
+      });
     }
 
-    const hostEl = document.getElementById("history-host");
-    const marchEl = document.getElementById("history-march");
-    const entries = (history.entries || []).map(localizeHistoryEntry);
-    if (hostEl) {
-      hostEl.innerHTML = entries
-        .filter((e) => e.bucket === "host")
-        .map(renderHistoryEntry)
-        .join("");
+    yearsEl.innerHTML = years
+      .map((year) => {
+        const entries = (year.entries || []).map(localizeHistoryEntry);
+        return `
+      <section class="section" id="${escapeHtml(year.id)}" data-doc-section aria-labelledby="year-${escapeHtml(year.id)}-title">
+        <div class="section-inner">
+          <h2 id="year-${escapeHtml(year.id)}-title">${escapeHtml(year.title || year.id)}</h2>
+          <div class="history-list">
+            ${entries.map(renderHistoryEntry).join("")}
+          </div>
+        </div>
+      </section>`;
+      })
+      .join("");
+  }
+
+  function isGalleryVideo(item) {
+    return Boolean(item && (item.type === "video" || /\.mp4(\?|$)/i.test(String(item.src || ""))));
+  }
+
+  function galleryItemLabel(item, index) {
+    if (item?.alt) return item.alt;
+    if (isGalleryVideo(item)) {
+      return t("gallery.openVideo") || "Open parade video";
     }
-    if (marchEl) {
-      marchEl.innerHTML = entries
-        .filter((e) => e.bucket === "march")
-        .map(renderHistoryEntry)
-        .join("");
+    return t("gallery.openPhoto", { n: index + 1 }) || `Photo ${index + 1}`;
+  }
+
+  function galleryOrgDisplayName(org) {
+    if (!org) return "";
+    if (lang === "vi" && org.nameVi) return String(org.nameVi).trim();
+    return String(org.name || org.nameEn || "").trim();
+  }
+
+  function renderGallery(gallery) {
+    const kicker = document.getElementById("gallery-kicker");
+    const headline = document.getElementById("gallery-headline");
+    const officer = document.getElementById("gallery-officer");
+    const grid = document.getElementById("photo-gallery");
+    const copy = galleryI18nCopy();
+    const galleryI18nKey = document.body?.dataset.galleryI18n || "";
+    const heroImg = document.getElementById("gallery-hero-img");
+    const hero = gallery.hero || {};
+    if (heroImg) {
+      if (hero.poster) heroImg.src = hero.poster;
+      heroImg.alt = copy.heroAlt || hero.alt || heroImg.alt || "";
     }
+    const e = gallery.event || (galleryI18nKey ? {} : siteCache?.event || {});
+    const ev = copy.event || (galleryI18nKey ? {} : t("gh.event") || {});
+    const dateDisplay = ev.dateDisplay || e.dateDisplay || copy.kicker || gallery.kicker || "";
+    if (kicker) kicker.textContent = dateDisplay;
+    if (headline) headline.textContent = copy.headline || gallery.headline || "";
+    const factsEl = document.getElementById("gallery-event-facts");
+    if (factsEl && (e.name || ev.name)) {
+      const labels = copy.facts || t("gh.facts") || {};
+      const rows = [
+        [labels.event || "Event", `${ev.edition || e.edition || ""} ${ev.name || e.name || ""}`.trim()],
+        [labels.when || "When", dateDisplay],
+        [labels.where || "Where", ev.venue || e.venue || ""],
+        [labels.theme || "Theme", ev.theme || e.theme || ""],
+      ].filter(([, dd]) => String(dd || "").trim());
+      factsEl.innerHTML = rows
+        .map(([dt, dd]) => `<div><dt>${escapeHtml(dt)}</dt><dd>${escapeHtml(dd)}</dd></div>`)
+        .join("");
+    } else if (factsEl) {
+      factsEl.innerHTML = "";
+    }
+    const sponsor = gallery.presentingSponsor || {};
+    const presentedWrap = document.getElementById("gallery-presented-by");
+    const presentedLabel = document.getElementById("gallery-presented-label");
+    const sponsorLogo = document.getElementById("gallery-sponsor-logo");
+    const sponsorName = document.getElementById("gallery-sponsor-name");
+    const sponsorDisplayName = copy.sponsorName || sponsor.name || "";
+    if (presentedWrap && sponsorDisplayName) {
+      if (presentedLabel) {
+        presentedLabel.textContent = copy.presentedBy || "Presented by";
+      }
+      if (sponsorName) sponsorName.textContent = sponsorDisplayName;
+      if (sponsorLogo && sponsor.logo) {
+        sponsorLogo.src = sponsor.logo;
+        sponsorLogo.alt = sponsorDisplayName;
+      }
+      presentedWrap.hidden = false;
+    } else if (presentedWrap) {
+      presentedWrap.hidden = true;
+    }
+    const officerWrap = officer?.closest(".gallery-officer-link");
+    if (officer) {
+      const href = gallery.officerHref || (galleryI18nKey ? "" : "/golden-harvest/");
+      if (href) {
+        officer.href = href;
+        officer.textContent =
+          copy.officerCta || gallery.officerCta || t("gallery.officerCta") || "Organizer page";
+        if (officerWrap) officerWrap.hidden = false;
+      } else if (officerWrap) {
+        officerWrap.hidden = true;
+      }
+    }
+    const orgsWrap = document.getElementById("gallery-orgs-wrap");
+    const orgsTitle = document.getElementById("gallery-orgs-title");
+    const orgsList = document.getElementById("gallery-orgs");
+    const orgs = (gallery.orgs || [])
+      .map(galleryOrgDisplayName)
+      .filter(Boolean);
+    if (orgsWrap && orgsTitle && orgsList) {
+      if (orgs.length) {
+        orgsTitle.textContent = copy.orgsTitle || "Who marched";
+        orgsList.innerHTML = orgs
+          .map((name) => `<li>${escapeHtml(name)}</li>`)
+          .join("");
+        orgsWrap.hidden = false;
+      } else {
+        orgsList.innerHTML = "";
+        orgsWrap.hidden = true;
+      }
+    }
+    if (!grid) return;
+    const items = gallery.photos || [];
+    grid.setAttribute("aria-label", copy.listLabel || "Parade photos and video");
+    grid.innerHTML = items
+      .map((item, index) => {
+        const video = isGalleryVideo(item);
+        const thumb = escapeHtml(item.thumb || item.poster || item.src);
+        const videoClass = video ? " photo-gallery-item--video" : "";
+        const play = video
+          ? `<span class="photo-gallery-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>`
+          : "";
+        return `
+      <button type="button" class="photo-gallery-item${videoClass}" role="listitem" data-gallery-index="${index}" aria-label="${escapeHtml(galleryItemLabel(item, index))}">
+        <img src="${thumb}" alt="" loading="lazy" />
+        ${play}
+      </button>`;
+      })
+      .join("");
+    initPhotoGalleryLightbox(items, grid);
+  }
+
+  function pauseGalleryLightboxVideo(dialog) {
+    const video = dialog?.querySelector(".photo-lightbox-video");
+    if (!video) return;
+    video.pause();
+    video.removeAttribute("src");
+    video.removeAttribute("poster");
+    video.load();
+    video.hidden = true;
+  }
+
+  function ensurePhotoLightbox() {
+    let dialog = document.getElementById("photo-gallery-lightbox");
+    if (dialog) return dialog;
+    dialog = document.createElement("dialog");
+    dialog.id = "photo-gallery-lightbox";
+    dialog.className = "photo-lightbox";
+    dialog.setAttribute("aria-label", t("gallery.lightboxLabel") || "Parade media");
+    dialog.innerHTML = `
+      <button type="button" class="photo-lightbox-close" aria-label="${escapeHtml(t("gallery.close") || "Close")}">&times;</button>
+      <button type="button" class="photo-lightbox-nav photo-lightbox-prev" aria-label="${escapeHtml(t("gallery.prevItem") || t("gallery.prevPhoto") || "Previous")}">${historyCarouselChevron("prev")}</button>
+      <div class="photo-lightbox-stage">
+        <img class="photo-lightbox-image" alt="" hidden />
+        <video class="photo-lightbox-video" controls playsinline preload="metadata" hidden></video>
+      </div>
+      <button type="button" class="photo-lightbox-nav photo-lightbox-next" aria-label="${escapeHtml(t("gallery.nextItem") || t("gallery.nextPhoto") || "Next")}">${historyCarouselChevron("next")}</button>
+      <p class="photo-lightbox-count" data-lightbox-count hidden></p>`;
+    document.body.appendChild(dialog);
+    return dialog;
+  }
+
+  function initPhotoGalleryLightbox(items, root) {
+    if (!items.length || !root) return;
+    const dialog = ensurePhotoLightbox();
+    dialog.__galleryItems = items;
+    const img = dialog.querySelector(".photo-lightbox-image");
+    const video = dialog.querySelector(".photo-lightbox-video");
+    const countEl = dialog.querySelector("[data-lightbox-count]");
+    const prevBtn = dialog.querySelector(".photo-lightbox-prev");
+    const nextBtn = dialog.querySelector(".photo-lightbox-next");
+
+    if (!dialog.__galleryShow) {
+      dialog.__galleryIndex = 0;
+      dialog.__galleryShow = function show(i) {
+        const photos = dialog.__galleryItems || [];
+        if (!photos.length) return;
+        dialog.__galleryIndex = (i + photos.length) % photos.length;
+        const item = photos[dialog.__galleryIndex];
+        if (!item) return;
+        const copy = t("gallery") || {};
+        dialog.setAttribute(
+          "aria-label",
+          isGalleryVideo(item) ? copy.lightboxVideoLabel || copy.lightboxLabel || "Parade video" : copy.lightboxLabel || "Parade photo"
+        );
+        if (isGalleryVideo(item)) {
+          if (img) {
+            img.hidden = true;
+            img.removeAttribute("src");
+            img.alt = "";
+          }
+          pauseGalleryLightboxVideo(dialog);
+          if (video) {
+            video.hidden = false;
+            video.poster = item.poster || "";
+            video.src = item.src;
+            video.muted = true;
+            video.playsInline = true;
+            video.controls = true;
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === "function") {
+              playPromise.catch(() => {});
+            }
+          }
+        } else {
+          pauseGalleryLightboxVideo(dialog);
+          if (video) video.hidden = true;
+          if (img) {
+            img.hidden = false;
+            img.src = item.src;
+            img.alt = item.alt || "";
+          }
+        }
+        if (countEl) {
+          countEl.hidden = photos.length < 2;
+          countEl.textContent = `${dialog.__galleryIndex + 1} / ${photos.length}`;
+        }
+        const multi = photos.length > 1;
+        if (prevBtn) prevBtn.hidden = !multi;
+        if (nextBtn) nextBtn.hidden = !multi;
+        if (!dialog.open) dialog.showModal();
+      };
+
+      dialog.dataset.lightboxBound = "1";
+      dialog.querySelector(".photo-lightbox-close")?.addEventListener("click", () => dialog.close());
+      prevBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dialog.__galleryShow(dialog.__galleryIndex - 1);
+      });
+      nextBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dialog.__galleryShow(dialog.__galleryIndex + 1);
+      });
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener("keydown", (event) => {
+        if (!dialog.open) return;
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          dialog.__galleryShow(dialog.__galleryIndex - 1);
+        } else if (event.key === "ArrowRight") {
+          event.preventDefault();
+          dialog.__galleryShow(dialog.__galleryIndex + 1);
+        }
+      });
+      dialog.addEventListener("close", () => {
+        pauseGalleryLightboxVideo(dialog);
+        if (img) {
+          img.hidden = true;
+          img.removeAttribute("src");
+          img.alt = "";
+        }
+      });
+    }
+
+    root.querySelectorAll("[data-gallery-index]").forEach((btn) => {
+      if (btn.dataset.lightboxBound === "1") return;
+      btn.dataset.lightboxBound = "1";
+      btn.addEventListener("click", () => {
+        const idx = Number(btn.getAttribute("data-gallery-index"));
+        if (!Number.isNaN(idx)) dialog.__galleryShow(idx);
+      });
+    });
+  }
+
+  /** Pause hero videos and carousel timer when the hero leaves the viewport (fully above or below). */
+  function wireHeroViewportPlayback(heroEl, reduce, handlers) {
+    if (!heroEl || reduce || heroEl.dataset.viewportPlaybackBound === "1") return;
+    heroEl.dataset.viewportPlaybackBound = "1";
+
+    let inView = true;
+    const io = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+        if (entry.isIntersecting) {
+          if (inView) return;
+          inView = true;
+          handlers.onVisible();
+        } else {
+          if (!inView) return;
+          inView = false;
+          handlers.onHidden();
+        }
+      },
+      { threshold: 0 }
+    );
+    io.observe(heroEl);
+
+    return {
+      isInView: () => inView,
+    };
+  }
+
+  /** Circular load ring centered on the active hero dot (active slide video only). */
+  function initHeroVideoLoadIndicator(root, reduce, dotsEl) {
+    const wrap = document.getElementById("hero-video-load");
+    if (!wrap || !root) return () => {};
+
+    let boundVideo = null;
+    const handlers = {};
+
+    function positionOnActiveDot() {
+      if (!dotsEl || wrap.hidden) return;
+      const dot = dotsEl.querySelector(".hero-dot.is-active");
+      if (!dot) return;
+      const dotsRect = dotsEl.getBoundingClientRect();
+      const dotRect = dot.getBoundingClientRect();
+      const cx = dotRect.left - dotsRect.left + dotRect.width / 2;
+      const cy = dotRect.top - dotsRect.top + dotRect.height / 2;
+      wrap.style.left = `${cx}px`;
+      wrap.style.top = `${cy}px`;
+    }
+
+    function setState(state) {
+      wrap.hidden = state === "hidden";
+      wrap.classList.toggle("is-loading", state === "loading");
+      wrap.classList.toggle("is-ready", state === "ready");
+      if (state !== "hidden") positionOnActiveDot();
+    }
+
+    function videoCanShowReady(video) {
+      return video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA;
+    }
+
+    function refreshFromVideo() {
+      if (!boundVideo) return;
+      setState(
+        boundVideo.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA ? "ready" : "loading"
+      );
+    }
+
+    function unbind() {
+      if (!boundVideo) return;
+      Object.entries(handlers).forEach(([evt, fn]) => {
+        boundVideo.removeEventListener(evt, fn);
+      });
+      for (const key of Object.keys(handlers)) delete handlers[key];
+      boundVideo = null;
+    }
+
+    function bindActiveVideo(activeIndex) {
+      unbind();
+      const slidesEls = root.querySelectorAll(".hero-slide");
+      const slide = slidesEls[activeIndex];
+      const video = slide?.querySelector("video");
+      if (!video || reduce || !slide?.classList.contains("hero-slide--video")) {
+        setState("hidden");
+        return;
+      }
+
+      boundVideo = video;
+      wrap.hidden = false;
+      refreshFromVideo();
+
+      handlers.loadstart = () => setState("loading");
+      handlers.waiting = () => setState("loading");
+      handlers.progress = () => refreshFromVideo();
+      handlers.canplay = () => setState("ready");
+      handlers.canplaythrough = () => setState("ready");
+      handlers.playing = () => setState("ready");
+
+      Object.entries(handlers).forEach(([evt, fn]) => {
+        video.addEventListener(evt, fn);
+      });
+      positionOnActiveDot();
+    }
+
+    window.addEventListener("resize", positionOnActiveDot);
+    if (dotsEl && typeof ResizeObserver !== "undefined") {
+      const ro = new ResizeObserver(() => positionOnActiveDot());
+      ro.observe(dotsEl);
+    }
+
+    return bindActiveVideo;
+  }
+
+  /** Overlay poster until the video can play (first frame visible while buffering). */
+  function bindHeroVideoPoster(slideEl, video) {
+    const poster = slideEl.querySelector(".hero-slide-poster");
+    if (!poster) return;
+
+    function revealVideo() {
+      poster.classList.add("is-hidden");
+      video.classList.add("is-ready");
+    }
+
+    if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      revealVideo();
+      return;
+    }
+
+    poster.classList.remove("is-hidden");
+    video.classList.remove("is-ready");
+    const onReady = () => revealVideo();
+    video.addEventListener("loadeddata", onReady, { once: true });
+    video.addEventListener("canplay", onReady, { once: true });
+    video.addEventListener("playing", onReady, { once: true });
   }
 
   function initCarousel(slides) {
@@ -624,6 +1033,8 @@
         el.setAttribute("aria-label", t("home.slideOf", { n: i + 1, total: slides.length }));
         const img = el.querySelector("img");
         if (img && slides[i]) img.alt = slides[i].alt || "";
+        const video = el.querySelector("video");
+        if (video && slides[i]) video.setAttribute("aria-label", slides[i].alt || "");
       });
       dotsEl?.querySelectorAll(".hero-dot").forEach((el, i) => {
         el.setAttribute("aria-label", t("home.showPhoto", { n: i + 1 }));
@@ -631,30 +1042,104 @@
       return;
     }
 
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
     root.innerHTML = slides
-      .map(
-        (s, i) => `
-      <div class="hero-slide${i === 0 ? " is-active" : ""}" role="group" aria-roledescription="slide" aria-label="${escapeHtml(t("home.slideOf", { n: i + 1, total: slides.length }))}">
-        <img src="${escapeHtml(s.src)}" alt="${escapeHtml(s.alt || "")}" ${i === 0 ? "" : 'loading="lazy"'} />
-      </div>`
-      )
+      .map((s, i) => {
+        const label = escapeHtml(t("home.slideOf", { n: i + 1, total: slides.length }));
+        const active = i === 0 ? " is-active" : "";
+        if (s.type === "video" && s.src && !reduce) {
+          const posterAttr = s.poster ? ` poster="${escapeHtml(s.poster)}"` : "";
+          const posterImg = s.poster
+            ? `<img class="hero-slide-poster" src="${escapeHtml(s.poster)}" alt="" aria-hidden="true" decoding="async" />`
+            : "";
+          const boomerang = s.boomerang ? ' data-boomerang="1"' : "";
+          return `
+      <div class="hero-slide hero-slide--video${active}" role="group" aria-roledescription="slide" aria-label="${label}">
+        <div class="hero-slide-media">
+          ${posterImg}
+          <video src="${escapeHtml(s.src)}"${posterAttr}${boomerang} muted playsinline preload="${i === 0 ? "auto" : "metadata"}" aria-label="${escapeHtml(s.alt || "")}"></video>
+        </div>
+      </div>`;
+        }
+        const src = s.type === "video" && s.poster ? s.poster : s.src;
+        return `
+      <div class="hero-slide${active}" role="group" aria-roledescription="slide" aria-label="${label}">
+        <img src="${escapeHtml(src)}" alt="${escapeHtml(s.alt || "")}" ${i === 0 ? "" : 'loading="lazy"'} />
+      </div>`;
+      })
       .join("");
 
-    if (slides.length < 2 || !controls || !dotsEl) return;
+    /** Slide indices for hero clips that play once (no boomerang), then auto-advance on `ended`. */
+    const fullPlaySlideIndex = new Set();
+    root.querySelectorAll(".hero-slide--video").forEach((slideEl) => {
+      const video = slideEl.querySelector("video");
+      if (!video) return;
+      bindHeroVideoPoster(slideEl, video);
+      const slideIndex = [...root.querySelectorAll(".hero-slide")].indexOf(slideEl);
+      if (video.dataset.boomerang === "1") {
+        // Assets are ffmpeg forward+reverse concat (*-live.mp4); native loop is reliable in Chromium/Safari.
+        video.loop = true;
+      } else {
+        video.loop = false;
+        fullPlaySlideIndex.add(slideIndex);
+      }
+    });
+
+    const bindActiveVideoLoad = initHeroVideoLoadIndicator(root, reduce, dotsEl);
+
+    function syncVideos(activeIndex) {
+      root.querySelectorAll("video").forEach((video) => {
+        const slide = video.closest(".hero-slide");
+        const slideIndex = [...root.querySelectorAll(".hero-slide")].indexOf(slide);
+        const isBoomerang = video.dataset.boomerang === "1";
+        if (slideIndex === activeIndex && !reduce) {
+          if (isBoomerang) {
+            video.loop = true;
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          } else if (fullPlaySlideIndex.has(slideIndex)) {
+            video.loop = false;
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          } else video.play().catch(() => {});
+        } else video.pause();
+      });
+      bindActiveVideoLoad(activeIndex);
+    }
+
+    const heroSection =
+      document.querySelector(".hero-carousel") || document.querySelector(".hero");
+
+    function pauseAllHeroVideos() {
+      root.querySelectorAll("video").forEach((video) => video.pause());
+    }
+
+    if (slides.length < 2 || !controls || !dotsEl) {
+      wireHeroViewportPlayback(heroSection, reduce, {
+        onHidden: pauseAllHeroVideos,
+        onVisible: () => syncVideos(0),
+      });
+      syncVideos(0);
+      root.dataset.carouselBound = "1";
+      return;
+    }
 
     controls.hidden = false;
+    const loadRing = document.getElementById("hero-video-load");
     dotsEl.innerHTML = slides
       .map(
         (_, i) =>
           `<button type="button" class="hero-dot${i === 0 ? " is-active" : ""}" aria-label="${escapeHtml(t("home.showPhoto", { n: i + 1 }))}" data-slide="${i}"></button>`
       )
       .join("");
+    if (loadRing) dotsEl.appendChild(loadRing);
     root.dataset.carouselBound = "1";
 
     let index = 0;
     let timer = null;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const hero = document.querySelector(".hero-carousel");
+    const hero = heroSection;
+    let viewportPlayback = { isInView: () => true };
 
     function go(to) {
       const slidesEls = root.querySelectorAll(".hero-slide");
@@ -662,6 +1147,7 @@
       index = (to + slides.length) % slides.length;
       slidesEls.forEach((el, i) => el.classList.toggle("is-active", i === index));
       dots.forEach((el, i) => el.classList.toggle("is-active", i === index));
+      syncVideos(index);
     }
 
     function stop() {
@@ -672,10 +1158,36 @@
     }
 
     function start() {
-      if (reduce) return;
+      if (reduce || !viewportPlayback.isInView()) return;
       stop();
+      if (fullPlaySlideIndex.has(index)) return;
       timer = setInterval(() => go(index + 1), 6000);
     }
+
+    viewportPlayback =
+      wireHeroViewportPlayback(heroSection, reduce, {
+        onHidden: () => {
+          stop();
+          pauseAllHeroVideos();
+        },
+        onVisible: () => {
+          syncVideos(index);
+          start();
+        },
+      }) ?? viewportPlayback;
+
+    fullPlaySlideIndex.forEach((slideIndex) => {
+      const slideEl = root.querySelectorAll(".hero-slide")[slideIndex];
+      const video = slideEl?.querySelector("video");
+      if (!video) return;
+      video.addEventListener("ended", () => {
+        if (reduce || index !== slideIndex) return;
+        go(index + 1);
+        start();
+      });
+    });
+
+    syncVideos(0);
 
     prev?.addEventListener("click", () => {
       go(index - 1);
@@ -764,12 +1276,29 @@
     const body = document.getElementById("waivers-body");
     const cutoff = document.getElementById("waivers-cutoff");
     const link = document.getElementById("portal-link");
+    const packet = document.getElementById("waiver-packet-link");
     if (title) title.textContent = copy.headline || p.headline;
     if (body) body.textContent = copy.body || p.body;
     if (cutoff) cutoff.textContent = copy.cutoff || p.cutoff || "";
     if (link) {
       link.href = site.portalUrl || "https://portal.cpalss.com";
       if (copy.button || p.button) link.textContent = copy.button || p.button;
+    }
+    if (packet) {
+      const href =
+        copy.waiverPacketHref ||
+        p.waiverPacketHref ||
+        "/assets/combined-waiver-packet-gh-lsk-2026.pdf";
+      packet.href = href;
+      if (copy.waiverPacketButton || p.waiverPacketButton) {
+        packet.textContent = copy.waiverPacketButton || p.waiverPacketButton;
+      }
+      if (p.waiverPacketDownload || copy.waiverPacketDownload) {
+        packet.setAttribute(
+          "download",
+          String(p.waiverPacketDownload || copy.waiverPacketDownload)
+        );
+      }
     }
   }
 
@@ -1100,9 +1629,33 @@
           const name = step.ctaDownload === true ? "" : String(step.ctaDownload);
           extra += ` download="${escapeHtml(name)}"`;
         }
-        const cta =
+        const secondaryLabel =
+          stepCopy.ctaSecondaryLabel || step.ctaSecondaryLabel;
+        const secondaryHref =
+          stepCopy.ctaSecondaryHref || step.ctaSecondaryHref || "";
+        const secondaryClass =
+          step.ctaSecondaryClass || "btn btn-ghost";
+        let secondaryExtra = secondaryHref.startsWith("mailto:")
+          ? ""
+          : ' rel="noopener noreferrer"';
+        if (step.ctaSecondaryDownload) {
+          const name =
+            step.ctaSecondaryDownload === true
+              ? ""
+              : String(step.ctaSecondaryDownload);
+          secondaryExtra += ` download="${escapeHtml(name)}"`;
+        }
+        const primary =
           href && ctaLabel
-            ? `<p class="timeline-cta"><a class="${escapeHtml(btnClass)}" href="${escapeHtml(href)}"${extra}>${escapeHtml(ctaLabel)}</a></p>`
+            ? `<a class="${escapeHtml(btnClass)}" href="${escapeHtml(href)}"${extra}>${escapeHtml(ctaLabel)}</a>`
+            : "";
+        const secondary =
+          secondaryHref && secondaryLabel
+            ? `<a class="${escapeHtml(secondaryClass)}" href="${escapeHtml(secondaryHref)}"${secondaryExtra}>${escapeHtml(secondaryLabel)}</a>`
+            : "";
+        const cta =
+          primary || secondary
+            ? `<p class="timeline-cta hero-cta">${primary}${secondary}</p>`
             : "";
         const itinerarySrc = stepCopy.itinerary || step.itinerary;
         const itinerary = Array.isArray(itinerarySrc) && itinerarySrc.length
@@ -1353,7 +1906,10 @@
       historyCarouselSeq = 0;
       renderHistory(historyCache);
       initHistoryCarousels();
-      observeReveal(".history-card, .history-bucket");
+      observeReveal(".history-card");
+      initDocScroll();
+    } else if (page === "gallery" && galleryCache) {
+      renderGallery(galleryCache);
     }
   }
 
@@ -1409,7 +1965,27 @@
         historyCache = await loadJson("/data/history.json");
         renderHistory(historyCache);
         initHistoryCarousels();
-        observeReveal(".history-card, .history-bucket");
+        observeReveal(".history-card");
+      } else if (page === "gallery") {
+        const mediaPath = galleryMediaJsonPath();
+        const galleryI18nKey = document.body?.dataset.galleryI18n || "";
+        const [gallery, site] = await Promise.all([
+          loadJson(mediaPath),
+          loadJson("/data/site.json"),
+        ]);
+        siteCache = site;
+        if (!gallery.event && !galleryI18nKey && site?.event) {
+          gallery.event = {
+            name: site.event.name,
+            edition: site.event.edition,
+            dateDisplay: site.event.dateDisplay,
+            timeNote: site.event.timeNote,
+            venue: site.event.venue,
+            theme: site.event.theme,
+          };
+        }
+        galleryCache = gallery;
+        renderGallery(galleryCache);
       }
     } catch (err) {
       console.error(err);
@@ -1417,7 +1993,8 @@
         document.getElementById("gh-pitch-body") ||
         document.getElementById("journey-intro") ||
         document.getElementById("wishlist-body") ||
-        document.getElementById("history-lead");
+        document.getElementById("history-lead") ||
+        document.getElementById("gallery-lead");
       if (fallback) {
         fallback.textContent = t("loadError");
       }

@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "poster": "/assets/eglny-2026/2026-eglny-01-signs.jpg",
+    "alt": "Language school banner and pageant sashes in the Elk Grove Lunar New Year parade"
+  },
+  "kicker": "Saturday–Sunday, February 14–15, 2026",
+  "headline": "Mardi Gras twist at the park",
+  "event": {
+    "name": "Elk Grove Lunar New Year Tết",
+    "dateDisplay": "Saturday–Sunday, February 14–15, 2026",
+    "timeNote": "11 AM–7 PM both days",
+    "venue": "Elk Grove Park, Elk Grove",
+    "theme": "Lunar New Year meets Mardi Gras"
+  },
+  "officerHref": "https://eglny.com",
+  "officerCta": "Festival site",
+  "photos": [
+    {
+      "src": "/assets/eglny-2026/2026-eglny-01-signs.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-01-signs-thumb.jpg",
+      "alt": "Language school banner and pageant sashes in the Elk Grove Lunar New Year parade"
+    },
+    {
+      "src": "/assets/eglny-2026/2026-eglny-02-banner.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-02-banner-thumb.jpg",
+      "alt": "Youth carrying a Vietnamese American Community of Sacramento banner in the parade"
+    },
+    {
+      "src": "/assets/eglny-2026/2026-eglny-03-car.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-03-car-thumb.jpg",
+      "alt": "Pageant contestants waving from a light blue classic car in the parade"
+    },
+    {
+      "src": "/assets/eglny-2026/2026-eglny-04-students.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-04-students-thumb.jpg",
+      "alt": "Students carrying yellow banners across the parade route"
+    },
+    {
+      "src": "/assets/eglny-2026/2026-eglny-05-fans.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-05-fans-thumb.jpg",
+      "alt": "Fan dancers marching in the parade"
+    },
+    {
+      "src": "/assets/eglny-2026/2026-eglny-06-lotus.jpg",
+      "thumb": "/assets/eglny-2026/2026-eglny-06-lotus-thumb.jpg",
+      "alt": "Vietnamese youth on the parade route holding a Hoa Sen Thức Tỉnh (Awakening of the Lotus) sign"
+    }
+  ]
+}
