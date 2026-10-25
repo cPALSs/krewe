@@ -75,6 +75,20 @@
       "src": "/assets/golden-harvest-2026/2026-golden_harvest-008.jpg",
       "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-008-thumb.jpg",
       "alt": "Little Saigon Krewe at Golden Harvest Parade on Capitol Mall"
+    },
+    {
+      "type": "video",
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-009-thuy.mp4",
+      "poster": "/assets/golden-harvest-2026/2026-golden_harvest-009-thuy-poster.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-009-thuy-poster.jpg",
+      "alt": "Golden Harvest Parade on Capitol Mall — Krewe marchers and community groups on the route (video by Thuy Pham)"
+    },
+    {
+      "type": "video",
+      "src": "/assets/golden-harvest-2026/2026-golden_harvest-010-thuy.mp4",
+      "poster": "/assets/golden-harvest-2026/2026-golden_harvest-010-thuy-poster.jpg",
+      "thumb": "/assets/golden-harvest-2026/2026-golden_harvest-010-thuy-poster.jpg",
+      "alt": "Golden Harvest Parade on Capitol Mall — wider view of the krewe train and parade crowd (video by Thuy Pham)"
     }
   ]
 }
