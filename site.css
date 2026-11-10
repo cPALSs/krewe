@@ -201,7 +201,7 @@ a:hover {
   margin: 0;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 0.35rem;
+  border-radius: 50%;
   background: transparent;
   color: #fff;
   cursor: pointer;
@@ -218,47 +218,6 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1;
-}
-
-.lang-menu {
-  position: absolute;
-  top: calc(100% + 0.4rem);
-  right: 0;
-  z-index: 110;
-  min-width: 9.75rem;
-  padding: 0.3rem 0;
-  background: rgba(6, 28, 26, 0.97);
-  border: 1px solid var(--line);
-  border-radius: 0.4rem;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
-}
-
-.lang-menu[hidden] {
-  display: none;
-}
-
-.lang-menu button {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0.5rem 0.85rem;
-  border: none;
-  background: none;
-  color: var(--ink);
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-align: left;
-  cursor: pointer;
-}
-
-.lang-menu button:hover,
-.lang-menu button[aria-selected="true"] {
-  color: var(--gold);
-}
-
-.lang-menu button[aria-selected="true"] {
-  font-weight: 600;
 }
 
 .site-nav-links {

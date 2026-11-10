@@ -141,12 +141,6 @@
           ?.setAttribute("content", desc);
       }
     }
-    document.querySelectorAll("[data-set-lang]").forEach((btn) => {
-      btn.setAttribute(
-        "aria-selected",
-        btn.getAttribute("data-set-lang") === lang ? "true" : "false"
-      );
-    });
     document.querySelectorAll(".lang-code").forEach((el) => {
       el.textContent = lang.toUpperCase();
     });
@@ -165,41 +159,9 @@
 
   function initLangSwitch() {
     const toggle = document.getElementById("lang-toggle");
-    const menu = document.getElementById("lang-menu");
-    if (!toggle || !menu) return;
-
-    function closeMenu() {
-      menu.hidden = true;
-      toggle.setAttribute("aria-expanded", "false");
-    }
-
-    function openMenu() {
-      menu.hidden = false;
-      toggle.setAttribute("aria-expanded", "true");
-    }
-
-    toggle.addEventListener("click", (event) => {
-      event.stopPropagation();
-      if (menu.hidden) openMenu();
-      else closeMenu();
-    });
-
-    menu.querySelectorAll("[data-set-lang]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        setLang(btn.getAttribute("data-set-lang"));
-        closeMenu();
-      });
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!menu.hidden && !event.target.closest(".lang-switch")) closeMenu();
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !menu.hidden) {
-        closeMenu();
-        toggle.focus();
-      }
+    if (!toggle) return;
+    toggle.addEventListener("click", () => {
+      setLang(lang === "vi" ? "en" : "vi");
     });
   }
 
