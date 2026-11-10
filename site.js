@@ -147,6 +147,9 @@
         btn.getAttribute("data-set-lang") === lang ? "true" : "false"
       );
     });
+    document.querySelectorAll(".lang-code").forEach((el) => {
+      el.textContent = lang.toUpperCase();
+    });
   }
 
   function setLang(next) {

@@ -200,7 +200,7 @@ a:hover {
   height: 2.25rem;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 0.35rem;
   background: transparent;
   color: #fff;
@@ -208,11 +208,16 @@ a:hover {
 }
 
 .lang-toggle:hover {
+  border-color: var(--gold);
   color: var(--gold);
 }
 
-.lang-globe {
+.lang-code {
   display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .lang-menu {
@@ -302,11 +307,6 @@ a:hover {
     margin-left: 0.35rem;
   }
 
-  /* Optical: globe stroke sits a hair heavy vs nav link caps */
-  .lang-globe {
-    transform: translateY(-1px);
-  }
-
   .site-nav-links a,
   .site-nav-links a[aria-current="page"] {
     color: #fff;
@@ -356,6 +356,10 @@ a:hover {
   .lang-toggle:hover {
     border-color: rgba(230, 184, 74, 0.45);
     color: var(--ink);
+  }
+
+  .lang-code {
+    font-size: 0.72rem;
   }
 
   .nav-toggle {
